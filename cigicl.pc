@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: CIGI Class Library
+Description: Library for unpacking, manipulating, and packing CIGI packets
+Version: 4.0.2
+Libs: -L/usr/local/lib -lcigicl
+Cflags: -I/usr/local/include/cigicl 

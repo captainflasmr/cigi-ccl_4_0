@@ -1,0 +1,305 @@
+Introduction
+============
+
+This document is designed to help users that are currently using CCL 3.3.3 or older migrate to using CCL 4.0.2 or later.
+
+It assumes the reader is already familiar with the CCL documentation available online at http://cigi.sourceforge.net/manual/ccl/index.html
+
+Guidance is given on how to handle the capability of interfacing to streams of different versions of CIGI, and how the version conversion is implemented.
+
+
+CIGI 4.0 Major Changes
+======================
+
+With CIGI 4.0 there were several major changes:
+
+- Packet header changed significantly, most notably:
+  - PacketID's all changed and became 16 bit (was previously 8 bit)
+  - Packet sizes are now 16 bit (was previously 8 bit)
+- All packet ID's changed.
+- The range of allowed packetID's for user packets changed, and does not include the range that was previously allowed.
+- Old Entity Control packet is now broken down into three different packets: Entity Control, Entity Position, and Animation Control
+- Three packets had name changes: 
+    Rate Control became Velocity Control
+    Trajectory Definition became Acceleration Control
+    Symbol Line Definition became Symbol Polygon Definition
+- Two new packets were added for textured symbols.
+
+
+Supporting multiple CIGI Versions With CCL
+==========================================
+
+The CCL is designed to implement the bulk of the work required to translate between CIGI versions. Though it is important to note that, in the case where some functional change of a packet occurs between versions (e.g. the Entity Control packet), some of the conversion must be done at the user application level as discussed later.
+
+This means that an IG or Host application can tell CCL the highest version of CIGI that the application supports. The application can then implement the callbacks for that version of CIGI. If the received CIGI stream is of a different version, then packets will converted as much as possible to the applications versions of CIGI before the callbacks are made.
+
+There may be more than one way that support multiple versions can be implemented, what follows is a rough outline of one possible method.
+
+For receiving CIGI packets, do the following:
+---------------------------------------------
+
+- Call CigiIncomingMsg::SetReaderCigiversion() with the highest version of CIGI the application (IG or Host) supports, e.g. SetReaderCigiversion(4, 0) for 4.0. Call this readerVer.
+
+- Call CigiIncomingMsg::RegisterCallBack() for each packet type you are going to provide support for. The first parameter is the PacketID, which is obviously potentially different for each CIGI version, particularly in version 4 where they all changed. But you should use the ID that matches readerVer.
+
+- When CCL processes a packet, internally the packetID is used to index CigiIncomingMessage::IncomingHandlerTable[] to get an object of the derived class for the version being received (which may be different to readerVer). It has it's Unpack() function called to extract the data from the incoming stream into the object. 
+
+- The Unpack() function also sets data members of the packet base class that may be for other versions of CIGI, but which can be inferred from the current packet. e.g. if receiving a Cigi 3.3 Weather Packet, the Transition value will be used to set both the Upper and Lower Transition values in the base object. So if the readerVer is 4.0 it can call GetTopTransition() and GetBottomTransition() and still get valid values for both.
+
+- The GetCnvt() member of the same object is also called, this determines the corresponding packetID of readerVer version of CIGI, and this converted packetID is used to determine which registered callback to call by matching against the packetID's specified in CigiIncomingMsg::RegisterCallBack().
+
+- So the IG's callback function is called with a pointer (pkt) to an object of the derived class of the version of the incoming stream. 
+
+- CCL is written such that all data members for a packet are in the base class of the packet type, none are in the derived class for the specific CIGI version. The derived version classes only contain accessor functions. So all versions of a particular packet object have the same data layout in memory. This means that 90% of the time, application code can just static cast the object reference to the readerVer derived class and access the data. Note that because of this, you should not rely on pkt->PacketID() returning the expected packetID, it will return the original packetID, not the readerVer packetID.
+
+- The remaining 10% is where some functionality of the packet has changed in a way that can not be inferred automatically, a good example being the EntityControl packet. In this case, the implementation must call the passed in packets pkt->GetVersion() function which returns the version of the incoming data, and then take appropriate action. This is made easier by the ability to static cast between versions of the derived class due to the common data layout of all versions.
+
+  e.g. if pkt is the incoming CigiBasePacket which is an EntityControl
+
+	void EntityControlCB(CigiBasePacket *pkt)
+	{
+  		uint8 pktVer = pkt->GetVersion(); // This will retreive the CIGI version of the incoming data
+
+  		if(pktVer < 4) {
+
+ 
+
+     			const CigiEntityCtrlV3 *ec3 = (const CigiEntityCtrlV3  *)pkt;
+
+
+      			// Handle V3 packet
+  		}
+
+  		else {
+
+      			const CigiEntityCtrlV4 *ec4 = (const CigiEntityCtrlV4  *)pkt;
+
+      			// Handle V4 packet
+
+  		}
+	}
+
+For sending CIGI packets you do the following:
+----------------------------------------------
+
+- Call CigiOutgoingMsg::SetOutgoingCigiVersion() with the version of CIGI you want to send, call this senderVer.
+- Create a new object of the derived version of the highest version supported. Fill in the data using the SetNNN accessors.
+- Insert the packet into the outgoing stream with CigiOutgoingMsg::<< operator.
+- Internally the CCL will call the objects GetCnvt() member to get the matching packetID in senderVer. This is used internally to index CigiOutgoingMsg::OutgoingHandlerTbl[] to access an object of the derived class of version senderVer. This senderVer objects Pack() member is called to pack the data from the passed in object into the correct format for the version being transmitted.
+
+If the sender needs to support multiple versions of Cigi then it needs to be cognizant of the functional differences between the versions. e.g. for CIGI<4 just use the EntityCtrl packet (and static cast a reference to it of the V3 derived type to be able to call the V3 SetNNN accessors), for CIGI >= 4 use EntityCtrl and EntityPosition packet.
+
+
+Packet Name Changes
+===================
+As mentioned previously, some packets were renamed in CIGI 4.0. In the CCL the derived version classes of these packets are named according to the version, but all are derived from the same packet base class, which will be named according to the original name.
+
+So...
+
+CigiRateCtrlV1, CigiRateCtrlV2, CigiRateCtrlV3, and CigiVelocityCtrlV4 are all derived from CigiBaseVelocityCtrl, and you can static cast an object reference between any of these classes.
+
+CigiTrajectoryDefV1, CigiTrajectoryDefV2, CigiTrajectoryDefV3, and CigiAccelerationCtrlV4 are all derived from CigiBaseTrajectoryDef, and you can static cast an object reference between any of these classes.
+
+CigiSymbolLineDefV3_3 and CigiSymbolPolygonDefV4 are both derived from CigiBaseSymbolLineDef, and you can static cast an object reference between any of these classes.
+
+So an application registered as CigiIncomingMsg::SetReaderCigiversion(4, 0) should register callbacks for CigiVelocityCtrlV4, CigiAccelerationCtrlV4 and CigiSymbolPolygonDefV4. If the external CIGI version is an older version then the old packets will result in these V4 callbacks being called.
+
+
+Extension Packets
+=================
+If registering you own user defined packet class, make sure the packetID falls in the valid range for the external CIGI version (i.e. the version being transmitted or received, not readerVer) you are using.
+
+Prior to CIGI4 this is 201 to 255.
+
+For CIGI4 this is 0x1000-0x7fff for extension packets registered with the CIGI SISO PSG, or 0x8000-0xfffe for locally defined extension packets.
+
+Since the packet ID of a user defined packet will be different for 4.0 to prior versions it is now important that all user defined packet classes implement their own GetCnvt() derived virtual member.
+
+You will also need a derived version class for V3 and V4 as a minimum (V2 and V1 also if you want to support them), each with Pack and Unpack members that adhere to the packet header format of the respective version. 
+
+CAUTION: The external CIGI version is liable to change after start up, it's also possible for the outgoing version to be different to the incoming version:
+-The incoming version will change to match what ever version is received in the current packet.
+-The outgoing CIGI Version will change to match the incoming version if an incoming packet is received whose version is greater than the current outgoing version.
+
+To handle these version changes, a new callback mechanism has been added to the CigiMessage class in CCL 4.0.2. A new member function has been added called SetVersionChangeCallback(). Both CigiOutgoingMsg and CigiIncomingMsg inherit CigiMessage. This callback mechanism can be used to set a user function that will be called whenever the external CIGI version on that message channel changes. A callback should be set for both the incoming and outgoing message channel. In the callback you should re-register the extension functions that need to be handled by that channel with a derived version of the class appropriate for the version parameter that is passed to the callback.
+
+e.g.
+
+void InitCigiInitExtensions(CigiOutgoingMsg *outgoingMsg, CigiIncomingMsg *incomingMsg)
+{
+    // Register callbacks for if external CIGI version changes
+    outgoingMsg->SetVersionChangeCallback(OutgoingVersionChangeCB, outgoingMsg);
+    incomingMsg->SetVersionChangeCallback(IncomingVersionChangeCB, incomingMsg);
+
+    // Setup outgoing packets to our desired version
+    OutgoingVersionChangeCB(DesiredMajorVer, DesiredMinorVer, outgoingMsg);
+
+    // Note we do not need to call IncomingVersionChangeCB() here since it is guaranteed to
+    // be called by the callback when the first packet is received and before the first use of
+    // the incoming registered classes.
+}
+
+void OutgoingVersionChangeCB(int majorVer, int minorVer, void *user)
+{
+    CigiOutgoingMsg *outgoingMsg = (CigiOutgoingMsg *)user;
+
+    // Only need to register packets that we will be sending
+    if(majorVer >= 4) {
+        outgoingMsg->RegisterUserPacket(new CigiMyCustomPacketV4, MyCustomPacketV4PacketId,
+               trueIfThisIsHostToIgPacket, trueIfThisIsIgToHostPacket);
+        ... Register other V4 extension packets here
+    }
+    else {
+        outgoingMsg->RegisterUserPacket(new CigiMyCustomPacketV3, MyCustomPacketV3PacketId,
+               trueIfThisIsHostToIgPacket, trueIfThisIsIgToHostPacket);
+        ... Register other V3 extension packets here
+    }
+}
+
+void IncomingVersionChangeCB(int majorVer, int minorVer, void *user)
+{
+    Similar to OutgoingVersionChangeCB() but for packets that we will be receiving
+}
+
+class CigiMyCustomPacketV3;
+class CigiMyCustomPacketV4;
+
+
+class CIGI_SPEC CigiBaseMyCustomPacket : public CigiBasePacket
+{
+public:
+  friend CigiMyCustomPacketV3;
+  friend CigiMyCustomPacketV4;
+
+  enum {
+    MyCustomPacketV3PacketId = ???, // Must be in range 201 to 255
+    MyCustomPacketV4PacketId = ???, // Must be in range 0x1000 to 0xfffe
+    MyCustomPacketV3PacketSize = ???, // Must be multiple of 8 V3 (or 4 for V1 or V2)
+    MyCustomPacketV4PacketSize = ??? // Must be multiple of 8
+  }
+
+  CigiBaseMyCustomPacket() { m_MyValue = defaultMyValue; }
+
+  virtual int GetCnvt(CigiVersionID &CnvtVersion, CigiCnvtInfoType::Type &CnvtInfo) {
+
+    CnvtInfo.ProcID = CigiProcessType::ProcStd;
+
+    if (CnvtVersion.CigiMajorVersion < 4)
+      CnvtInfo.CnvtPacketID = MyCustomPacketV3PacketId;
+    else
+      CnvtInfo.CnvtPacketID = MyCustomPacketV4PacketId;
+
+    return(CIGI_SUCCESS);
+  }
+
+  // Custom data accessors
+  void SetMyValue(Cigi_uint32 val) { m_MyValue = val; }
+  Cigi_uint32 MyValue() const { return m_MyValue; }
+
+protected:
+  // All custom data members for the packet must be here in the base class
+  Cigi_uint32 m_MyValue;
+}
+
+
+class CIGI_SPEC CigiMyCustomPacketV3 : public CigiBaseMyCustomPacket 
+{
+public:
+  CigiMyCustomPacketV3()  { 
+     Version = 3; 
+     MinorVersion = 0; 
+     PacketSize = MyCustomPacketV3PacketSize; 
+     PacketID = MyCustomPacketV3PacketId;
+  }
+
+
+  virtual int Pack(CigiBasePacket *Base, Cigi_uint8 *Buff, void *Spec) const
+  {
+    PackPointer CDta;
+
+    CigiBaseMyCustomPacket *Data = (CigiBaseMyCustomPacket *)Base;
+
+    CDta.c = Buff;
+
+    *CDta.c++ = MyCustomPacketV3PacketId;
+    *CDta.c++ = MyCustomPacketV3PacketSize;
+
+    CDta.s++ = 0; // Pad unused 16 bit value
+    *CDta.l++ = Data->m_MyValue;
+ 
+    return (MyCustomPacketV3PacketSize);
+  }
+
+  virtual int Unpack(Cigi_uint8 *Buff, bool Swap, void *Spec)
+    PackPointer CDta;
+
+    CDta.c = Buff;
+    
+    CDta.c += 2; // skip packet id and size  (both 8 bit)
+    CDta.s++; // skip unused padding
+
+    if (!Swap) {
+        m_MyValue = *CDta.l++;
+    } else {
+        CigiSwap4(&m_MyValue, CDta.l++);
+    }
+
+    return (CIGI_SUCCESS);
+  }
+}
+
+
+class CIGI_SPEC CigiMyCustomPacketV4 : public CigiBaseMyCustomPacket 
+{
+public:
+  CigiMyCustomPacketV4()  { 
+     Version = 4; 
+     MinorVersion = 0; 
+     PacketSize = MyCustomPacketV4PacketSize; 
+     PacketID = MyCustomPacketV4PacketId;
+  }
+
+  virtual int Pack(CigiBasePacket *Base, Cigi_uint8 *Buff, void *Spec) const
+  {
+    PackPointer CDta;
+
+    CigiBaseMyCustomPacket *Data = (CigiBaseMyCustomPacket *)Base;
+
+    CDta.c = Buff;
+
+    *CDta.s++ = MyCustomPacketV4PacketSize;
+    *CDta.s++ = MyCustomPacketV4PacketId;
+
+    *CDta.l++ = Data->m_MyValue;
+ 
+    return (MyCustomPacketV4PacketSize);
+  }
+
+  virtual int Unpack(Cigi_uint8 *Buff, bool Swap, void *Spec)
+  {
+    PackPointer CDta;
+
+    CDta.c = Buff;
+    
+    CDta.s += 2; // skip packet id and size (both 16 bit)
+
+    if (!Swap) {
+        m_MyValue = *CDta.l++;
+    } else {
+        CigiSwap4(&m_MyValue, CDta.l++);
+    }
+
+    return (CIGI_SUCCESS);
+  }
+ 
+}
+
+
+
+
+Other Considerations
+====================
+If upgrading from a 3.x version of CCL to 4.0+ version, note the following:
+
+- Your application may need to be modified to handle 16 bit packet IDs.
+- Your application may need to be modified to handle 16 bit packet sizes.
