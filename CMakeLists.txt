@@ -1,5 +1,9 @@
+cmake_minimum_required(VERSION 3.29)
 PROJECT(ccl)
 SET(VERSION 4.0.2)
+
+find_package(SWIG REQUIRED)
+include(${SWIG_USE_FILE})
 
 # Ensure compile_commands.json is always generated.
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
@@ -107,16 +111,16 @@ INCLUDE_DIRECTORIES(include)
 ADD_LIBRARY(cigicl-shared SHARED
 	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4})
-source_group("Header Files\BaseClasses"         FILES ${CCL_HDRS_BASE})
-source_group("Header Files\Version1"            FILES ${CCL_HDRS_V1})
-source_group("Header Files\Version2"            FILES ${CCL_HDRS_V2})
-source_group("Header Files\Version3"            FILES ${CCL_HDRS_V3})
-source_group("Header Files\Version4"            FILES ${CCL_HDRS_V4})
-source_group("Source Files\BaseClasses"         FILES ${CCL_SRCS_BASE})
-source_group("Source Files\Version1"            FILES ${CCL_SRCS_V1})
-source_group("Source Files\Version2"            FILES ${CCL_SRCS_V2})
-source_group("Source Files\Version3"            FILES ${CCL_SRCS_V3})
-source_group("Source Files\Version4"            FILES ${CCL_SRCS_V4})
+source_group("Header Files\\BaseClasses"         FILES ${CCL_HDRS_BASE})
+source_group("Header Files\\Version1"            FILES ${CCL_HDRS_V1})
+source_group("Header Files\\Version2"            FILES ${CCL_HDRS_V2})
+source_group("Header Files\\Version3"            FILES ${CCL_HDRS_V3})
+source_group("Header Files\\Version4"            FILES ${CCL_HDRS_V4})
+source_group("Source Files\\BaseClasses"         FILES ${CCL_SRCS_BASE})
+source_group("Source Files\\Version1"            FILES ${CCL_SRCS_V1})
+source_group("Source Files\\Version2"            FILES ${CCL_SRCS_V2})
+source_group("Source Files\\Version3"            FILES ${CCL_SRCS_V3})
+source_group("Source Files\\Version4"            FILES ${CCL_SRCS_V4})
 
 IF(MSVC OR MINGW)
     # Both the CCL_DLL and _CCL_EXPORTS_ defines are needed to export DLLs.
@@ -166,3 +170,31 @@ INSTALL(FILES
 IF(CMAKE_COMPILER_IS_GNUCXX)
     INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
 ENDIF()
+
+# set_property(SOURCE swig/swigcigi.i PROPERTY CPLUSPLUS ON)
+
+# swig_add_library(swigcigi
+#                  TYPE STATIC
+#                  LANGUAGE csharp
+#                  SOURCES swig/swigcigi.i ${CCL_SRCS})
+
+# swig_link_libraries(swigcigi "build/lib/libccl_lib.a")
+
+# Ensure C# is enabled as a SWIG language
+enable_language(CSharp)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Define C# properties - Adapt these paths and options as necessary
+set(CSHARP_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/csharp)
+set_property(SOURCE swig/mylib.i PROPERTY CPLUSPLUS ON)
+set_property(SOURCE swig/mylib.i PROPERTY SWIG_FLAGS "-namespace" "ccl")
+
+swig_add_library(mylib
+                 TYPE SHARED
+                 LANGUAGE csharp
+                 SOURCES swig/mylib.i ${CCL_SRCS})
+
+# Set the output directory for C# files (DLLs will also be placed here)
+set_target_properties(mylib PROPERTIES
+    LIBRARY_OUTPUT_DIRECTORY ${CSHARP_OUTPUT_DIRECTORY}
+    RUNTIME_OUTPUT_DIRECTORY ${CSHARP_OUTPUT_DIRECTORY})
