@@ -1,12 +1,6 @@
-cmake_minimum_required(VERSION 3.29)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.29)
 PROJECT(ccl)
 SET(VERSION 4.0.2)
-
-find_package(SWIG REQUIRED)
-include(${SWIG_USE_FILE})
-
-# Ensure compile_commands.json is always generated.
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 
 #============================================================================
 # Please note:
@@ -35,7 +29,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 #
 #============================================================================
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.4.7)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
+
 SET(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS 1)
 SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 IF(MSVC OR MINGW)
@@ -105,12 +100,50 @@ file(GLOB_RECURSE CCL_SRCS_V4 "source/*V4*.cpp")
 
 INCLUDE_DIRECTORIES(include)
 
+if ( MSVC )
+  set(SWIG_DIR "C:/Users/jimbo/OneDrive/Documents/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
+  set(SWIG_EXECUTABLE "C:/Users/jimbo/OneDrive/Documents/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
+endif (MSVC)
+
+find_package(SWIG REQUIRED)
+include(${SWIG_USE_FILE})
+
+set (CMAKE_SWIG_FLAGS "")
+
+set_property(SOURCE example.i PROPERTY CPLUSPLUS ON)
+
+set(INTERFACE_FILE_TEMPLATE "${CMAKE_SOURCE_DIR}/example.i.in")
+set(INTERFACE_FILE "${CMAKE_SOURCE_DIR}/example.i")
+
+file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h")
+
+# Generate a string with all #include directives for the collected headers
+set(INCLUDE_DIRECTIVES "")
+foreach(HEADER ${HEADER_FILES})
+    get_filename_component(DIR_PATH ${HEADER} DIRECTORY)
+    include_directories(${DIR_PATH})
+    string(APPEND INCLUDE_DIRECTIVES "#include \"${HEADER}\"\n")
+endforeach()
+
+# Configure the .i file with dynamic includes
+# configure_file(${INTERFACE_FILE_TEMPLATE} ${INTERFACE_FILE})
+
+swig_add_library(cigicl-shared
+  TYPE SHARED
+  LANGUAGE CSharp
+  SOURCES example.i
+  OUTPUT_DIR ${CMAKE_SOURCE_DIR}/csharp
+  OUTFILE_DIR ${CMAKE_SOURCE_DIR}/csharp
+  )
+
 #
 # Compiling the CCL as a shared library
 #
-ADD_LIBRARY(cigicl-shared SHARED
-	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
-	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4})
+
+# ADD_LIBRARY(cigicl-shared SHARED
+# 	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
+# 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4})
+
 source_group("Header Files\\BaseClasses"         FILES ${CCL_HDRS_BASE})
 source_group("Header Files\\Version1"            FILES ${CCL_HDRS_V1})
 source_group("Header Files\\Version2"            FILES ${CCL_HDRS_V2})
@@ -140,61 +173,33 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 #
 # Compiling the CCL as a static library
 #
-IF(MSVC OR MINGW)
-    add_definitions("/MP")
-    ADD_LIBRARY(cigicl-static STATIC ${CCL_PUBLIC_HDRS} ${CCL_SRCS})
-    SET_TARGET_PROPERTIES(cigicl-static PROPERTIES OUTPUT_NAME ccl_lib	)
-ELSE()
-    ADD_LIBRARY(cigicl-static STATIC ${CCL_PUBLIC_HDRS} ${CCL_SRCS})
-    SET_TARGET_PROPERTIES(cigicl-static PROPERTIES OUTPUT_NAME ccl_lib)
-ENDIF()
-SET_TARGET_PROPERTIES(cigicl-static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+# IF(MSVC OR MINGW)
+#     add_definitions("/MP")
+#     ADD_LIBRARY(cigicl-static STATIC ${CCL_PUBLIC_HDRS} ${CCL_SRCS})
+#     SET_TARGET_PROPERTIES(cigicl-static PROPERTIES OUTPUT_NAME ccl_lib	)
+# ELSE()
+#     ADD_LIBRARY(cigicl-static STATIC ${CCL_PUBLIC_HDRS} ${CCL_SRCS})
+#     SET_TARGET_PROPERTIES(cigicl-static PROPERTIES OUTPUT_NAME ccl_lib)
+# ENDIF()
+# SET_TARGET_PROPERTIES(cigicl-static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 
 #==========================================================
 # Install
 #==========================================================
 
-INSTALL(TARGETS cigicl-static cigicl-shared
-        RUNTIME DESTINATION bin
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
-INSTALL(FILES ${CCL_PUBLIC_HDRS} DESTINATION include/cigicl)
-INSTALL(FILES
-    COPYING
-    ChangeLog
-    license.html
-    README
-    ReleaseNotes.txt
-    DESTINATION share/cigicl)
+# INSTALL(TARGETS cigicl-static cigicl-shared
+#         RUNTIME DESTINATION bin
+#         LIBRARY DESTINATION lib
+#         ARCHIVE DESTINATION lib)
+# INSTALL(FILES ${CCL_PUBLIC_HDRS} DESTINATION include/cigicl)
+# INSTALL(FILES
+#     COPYING
+#     ChangeLog
+#     license.html
+#     README
+#     ReleaseNotes.txt
+#     DESTINATION share/cigicl)
 
-IF(CMAKE_COMPILER_IS_GNUCXX)
-    INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
-ENDIF()
-
-# set_property(SOURCE swig/swigcigi.i PROPERTY CPLUSPLUS ON)
-
-# swig_add_library(swigcigi
-#                  TYPE STATIC
-#                  LANGUAGE csharp
-#                  SOURCES swig/swigcigi.i ${CCL_SRCS})
-
-# swig_link_libraries(swigcigi "build/lib/libccl_lib.a")
-
-# Ensure C# is enabled as a SWIG language
-enable_language(CSharp)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-
-# Define C# properties - Adapt these paths and options as necessary
-set(CSHARP_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/csharp)
-set_property(SOURCE swig/mylib.i PROPERTY CPLUSPLUS ON)
-set_property(SOURCE swig/mylib.i PROPERTY SWIG_FLAGS "-namespace" "ccl")
-
-swig_add_library(mylib
-                 TYPE SHARED
-                 LANGUAGE csharp
-                 SOURCES swig/mylib.i ${CCL_SRCS})
-
-# Set the output directory for C# files (DLLs will also be placed here)
-set_target_properties(mylib PROPERTIES
-    LIBRARY_OUTPUT_DIRECTORY ${CSHARP_OUTPUT_DIRECTORY}
-    RUNTIME_OUTPUT_DIRECTORY ${CSHARP_OUTPUT_DIRECTORY})
+# IF(CMAKE_COMPILER_IS_GNUCXX)
+#     INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
+# ENDIF()
