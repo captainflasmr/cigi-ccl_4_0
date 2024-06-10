@@ -1,0 +1,10 @@
+%{
+/* Includes for C++ compilation */
+${INCLUDE_DIRECTIVES}
+%}
+
+/* SWIG directives */
+%module example_module
+
+/* Dynamic includes */
+${INCLUDE_DIRECTIVES}
