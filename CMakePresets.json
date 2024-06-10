@@ -1,0 +1,41 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 19,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "linux-debug",
+            "description": "Use this preset for Linux Debug builds",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/linux/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            }
+        },
+        {
+            "name": "linux-release",
+            "description": "Use this preset for Linux Release builds",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/linux/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "linux-debug-build",
+            "configurePreset": "linux-debug"
+        },
+        {
+            "name": "linux-release-build",
+            "configurePreset": "linux-release"
+        }
+    ],
+    "testPresets": []
+}
