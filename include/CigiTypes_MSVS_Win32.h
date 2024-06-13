@@ -61,11 +61,11 @@ typedef __int64 Cigi_int64;
 
 #ifdef CCL_DLL
 
-   #ifdef _EXPORT_CCL_
+  // #ifdef _EXPORT_CCL_
       #define CIGI_SPEC __declspec(dllexport)
-   #else
-      #define CIGI_SPEC __declspec(dllimport)
-   #endif
+   //#else
+   //   #define CIGI_SPEC __declspec(dllimport)
+   //#endif
 
 #else
 

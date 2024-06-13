@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.29)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.28)
 PROJECT(ccl)
 SET(VERSION 4.0.2)
 
@@ -101,8 +101,8 @@ file(GLOB_RECURSE CCL_SRCS_V4 "source/*V4*.cpp")
 INCLUDE_DIRECTORIES(include)
 
 if ( MSVC )
-  set(SWIG_DIR "C:/Users/jimbo/OneDrive/Documents/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
-  set(SWIG_EXECUTABLE "C:/Users/jimbo/OneDrive/Documents/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
+  set(SWIG_DIR "E:/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
+  set(SWIG_EXECUTABLE "E:/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
 endif (MSVC)
 
 find_package(SWIG REQUIRED)
@@ -119,11 +119,11 @@ file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h")
 
 # Generate a string with all #include directives for the collected headers
 set(INCLUDE_DIRECTIVES "")
-foreach(HEADER ${HEADER_FILES})
-    get_filename_component(DIR_PATH ${HEADER} DIRECTORY)
-    include_directories(${DIR_PATH})
-    string(APPEND INCLUDE_DIRECTIVES "#include \"${HEADER}\"\n")
-endforeach()
+#foreach(HEADER ${HEADER_FILES})
+#    get_filename_component(DIR_PATH ${HEADER} DIRECTORY)
+#    include_directories(${DIR_PATH})
+#    string(APPEND INCLUDE_DIRECTIVES "#include \"${HEADER}\"\n")
+#endforeach()
 
 # Configure the .i file with dynamic includes
 # configure_file(${INTERFACE_FILE_TEMPLATE} ${INTERFACE_FILE})
@@ -131,9 +131,9 @@ endforeach()
 swig_add_library(cigicl-shared
   TYPE SHARED
   LANGUAGE CSharp
-  SOURCES example.i
+  SOURCES ${CCL_PUBLIC_HDRS} ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4} ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} example.i
   OUTPUT_DIR ${CMAKE_SOURCE_DIR}/csharp
-  OUTFILE_DIR ${CMAKE_SOURCE_DIR}/csharp
+  OUTFILE_DIR ${CMAKE_SOURCE_DIR}
   )
 
 #
@@ -203,3 +203,7 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 # IF(CMAKE_COMPILER_IS_GNUCXX)
 #     INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
 # ENDIF()
+
+add_subdirectory("examples/tinyxml")
+add_subdirectory("examples/CigiMiniHost")
+add_subdirectory("examples/CigiDummyIG")

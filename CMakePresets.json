@@ -5,37 +5,52 @@
         "minor": 19,
         "patch": 0
     },
-    "configurePresets": [
-        {
-            "name": "linux-debug",
-            "description": "Use this preset for Linux Debug builds",
-            "generator": "Ninja",
-            "binaryDir": "${sourceDir}/build/linux/debug",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
-            }
-        },
-        {
-            "name": "linux-release",
-            "description": "Use this preset for Linux Release builds",
-            "generator": "Ninja",
-            "binaryDir": "${sourceDir}/build/linux/release",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
-            }
-        }
-    ],
-    "buildPresets": [
-        {
-            "name": "linux-debug-build",
-            "configurePreset": "linux-debug"
-        },
-        {
-            "name": "linux-release-build",
-            "configurePreset": "linux-release"
-        }
-    ],
+  "configurePresets": [
+    {
+      "name": "windows-debug",
+      "description": "Use this preset for Windows Debug builds",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/windows/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+      }
+    },
+    {
+      "name": "linux-debug",
+      "description": "Use this preset for Linux Debug builds",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+      }
+    },
+    {
+      "name": "linux-release",
+      "description": "Use this preset for Linux Release builds",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-debug-build",
+      "configurePreset": "windows-debug",
+      "jobs": 8
+    },
+    {
+      "name": "linux-debug-build",
+      "configurePreset": "linux-debug"
+    },
+    {
+      "name": "linux-release-build",
+      "configurePreset": "linux-release"
+    }
+  ],
     "testPresets": []
 }

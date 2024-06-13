@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(tinyuml)
+project(tinyxml)
 
 # Ensure compile_commands.json is always generated.
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
@@ -30,7 +30,7 @@ if(PROFILE)
 endif()
 
 file(GLOB SOURCE_FILES
-  "${CMAKE_SOURCE_DIR}/*.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 
 add_executable(xmltest ${SOURCE_FILES})
-add_library(tinyuml STATIC ${SOURCE_FILES})
+add_library(tinyxml STATIC ${SOURCE_FILES})
