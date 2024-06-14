@@ -101,8 +101,8 @@ file(GLOB_RECURSE CCL_SRCS_V4 "source/*V4*.cpp")
 INCLUDE_DIRECTORIES(include)
 
 if ( MSVC )
-  set(SWIG_DIR "E:/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
-  set(SWIG_EXECUTABLE "E:/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
+  set(SWIG_DIR "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
+  set(SWIG_EXECUTABLE "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
 endif (MSVC)
 
 find_package(SWIG REQUIRED)
@@ -206,4 +206,5 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 
 add_subdirectory("examples/tinyxml")
 add_subdirectory("examples/CigiMiniHost")
+add_subdirectory("examples/CigiMiniHostCSharp")
 add_subdirectory("examples/CigiDummyIG")
