@@ -5,6 +5,7 @@ using System.IO;
 using System.Xml;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 public struct DbInfo
 {
@@ -64,8 +65,49 @@ class Program
 
     static List<DbInfo> dbList = new List<DbInfo>();
 
+    static CigiHostSession HostSn;
+    static CigiOutgoingMsg OmsgPtr;
+    static CigiIncomingMsg ImsgPtr;
+    static CigiEntityCtrlV3_3 COwn;
+
+    public static SWIGTYPE_p_unsigned___int16 CreateInstance(ushort value) {
+        // Create a GCHandle to pin the managed ushort
+        GCHandle handle = GCHandle.Alloc(value, GCHandleType.Pinned);
+
+        // Get the pointer to the pinned memory
+        IntPtr ptr = handle.AddrOfPinnedObject();
+
+        // Create an instance of SWIGTYPE_p_unsigned___int16 using the pointer
+        SWIGTYPE_p_unsigned___int16 instance = new SWIGTYPE_p_unsigned___int16(ptr, true);
+
+        // Free the GCHandle when done
+        handle.Free();
+
+        return instance;
+    }
+
+    public static ushort GetValue(SWIGTYPE_p_unsigned___int16 instance) {
+        // Get the pointer from the SWIGTYPE_p_unsigned___int16 instance
+        IntPtr ptr = SWIGTYPE_p_unsigned___int16.getCPtr(instance).Handle;
+
+        // Read the 16-bit unsigned integer value from the pointer
+        return (ushort)Marshal.ReadInt16(ptr);
+    }
+
     static void Main(string[] args)
     {
+        HostSn = new CigiHostSession(1,32768,2,32768);
+        COwn = new CigiEntityCtrlV3_3();
+
+        HostSn.SetCigiVersion(3,1);
+        HostSn.SetSynchronous(true);
+
+        COwn.SetEntityID(CreateInstance(43));
+
+        Console.WriteLine("Poopy : " + GetValue(COwn.GetEntityID()));
+
+        Console.WriteLine("Version : " + HostSn.GetCigiVersion() + " : " + HostSn.GetCigiMinorVersion());
+
         CigiInSz = 0;
 
         ReadConfig();

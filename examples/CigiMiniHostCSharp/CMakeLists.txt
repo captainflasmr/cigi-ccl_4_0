@@ -28,7 +28,7 @@ add_dependencies(CigiMiniHostCSharp cigicl-shared)
 
 # Specify the .NET framework
 set_property(TARGET CigiMiniHostCSharp PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION ${DOTNET_TARGET_FRAMEWORK})
-set_property(TARGET CigiMiniHostCSharp PROPERTY VS_DOTNET_REFERENCES "System" "System.Collections" "System.Net.Sockets" "System.IO" "System.Xml" "System.Threading.Tasks")
+set_property(TARGET CigiMiniHostCSharp PROPERTY VS_DOTNET_REFERENCES "System" "System.Collections" "System.Net.Sockets" "System.IO" "System.Xml" "System.Threading.Tasks" "System.Runtime.InteropServices")
 # Add the System.Net.Sockets package reference
 
 
