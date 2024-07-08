@@ -4,13 +4,23 @@
 #+todo: TODO DOING | DONE
 #+startup: showall
 
-This is the source distribution of the CIGI Class Library (CCL).  This library makes integration of CIGI into an application much easier.  More information about CIGI and the CCL can be found on the CIGI web site: http://cigi.sourceforge.net
+* Introduction
 
-This version is with a leaning towards generating additional language bindings using SWIG so that multiple languages can support the CCL.
+This is a modified source distribution of the CIGI Class Library (CCL).  The CCL library makes integration of CIGI into an application much easier.  More information about CIGI and the CCL can be found on the CIGI web site: http://cigi.sourceforge.net
+
+---
+
+This project is a modified version of the CCL with a leaning towards generating additional language bindings using SWIG so that multiple languages can support the CCL.
+
+The original CCL includes example applications for CCL C++ Host / IG. The objective of this project is to generate language bindings for as many target sources as possible using SWIG, and to develop a CigiMiniHost / CigiDummyIG in each supported language. This will implement a simple CIGI message mechanism that can be easily scaled up.
+
+#+begin_quote
+SWIG (Simplified Wrapper and Interface Generator) is a software development tool designed to facilitate the task of creating interfacing between programs written in C and C++ and various scripting languages such as Python, Perl, Ruby, Tcl, and JavaScript, as well as managed code languages like C# and Java. It is an open-source tool that helps in creating bindings between native code and the high-level programming languages, making it easier to call C or C++ code from these languages and vice versa.
+#+end_quote
+
+The original CCL has also been modified to be more flexible in the build systems that it utilises, both having the option to build with cmake or dotnet / visual studio and supported well in major text editors such as Visual Studio, VSCode and Emacs.
 
 * SWIG
-
-SWIG (Simplified Wrapper and Interface Generator) is a software development tool designed to facilitate the task of creating interfacing between programs written in C and C++ and various scripting languages such as Python, Perl, Ruby, Tcl, and JavaScript, as well as managed code languages like C# and Java. It is an open-source tool that helps in creating bindings between native code and the high-level programming languages, making it easier to call C or C++ code from these languages and vice versa.
 
 ** Key Features of SWIG:
 
@@ -41,6 +51,10 @@ This command tells SWIG to generate Python bindings for the definitions containe
 ** Why SWIG?
 
 SWIG is particularly useful in scenarios where you have a substantial amount of legacy C/C++ code that you want to utilize in applications written in more modern or higher-level programming languages. It saves time and effort by automating the creation of the necessary glue code, allowing developers to focus more on developing the core application logic rather than worrying about interfacing between languages.
+
+---
+
+* kanban
 
 #+begin: kanban :layout ("..." . 50) :scope nil :range ("TODO" . "DONE") :sort "O" :depth 3 :compressed t
 | TODO                                             | DOING                                        | DONE                                               |
