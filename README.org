@@ -1,0 +1,122 @@
+#+title: README
+#+language: en
+#+options: ':t toc:nil author:nil email:nil num:nil title:nil
+#+todo: TODO DOING | DONE
+#+startup: showall
+
+This is the source distribution of the CIGI Class Library (CCL).  This library makes integration of CIGI into an application much easier.  More information about CIGI and the CCL can be found on the CIGI web site: http://cigi.sourceforge.net
+
+This version is with a leaning towards generating additional language bindings using SWIG so that multiple languages can support the CCL.
+
+* SWIG
+
+SWIG (Simplified Wrapper and Interface Generator) is a software development tool designed to facilitate the task of creating interfacing between programs written in C and C++ and various scripting languages such as Python, Perl, Ruby, Tcl, and JavaScript, as well as managed code languages like C# and Java. It is an open-source tool that helps in creating bindings between native code and the high-level programming languages, making it easier to call C or C++ code from these languages and vice versa.
+
+** Key Features of SWIG:
+
+1. *Automatic Generation*: SWIG can automatically generate the bindings needed to access C or C++ code from other languages, significantly reducing manual coding efforts.
+
+2. *Cross-Language Support*: It supports interfacing with multiple programming languages, allowing developers to write code in C/C++ and seamlessly integrate it with other languages.
+
+3. *Customization*: While SWIG tries to automate as much as possible, it also provides mechanisms to customize the generated bindings. This includes typemaps for converting between C/C++ types and high-level language types.
+
+4. *Efficiency*: The generated interfaces are efficient, making it a suitable tool for performance-critical applications that need to leverage legacy or complex C/C++ code.
+
+5. *Portability*: It is designed to work on various operating systems, including Windows, Linux, and macOS.
+
+** How SWIG Works:
+
+- *Input*: SWIG starts with an interface file (.i extension) that defines the functions, classes, and variables from C or C++ code that you want to make accessible from other languages.
+- *Processing*: SWIG processes this file and generates the necessary wrapper code that bridges the gap between C/C++ and the target language.
+- *Compiling*: The generated wrapper code is then compiled into a shared library or module that can be directly imported and used in the target language.
+
+** Example Usage:
+
+#+begin_src bash
+swig -python example.i
+#+end_src
+
+This command tells SWIG to generate Python bindings for the definitions contained in `example.i`.
+
+** Why SWIG?
+
+SWIG is particularly useful in scenarios where you have a substantial amount of legacy C/C++ code that you want to utilize in applications written in more modern or higher-level programming languages. It saves time and effort by automating the creation of the necessary glue code, allowing developers to focus more on developing the core application logic rather than worrying about interfacing between languages.
+
+#+begin: kanban :layout ("..." . 50) :scope nil :range ("TODO" . "DONE") :sort "O" :depth 3 :compressed t
+| TODO                                             | DOING                                        | DONE                                               |
+|--------------------------------------------------+----------------------------------------------+----------------------------------------------------|
+| [[file:README.org::*generate swig other languages][generate swig other languages]]                    | [[file:README.org::*CigiMiniHostCSharp to generate CIGI messages][CigiMiniHostCSharp to generate CIGI messages]] | [[file:README.org::*generate swig interface dependancy file list using script][generate swig interface dependancy file list us...]] |
+| [[file:README.org::*- swig python][- swig python]]                                    | [[file:README.org::*generate swig files using scripts][generate swig files using scripts]]            | [[file:README.org::*C# xml and socket connection implemented for CIGI host][C# xml and socket connection implemented for CI...]] |
+| [[file:README.org::*- swig tcl][- swig tcl]]                                       | [[file:README.org::*generate swig other languages][generate swig other languages]]                | [[file:README.org::*C# examples imported swig C# files][C# examples imported swig C# files]]                 |
+| [[file:README.org::*possibly remove ALL_BUILD and ZERO_CHECK vcxproj][possibly remove ALL_BUILD and ZERO_CHECK vcxproj]] | [[file:README.org::*- swig C#][- swig C#]]                                    | [[file:README.org::*example swig concept explored with animal and kermit][example swig concept explored with animal and k...]] |
+| [[file:README.org::*update README files][update README files]]                              |                                              | [[file:README.org::*swig generated C# files][swig generated C# files]]                            |
+| [[file:README.org::*sln to install files][sln to install files]]                             |                                              | [[file:README.org::*wireshark to monitor CIGI messages][wireshark to monitor CIGI messages]]                 |
+| [[file:README.org::*Turn on / off cmake SWIG generation][Turn on / off cmake SWIG generation]]              |                                              | [[file:README.org::*CigiDummyIG and CigiMiniHost sending CIGI][CigiDummyIG and CigiMiniHost sending CIGI]]          |
+| [[file:README.org::*clean up visual studio solution files][clean up visual studio solution files]]            |                                              | [[file:README.org::*visual studio sln to build whole ccl project with examples][visual studio sln to build whole ccl project wi...]] |
+| [[file:README.org::*clean up top level build files][clean up top level build files]]                   |                                              | [[file:README.org::*cmake building whole ccl project with examples][cmake building whole ccl project with examples]]     |
+| [[file:README.org::*rename swig interface / modules to ccl][rename swig interface / modules to ccl]]           |                                              |                                                    |
+#+end:
+
+* ROADMAP
+** DOING CigiMiniHostCSharp to generate CIGI messages
+** DOING generate swig files using scripts
+** DOING generate swig other languages
+*** DOING - swig C#
+** TODO generate swig other languages
+*** TODO - swig python
+*** TODO - swig tcl
+** TODO possibly remove ALL_BUILD and ZERO_CHECK vcxproj
+** TODO update README files
+** TODO sln to install files
+** TODO Turn on / off cmake SWIG generation
+** TODO clean up visual studio solution files
+** TODO clean up top level build files
+** TODO rename swig interface / modules to ccl
+** DONE generate swig interface dependancy file list using script
+** DONE C# xml and socket connection implemented for CIGI host
+** DONE C# examples imported swig C# files
+** DONE example swig concept explored with animal and kermit
+** DONE swig generated C# files
+** DONE wireshark to monitor CIGI messages
+** DONE CigiDummyIG and CigiMiniHost sending CIGI
+** DONE visual studio sln to build whole ccl project with examples
+** DONE cmake building whole ccl project with examples
+
+* CCL INSTALLATION
+============
+
+** Windows systems
+---------------
+
+The CCL can be compiled as a DLL or as a static LIB.  The project files for compiling as a DLL can be found in the ccl_dll directory, and project files for compiling as a LIB can be found in the ccl_lib directory.
+
+** UNIX systems
+------------
+
+UNIX installation instructions can be found in the INSTALL file.
+
+Briefly, the process goes like this:
+	./configure
+	make
+
+And run the following as 'root':
+	make install
+
+
+** USAGE
+=====
+
+*** API Documentation
+-----------------
+
+Documentation for the CCL API is available from the CIGI web site, and in the form of Doxygen-generated help files.
+
+*** pkg-config
+----------
+
+If you are building a program that uses the CIGI Class Library, and you are using a modern UNIX-like system, you may be able to take advantage of the 'pkg-config' utility.  The CCL includes a configuration file for pkg-config, and this file is installed by default when you run 'make install'.  If your system has pkg-config installed, you can build CCL programs using a series of commands similar to the following:
+
+cc `pkg-config --cflags cigicl` ...etc...
+cc `pkg-config --libs cigicl` *.o ...etc...
+
+This makes your Makefiles much more readable, and saves you time spent tracking down the location of header and library files.  You can get more info on pkg-config by running 'man pkg-config'.
