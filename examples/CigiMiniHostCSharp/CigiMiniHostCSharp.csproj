@@ -1,0 +1,1005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{120FF885-E5E7-379C-8D76-2E773F7AB67C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CigiMiniHostCSharp</ProjectName>
+    <TargetFrameworkVersion>4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <ManagedAssembly>true</ManagedAssembly>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>CigiMiniHostCSharp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Debug\CigiMiniHostCSharp.exe</StartProgram>
+    <AdditionalOptions>/W4 /MDd</AdditionalOptions>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG;CIGI_LITTLE_ENDIAN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>CigiMiniHostCSharp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Release\CigiMiniHostCSharp.exe</StartProgram>
+    <AdditionalOptions>/W4 /MDd</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE;CIGI_LITTLE_ENDIAN</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <OutputPath>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\MinSizeRel\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>CigiMiniHostCSharp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\MinSizeRel\CigiMiniHostCSharp.exe</StartProgram>
+    <AdditionalOptions>/W4 /MDd</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE;CIGI_LITTLE_ENDIAN</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\RelWithDebInfo\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>CigiMiniHostCSharp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\RelWithDebInfo\CigiMiniHostCSharp.exe</StartProgram>
+    <AdditionalOptions>/W4 /MDd</AdditionalOptions>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;CIGI_LITTLE_ENDIAN</DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAccelerationCtrlV4.cs">
+      <Link>CigiAccelerationCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAerosolRespV3.cs">
+      <Link>CigiAerosolRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAerosolRespV4.cs">
+      <Link>CigiAerosolRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAllocFailedException.cs">
+      <Link>CigiAllocFailedException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAnimationCtrlV4.cs">
+      <Link>CigiAnimationCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAnimationStopV3.cs">
+      <Link>CigiAnimationStopV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAnimationStopV4.cs">
+      <Link>CigiAnimationStopV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAnimationTable.cs">
+      <Link>CigiAnimationTable.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiArtPartCtrlV1.cs">
+      <Link>CigiArtPartCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiArtPartCtrlV2.cs">
+      <Link>CigiArtPartCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiArtPartCtrlV3.cs">
+      <Link>CigiArtPartCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiArtPartCtrlV4.cs">
+      <Link>CigiArtPartCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAtmosCtrlV3.cs">
+      <Link>CigiAtmosCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiAtmosCtrlV4.cs">
+      <Link>CigiAtmosCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseAerosolResp.cs">
+      <Link>CigiBaseAerosolResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseAnimationCtrl.cs">
+      <Link>CigiBaseAnimationCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseAnimationStop.cs">
+      <Link>CigiBaseAnimationStop.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseArtPartCtrl.cs">
+      <Link>CigiBaseArtPartCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCircleSymbolData.cs">
+      <Link>CigiBaseCircleSymbolData.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCircleSymbolTextureData.cs">
+      <Link>CigiBaseCircleSymbolTextureData.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCollDetSegDef.cs">
+      <Link>CigiBaseCollDetSegDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCollDetSegResp.cs">
+      <Link>CigiBaseCollDetSegResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCollDetVolDef.cs">
+      <Link>CigiBaseCollDetVolDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCollDetVolResp.cs">
+      <Link>CigiBaseCollDetVolResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseCompCtrl.cs">
+      <Link>CigiBaseCompCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseConfClampEntityCtrl.cs">
+      <Link>CigiBaseConfClampEntityCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEarthModelDef.cs">
+      <Link>CigiBaseEarthModelDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEntityCtrl.cs">
+      <Link>CigiBaseEntityCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEntityPositionCtrl.cs">
+      <Link>CigiBaseEntityPositionCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEnvCondReq.cs">
+      <Link>CigiBaseEnvCondReq.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEnvCtrl.cs">
+      <Link>CigiBaseEnvCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEnvRgnCtrl.cs">
+      <Link>CigiBaseEnvRgnCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEventNotification.cs">
+      <Link>CigiBaseEventNotification.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseEventProcessor.cs">
+      <Link>CigiBaseEventProcessor.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseHatHotReq.cs">
+      <Link>CigiBaseHatHotReq.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseHatHotResp.cs">
+      <Link>CigiBaseHatHotResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseIGCtrl.cs">
+      <Link>CigiBaseIGCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseIGMsg.cs">
+      <Link>CigiBaseIGMsg.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseLosResp.cs">
+      <Link>CigiBaseLosResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseLosSegReq.cs">
+      <Link>CigiBaseLosSegReq.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseLosVectReq.cs">
+      <Link>CigiBaseLosVectReq.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseMaritimeSurfaceCtrl.cs">
+      <Link>CigiBaseMaritimeSurfaceCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseMaritimeSurfaceResp.cs">
+      <Link>CigiBaseMaritimeSurfaceResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseMotionTrackCtrl.cs">
+      <Link>CigiBaseMotionTrackCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBasePacket.cs">
+      <Link>CigiBasePacket.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBasePositionReq.cs">
+      <Link>CigiBasePositionReq.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBasePositionResp.cs">
+      <Link>CigiBasePositionResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseRateCtrl.cs">
+      <Link>CigiBaseRateCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSOF.cs">
+      <Link>CigiBaseSOF.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSensorCtrl.cs">
+      <Link>CigiBaseSensorCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSensorResp.cs">
+      <Link>CigiBaseSensorResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseShortArtPartCtrl.cs">
+      <Link>CigiBaseShortArtPartCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseShortSymbolCtrl.cs">
+      <Link>CigiBaseShortSymbolCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSignalProcessing.cs">
+      <Link>CigiBaseSignalProcessing.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSpecEffDef.cs">
+      <Link>CigiBaseSpecEffDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolCircleDef.cs">
+      <Link>CigiBaseSymbolCircleDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolClone.cs">
+      <Link>CigiBaseSymbolClone.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolCtrl.cs">
+      <Link>CigiBaseSymbolCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolLineDef.cs">
+      <Link>CigiBaseSymbolLineDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolSurfaceDef.cs">
+      <Link>CigiBaseSymbolSurfaceDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolTextDef.cs">
+      <Link>CigiBaseSymbolTextDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolTexturedCircleDef.cs">
+      <Link>CigiBaseSymbolTexturedCircleDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseSymbolTexturedPolygonDef.cs">
+      <Link>CigiBaseSymbolTexturedPolygonDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseTerrestrialSurfaceCtrl.cs">
+      <Link>CigiBaseTerrestrialSurfaceCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseTerrestrialSurfaceResp.cs">
+      <Link>CigiBaseTerrestrialSurfaceResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseTrajectoryDef.cs">
+      <Link>CigiBaseTrajectoryDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseVariableSizePckt.cs">
+      <Link>CigiBaseVariableSizePckt.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseVertexSymbolData.cs">
+      <Link>CigiBaseVertexSymbolData.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseViewCtrl.cs">
+      <Link>CigiBaseViewCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseViewDef.cs">
+      <Link>CigiBaseViewDef.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseWaveCtrl.cs">
+      <Link>CigiBaseWaveCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseWeatherCondResp.cs">
+      <Link>CigiBaseWeatherCondResp.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBaseWeatherCtrl.cs">
+      <Link>CigiBaseWeatherCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBufferOverrunException.cs">
+      <Link>CigiBufferOverrunException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiBufferTooSmallException.cs">
+      <Link>CigiBufferTooSmallException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCalledOutOfSequenceException.cs">
+      <Link>CigiCalledOutOfSequenceException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCelestialCtrlV3.cs">
+      <Link>CigiCelestialCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCelestialCtrlV4.cs">
+      <Link>CigiCelestialCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCircleSymbolDataV3_3.cs">
+      <Link>CigiCircleSymbolDataV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCircleSymbolDataV4.cs">
+      <Link>CigiCircleSymbolDataV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCircleSymbolTextureDataV4.cs">
+      <Link>CigiCircleSymbolTextureDataV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegDefV1.cs">
+      <Link>CigiCollDetSegDefV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegDefV2.cs">
+      <Link>CigiCollDetSegDefV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegDefV3.cs">
+      <Link>CigiCollDetSegDefV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegDefV4.cs">
+      <Link>CigiCollDetSegDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegRespV1.cs">
+      <Link>CigiCollDetSegRespV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegRespV2.cs">
+      <Link>CigiCollDetSegRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegRespV3.cs">
+      <Link>CigiCollDetSegRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetSegRespV4.cs">
+      <Link>CigiCollDetSegRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolDefV2.cs">
+      <Link>CigiCollDetVolDefV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolDefV3.cs">
+      <Link>CigiCollDetVolDefV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolDefV4.cs">
+      <Link>CigiCollDetVolDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolRespV2.cs">
+      <Link>CigiCollDetVolRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolRespV3.cs">
+      <Link>CigiCollDetVolRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCollDetVolRespV4.cs">
+      <Link>CigiCollDetVolRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCompCtrlV1.cs">
+      <Link>CigiCompCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCompCtrlV2.cs">
+      <Link>CigiCompCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCompCtrlV3.cs">
+      <Link>CigiCompCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCompCtrlV3_3.cs">
+      <Link>CigiCompCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiCompCtrlV4.cs">
+      <Link>CigiCompCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiConfClampEntityCtrlV3.cs">
+      <Link>CigiConfClampEntityCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiConfClampEntityCtrlV4.cs">
+      <Link>CigiConfClampEntityCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiDefaultPacket.cs">
+      <Link>CigiDefaultPacket.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEarthModelDefV3.cs">
+      <Link>CigiEarthModelDefV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEarthModelDefV4.cs">
+      <Link>CigiEarthModelDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityCtrlV1.cs">
+      <Link>CigiEntityCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityCtrlV2.cs">
+      <Link>CigiEntityCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityCtrlV3.cs">
+      <Link>CigiEntityCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityCtrlV3_3.cs">
+      <Link>CigiEntityCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityCtrlV4.cs">
+      <Link>CigiEntityCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEntityPositionCtrlV4.cs">
+      <Link>CigiEntityPositionCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvCondReqV3.cs">
+      <Link>CigiEnvCondReqV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvCondReqV4.cs">
+      <Link>CigiEnvCondReqV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvCtrlV1.cs">
+      <Link>CigiEnvCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvCtrlV2.cs">
+      <Link>CigiEnvCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvRgnCtrlV3.cs">
+      <Link>CigiEnvRgnCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEnvRgnCtrlV4.cs">
+      <Link>CigiEnvRgnCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEventNotificationV3.cs">
+      <Link>CigiEventNotificationV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiEventNotificationV4.cs">
+      <Link>CigiEventNotificationV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiException.cs">
+      <Link>CigiException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotReqV3.cs">
+      <Link>CigiHatHotReqV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotReqV3_2.cs">
+      <Link>CigiHatHotReqV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotReqV4.cs">
+      <Link>CigiHatHotReqV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotRespV3.cs">
+      <Link>CigiHatHotRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotRespV3_2.cs">
+      <Link>CigiHatHotRespV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotRespV4.cs">
+      <Link>CigiHatHotRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotXRespV3.cs">
+      <Link>CigiHatHotXRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotXRespV3_2.cs">
+      <Link>CigiHatHotXRespV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatHotXRespV4.cs">
+      <Link>CigiHatHotXRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatReqV1.cs">
+      <Link>CigiHatReqV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatReqV2.cs">
+      <Link>CigiHatReqV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatRespV1.cs">
+      <Link>CigiHatRespV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHatRespV2.cs">
+      <Link>CigiHatRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHoldEnvCtrl.cs">
+      <Link>CigiHoldEnvCtrl.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHostSession.cs">
+      <Link>CigiHostSession.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHotReqV2.cs">
+      <Link>CigiHotReqV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiHotRespV2.cs">
+      <Link>CigiHotRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV1.cs">
+      <Link>CigiIGCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV2.cs">
+      <Link>CigiIGCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV3.cs">
+      <Link>CigiIGCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV3_2.cs">
+      <Link>CigiIGCtrlV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV3_3.cs">
+      <Link>CigiIGCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGCtrlV4.cs">
+      <Link>CigiIGCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGMsgV2.cs">
+      <Link>CigiIGMsgV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGMsgV3.cs">
+      <Link>CigiIGMsgV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGMsgV4.cs">
+      <Link>CigiIGMsgV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIGSession.cs">
+      <Link>CigiIGSession.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIO.cs">
+      <Link>CigiIO.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiImproperPacketException.cs">
+      <Link>CigiImproperPacketException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiIncomingMsg.cs">
+      <Link>CigiIncomingMsg.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidOpcodeException.cs">
+      <Link>CigiInvalidOpcodeException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidPacketException.cs">
+      <Link>CigiInvalidPacketException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidPacketSizeException.cs">
+      <Link>CigiInvalidPacketSizeException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidSessionException.cs">
+      <Link>CigiInvalidSessionException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidSessionTypeException.cs">
+      <Link>CigiInvalidSessionTypeException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiInvalidUserPacketException.cs">
+      <Link>CigiInvalidUserPacketException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosRespV1.cs">
+      <Link>CigiLosRespV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosRespV2.cs">
+      <Link>CigiLosRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosRespV3.cs">
+      <Link>CigiLosRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosRespV3_2.cs">
+      <Link>CigiLosRespV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosRespV4.cs">
+      <Link>CigiLosRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosSegReqV1.cs">
+      <Link>CigiLosSegReqV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosSegReqV2.cs">
+      <Link>CigiLosSegReqV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosSegReqV3.cs">
+      <Link>CigiLosSegReqV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosSegReqV3_2.cs">
+      <Link>CigiLosSegReqV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosSegReqV4.cs">
+      <Link>CigiLosSegReqV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosVectReqV1.cs">
+      <Link>CigiLosVectReqV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosVectReqV2.cs">
+      <Link>CigiLosVectReqV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosVectReqV3.cs">
+      <Link>CigiLosVectReqV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosVectReqV3_2.cs">
+      <Link>CigiLosVectReqV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosVectReqV4.cs">
+      <Link>CigiLosVectReqV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosXRespV3.cs">
+      <Link>CigiLosXRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosXRespV3_2.cs">
+      <Link>CigiLosXRespV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiLosXRespV4.cs">
+      <Link>CigiLosXRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMaritimeSurfaceCtrlV3.cs">
+      <Link>CigiMaritimeSurfaceCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMaritimeSurfaceCtrlV4.cs">
+      <Link>CigiMaritimeSurfaceCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMaritimeSurfaceRespV3.cs">
+      <Link>CigiMaritimeSurfaceRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMaritimeSurfaceRespV4.cs">
+      <Link>CigiMaritimeSurfaceRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMaxSessionsException.cs">
+      <Link>CigiMaxSessionsException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMessage.cs">
+      <Link>CigiMessage.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMessageBuffer.cs">
+      <Link>CigiMessageBuffer.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMissingIgControlException.cs">
+      <Link>CigiMissingIgControlException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMissingStartOfFrameException.cs">
+      <Link>CigiMissingStartOfFrameException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMotionTrackCtrlV3.cs">
+      <Link>CigiMotionTrackCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiMotionTrackCtrlV4.cs">
+      <Link>CigiMotionTrackCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiNotImplementedException.cs">
+      <Link>CigiNotImplementedException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiNullPointerException.cs">
+      <Link>CigiNullPointerException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiOutgoingMsg.cs">
+      <Link>CigiOutgoingMsg.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiPacketTooLargeException.cs">
+      <Link>CigiPacketTooLargeException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiPositionReqV3.cs">
+      <Link>CigiPositionReqV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiPositionReqV4.cs">
+      <Link>CigiPositionReqV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiPositionRespV3.cs">
+      <Link>CigiPositionRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiPositionRespV4.cs">
+      <Link>CigiPositionRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiRateCtrlV1.cs">
+      <Link>CigiRateCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiRateCtrlV2.cs">
+      <Link>CigiRateCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiRateCtrlV3.cs">
+      <Link>CigiRateCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiRateCtrlV3_2.cs">
+      <Link>CigiRateCtrlV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSOFV1.cs">
+      <Link>CigiSOFV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSOFV2.cs">
+      <Link>CigiSOFV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSOFV3.cs">
+      <Link>CigiSOFV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSOFV3_2.cs">
+      <Link>CigiSOFV3_2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSOFV4.cs">
+      <Link>CigiSOFV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorCtrlV1.cs">
+      <Link>CigiSensorCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorCtrlV2.cs">
+      <Link>CigiSensorCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorCtrlV3.cs">
+      <Link>CigiSensorCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorCtrlV4.cs">
+      <Link>CigiSensorCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorRespV1.cs">
+      <Link>CigiSensorRespV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorRespV2.cs">
+      <Link>CigiSensorRespV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorRespV3.cs">
+      <Link>CigiSensorRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorRespV4.cs">
+      <Link>CigiSensorRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorXRespV3.cs">
+      <Link>CigiSensorXRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSensorXRespV4.cs">
+      <Link>CigiSensorXRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSession.cs">
+      <Link>CigiSession.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortArtPartCtrlV3.cs">
+      <Link>CigiShortArtPartCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortArtPartCtrlV4.cs">
+      <Link>CigiShortArtPartCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortCompCtrlV3.cs">
+      <Link>CigiShortCompCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortCompCtrlV3_3.cs">
+      <Link>CigiShortCompCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortCompCtrlV4.cs">
+      <Link>CigiShortCompCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortSymbolCtrlV3_3.cs">
+      <Link>CigiShortSymbolCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiShortSymbolCtrlV4.cs">
+      <Link>CigiShortSymbolCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSpecEffDefV1.cs">
+      <Link>CigiSpecEffDefV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSpecEffDefV2.cs">
+      <Link>CigiSpecEffDefV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCircleDefV3_3.cs">
+      <Link>CigiSymbolCircleDefV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCircleDefV4.cs">
+      <Link>CigiSymbolCircleDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCloneV3_3.cs">
+      <Link>CigiSymbolCloneV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCloneV4.cs">
+      <Link>CigiSymbolCloneV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCtrlV3_3.cs">
+      <Link>CigiSymbolCtrlV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolCtrlV4.cs">
+      <Link>CigiSymbolCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolLineDefV3_3.cs">
+      <Link>CigiSymbolLineDefV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolPolygonDefV4.cs">
+      <Link>CigiSymbolPolygonDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolSurfaceDefV3_3.cs">
+      <Link>CigiSymbolSurfaceDefV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolSurfaceDefV4.cs">
+      <Link>CigiSymbolSurfaceDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolTextDefV3_3.cs">
+      <Link>CigiSymbolTextDefV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolTextDefV4.cs">
+      <Link>CigiSymbolTextDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolTexturedCircleDefV4.cs">
+      <Link>CigiSymbolTexturedCircleDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiSymbolTexturedPolygonDefV4.cs">
+      <Link>CigiSymbolTexturedPolygonDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTerrestrialSurfaceCtrlV3.cs">
+      <Link>CigiTerrestrialSurfaceCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTerrestrialSurfaceCtrlV4.cs">
+      <Link>CigiTerrestrialSurfaceCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTerrestrialSurfaceRespV3.cs">
+      <Link>CigiTerrestrialSurfaceRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTerrestrialSurfaceRespV4.cs">
+      <Link>CigiTerrestrialSurfaceRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTrajectoryDefV1.cs">
+      <Link>CigiTrajectoryDefV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTrajectoryDefV2.cs">
+      <Link>CigiTrajectoryDefV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiTrajectoryDefV3.cs">
+      <Link>CigiTrajectoryDefV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiValueOutOfRangeException.cs">
+      <Link>CigiValueOutOfRangeException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiVelocityCtrlV4.cs">
+      <Link>CigiVelocityCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiVersionID.cs">
+      <Link>CigiVersionID.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiVertexSymbolDataV3_3.cs">
+      <Link>CigiVertexSymbolDataV3_3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiVertexSymbolDataV4.cs">
+      <Link>CigiVertexSymbolDataV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiVertexSymbolTextureDataV4.cs">
+      <Link>CigiVertexSymbolTextureDataV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewCtrlV1.cs">
+      <Link>CigiViewCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewCtrlV2.cs">
+      <Link>CigiViewCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewCtrlV3.cs">
+      <Link>CigiViewCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewCtrlV4.cs">
+      <Link>CigiViewCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewDefV1.cs">
+      <Link>CigiViewDefV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewDefV2.cs">
+      <Link>CigiViewDefV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewDefV3.cs">
+      <Link>CigiViewDefV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiViewDefV4.cs">
+      <Link>CigiViewDefV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWaveCtrlV3.cs">
+      <Link>CigiWaveCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWaveCtrlV4.cs">
+      <Link>CigiWaveCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCondRespV3.cs">
+      <Link>CigiWeatherCondRespV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCondRespV4.cs">
+      <Link>CigiWeatherCondRespV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCtrlV1.cs">
+      <Link>CigiWeatherCtrlV1.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCtrlV2.cs">
+      <Link>CigiWeatherCtrlV2.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCtrlV3.cs">
+      <Link>CigiWeatherCtrlV3.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWeatherCtrlV4.cs">
+      <Link>CigiWeatherCtrlV4.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\CigiWrongVersionException.cs">
+      <Link>CigiWrongVersionException.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\PackPointer.cs">
+      <Link>PackPointer.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_CigiCnvtInfoType__Type.cs">
+      <Link>SWIGTYPE_p_CigiCnvtInfoType__Type.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p___int16.cs">
+      <Link>SWIGTYPE_p___int16.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p___int32.cs">
+      <Link>SWIGTYPE_p___int32.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p___int8.cs">
+      <Link>SWIGTYPE_p___int8.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_double.cs">
+      <Link>SWIGTYPE_p_double.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_f_int_int_p_void__void.cs">
+      <Link>SWIGTYPE_p_f_int_int_p_void__void.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_f_p_CigiBasePacket__void.cs">
+      <Link>SWIGTYPE_p_f_p_CigiBasePacket__void.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_float.cs">
+      <Link>SWIGTYPE_p_float.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_int.cs">
+      <Link>SWIGTYPE_p_int.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_p_unsigned___int8.cs">
+      <Link>SWIGTYPE_p_p_unsigned___int8.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_std__string.cs">
+      <Link>SWIGTYPE_p_std__string.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_unsigned___int16.cs">
+      <Link>SWIGTYPE_p_unsigned___int16.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_unsigned___int32.cs">
+      <Link>SWIGTYPE_p_unsigned___int32.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_unsigned___int64.cs">
+      <Link>SWIGTYPE_p_unsigned___int64.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_unsigned___int8.cs">
+      <Link>SWIGTYPE_p_unsigned___int8.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_unsigned_char.cs">
+      <Link>SWIGTYPE_p_unsigned_char.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\SWIGTYPE_p_void.cs">
+      <Link>SWIGTYPE_p_void.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\Type.cs">
+      <Link>Type.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\example_module.cs">
+      <Link>example_module.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\example_modulePINVOKE.cs">
+      <Link>example_modulePINVOKE.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHostCSharp\MiniHost.cs">
+      <Link>MiniHost.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Collections">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.IO">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZERO_CHECK.vcxproj">
+      <Project>{6771BD96-1134-347E-BA88-7ABE7DB97D7C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\cigicl-shared.vcxproj">
+      <Project>{A17F165A-D9B8-3D4B-816E-79C1F34E3523}</Project>
+      <Name>cigicl-shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'MinSizeRel'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'RelWithDebInfo'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

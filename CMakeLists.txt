@@ -204,8 +204,8 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 #     INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
 # ENDIF()
 
-# add_subdirectory("examples/tinyxml")
-# add_subdirectory("examples/CigiMiniHost")
-# add_subdirectory("examples/CigiDummyIG")
+add_subdirectory("examples/tinyxml")
+add_subdirectory("examples/CigiMiniHost")
+add_subdirectory("examples/CigiDummyIG")
 add_subdirectory("examples/CigiMiniHostCSharp")
-# add_subdirectory("examples/CigiDummyIGCSharp")
+add_subdirectory("examples/CigiDummyIGCSharp")
