@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A17F165A-D9B8-3D4B-816E-79C1F34E3523}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>cigicl-shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cigicl-shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ccl_dllD</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cigicl-shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ccl_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cigicl-shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ccl_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cigicl-shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ccl_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR="Debug";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR=\"Debug\";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/lib/Debug/ccl_dllD.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/bin/Debug/ccl_dllD.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR="Release";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR=\"Release\";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/lib/Release/ccl_dll.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/bin/Release/ccl_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR="MinSizeRel";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR=\"MinSizeRel\";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/lib/MinSizeRel/ccl_dll.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/bin/MinSizeRel/ccl_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR="RelWithDebInfo";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CCL_DLL;CIGI_LITTLE_ENDIAN;CMAKE_INTDIR=\"RelWithDebInfo\";_CCL_EXPORTS_</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jimbo\source\cigi-ccl_4_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/lib/RelWithDebInfo/ccl_dll.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/bin/RelWithDebInfo/ccl_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jimbo\source\cigi-ccl_4_0\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/jimbo/source/cigi-ccl_4_0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jimbo/source/cigi-ccl_4_0 -BC:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug --check-stamp-file C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/jimbo/source/cigi-ccl_4_0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jimbo/source/cigi-ccl_4_0 -BC:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug --check-stamp-file C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/jimbo/source/cigi-ccl_4_0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jimbo/source/cigi-ccl_4_0 -BC:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug --check-stamp-file C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/jimbo/source/cigi-ccl_4_0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jimbo/source/cigi-ccl_4_0 -BC:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug --check-stamp-file C:/Users/jimbo/source/cigi-ccl_4_0/build/windows/debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake;C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAccelerationCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAerosolRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAerosolRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAllPackets.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationStopV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationStopV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationTable.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAtmosCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAtmosCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAerosolResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAnimationCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAnimationStop.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseArtPartCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCircleSymbolData.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCircleSymbolTextureData.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetSegDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetSegResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetVolDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetVolResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCompCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseConfClampEntityCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEarthModelDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEntityCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEntityPositionCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvCondReq.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvRgnCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEventNotification.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEventProcessor.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseHatHotReq.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseHatHotResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseIGCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseIGMsg.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosSegReq.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosVectReq.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMaritimeSurfaceCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMaritimeSurfaceResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMotionTrackCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePacket.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePositionReq.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePositionResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseRateCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSOF.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSensorCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSensorResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseShortArtPartCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseShortSymbolCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSignalProcessing.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSpecEffDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolCircleDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolClone.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolLineDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolSurfaceDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTextDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTexturedCircleDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTexturedPolygonDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTerrestrialSurfaceCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTerrestrialSurfaceResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTrajectoryDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseVariableSizePckt.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseVertexSymbolData.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseViewCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseViewDef.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWaveCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWeatherCondResp.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWeatherCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCelestialCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCelestialCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolDataV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolDataV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolTextureDataV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCnvtInfoType.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiConfClampEntityCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiConfClampEntityCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiDefaultPacket.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEarthModelDefV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEarthModelDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityPositionCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCondReqV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCondReqV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvRgnCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvRgnCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiErrorCodes.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEventNotificationV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEventNotificationV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiException.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiExceptions.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatReqV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatReqV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatRespV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHoldEnvCtrl.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHostSession.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHotReqV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHotRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGSession.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIO.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIncomingMsg.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMessage.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMessageBuffer.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMotionTrackCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMotionTrackCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiOutgoingMsg.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionReqV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionReqV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiProcessType.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV3_2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorXRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorXRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSession.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortArtPartCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortArtPartCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortSymbolCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortSymbolCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSignalType.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSpecEffDefV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSpecEffDefV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSwapping.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCircleDefV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCircleDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCloneV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCloneV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCtrlV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolLineDefV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolPolygonDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolSurfaceDefV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolSurfaceDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTextDefV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTextDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTexturedCircleDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTexturedPolygonDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes_Default.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes_MSVS_Win32.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVelocityCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVersionID.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolDataV3_3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolDataV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolTextureDataV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWaveCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWaveCtrlV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCondRespV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCondRespV4.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV1.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV2.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV3.h" />
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV4.h" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAccelerationCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAerosolRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAerosolRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationStopV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationStopV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationTable.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAtmosCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAtmosCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseAerosolResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseAnimationCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseArtPartCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCircleSymbolData.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCircleSymbolTextureData.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetSegDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetSegResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetVolDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetVolResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseConfClampEntityCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEarthModelDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEntityCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEntityPositionCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvCondReq.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvRgnCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEventNotification.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseHatHotReq.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseIGCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosSegReq.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosVectReq.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMaritimeSurfaceCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMaritimeSurfaceResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMotionTrackCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBasePositionReq.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBasePositionResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSOF.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSensorCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSensorResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseShortArtPartCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseShortSymbolCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSpecEffDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolCircleDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolClone.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolLineDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolSurfaceDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTextDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTexturedCircleDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTexturedPolygonDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseTerrestrialSurfaceCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseTrajectoryDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseViewCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseViewDef.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWaveCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWeatherCondResp.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWeatherCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCelestialCtrl.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCelestialCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolDataV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolDataV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolTextureDataV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiConfClampEntityCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiConfClampEntityCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiDefaultPacket.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEarthModelDefV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEarthModelDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityPositionCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCondReqV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCondReqV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvRgnCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvRgnCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEventNotificationV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEventNotificationV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatReqV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatReqV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatRespV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHostSession.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHotReqV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHotRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGSession.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIO.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIncomingMsg.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMessage.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMotionTrackCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMotionTrackCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiOutgoingMsg.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionReqV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionReqV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV3_2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorXRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorXRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSession.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortArtPartCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortArtPartCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortSymbolCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortSymbolCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSpecEffDefV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSpecEffDefV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSwapping.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCircleDefV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCircleDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCloneV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCloneV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCtrlV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolLineDefV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolPolygonDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolSurfaceDefV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolSurfaceDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTextDefV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTextDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTexturedCircleDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTexturedPolygonDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVelocityCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolDataV3_3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolDataV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolTextureDataV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWaveCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWaveCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCondRespV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCondRespV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV1.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV2.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV3.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV4.cpp" />
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\exampleCSHARP_wrap_patch.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\ZERO_CHECK.vcxproj">
+      <Project>{6771BD96-1134-347E-BA88-7ABE7DB97D7C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

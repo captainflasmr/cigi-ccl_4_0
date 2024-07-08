@@ -100,49 +100,49 @@ file(GLOB_RECURSE CCL_SRCS_V4 "source/*V4*.cpp")
 
 INCLUDE_DIRECTORIES(include)
 
-if ( MSVC )
-  set(SWIG_DIR "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
-  set(SWIG_EXECUTABLE "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
-endif (MSVC)
+# if ( MSVC )
+#   set(SWIG_DIR "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/Lib")
+#   set(SWIG_EXECUTABLE "C:/Users/jimbo/source/cigi-ccl_4_0/swig/swigwin-4.2.1/swigwin-4.2.1/swig.exe")
+# endif (MSVC)
 
-find_package(SWIG REQUIRED)
-include(${SWIG_USE_FILE})
+# find_package(SWIG REQUIRED)
+# include(${SWIG_USE_FILE})
 
-set (CMAKE_SWIG_FLAGS "")
+# set (CMAKE_SWIG_FLAGS "")
 
-set_property(SOURCE example.i PROPERTY CPLUSPLUS ON)
+# set_property(SOURCE example.i PROPERTY CPLUSPLUS ON)
 
-set(INTERFACE_FILE_TEMPLATE "${CMAKE_SOURCE_DIR}/example.i.in")
-set(INTERFACE_FILE "${CMAKE_SOURCE_DIR}/example.i")
+# set(INTERFACE_FILE_TEMPLATE "${CMAKE_SOURCE_DIR}/example.i.in")
+# set(INTERFACE_FILE "${CMAKE_SOURCE_DIR}/example.i")
 
-file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h")
+# file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h")
 
-# Generate a string with all #include directives for the collected headers
-set(INCLUDE_DIRECTIVES "")
-#foreach(HEADER ${HEADER_FILES})
-#    get_filename_component(DIR_PATH ${HEADER} DIRECTORY)
-#    include_directories(${DIR_PATH})
-#    string(APPEND INCLUDE_DIRECTIVES "#include \"${HEADER}\"\n")
-#endforeach()
+# # Generate a string with all #include directives for the collected headers
+# set(INCLUDE_DIRECTIVES "")
+# #foreach(HEADER ${HEADER_FILES})
+# #    get_filename_component(DIR_PATH ${HEADER} DIRECTORY)
+# #    include_directories(${DIR_PATH})
+# #    string(APPEND INCLUDE_DIRECTIVES "#include \"${HEADER}\"\n")
+# #endforeach()
 
-# Configure the .i file with dynamic includes
-# configure_file(${INTERFACE_FILE_TEMPLATE} ${INTERFACE_FILE})
+# # Configure the .i file with dynamic includes
+# # configure_file(${INTERFACE_FILE_TEMPLATE} ${INTERFACE_FILE})
 
-swig_add_library(cigicl-shared
-  TYPE SHARED
-  LANGUAGE CSharp
-  SOURCES ${CCL_PUBLIC_HDRS} ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4} ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} example.i
-  OUTPUT_DIR ${CMAKE_SOURCE_DIR}/csharp
-  OUTFILE_DIR ${CMAKE_SOURCE_DIR}
-  )
+# swig_add_library(cigicl-shared
+#   TYPE SHARED
+#   LANGUAGE CSharp
+#   SOURCES ${CCL_PUBLIC_HDRS} ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4} ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} example.i
+#   OUTPUT_DIR ${CMAKE_SOURCE_DIR}/csharp
+#   OUTFILE_DIR ${CMAKE_SOURCE_DIR}
+#   )
 
-#
-# Compiling the CCL as a shared library
-#
+# #
+# # Compiling the CCL as a shared library
+# #
 
-# ADD_LIBRARY(cigicl-shared SHARED
-# 	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
-# 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4})
+add_library(cigicl-shared SHARED
+ 	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
+ 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/exampleCSHARP_wrap_patch.cxx)
 
 source_group("Header Files\\BaseClasses"         FILES ${CCL_HDRS_BASE})
 source_group("Header Files\\Version1"            FILES ${CCL_HDRS_V1})
@@ -204,8 +204,8 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 #     INSTALL(FILES ${CMAKE_BINARY_DIR}/cigicl.pc DESTINATION lib/pkgconfig)
 # ENDIF()
 
-add_subdirectory("examples/tinyxml")
-add_subdirectory("examples/CigiMiniHost")
+# add_subdirectory("examples/tinyxml")
+# add_subdirectory("examples/CigiMiniHost")
+# add_subdirectory("examples/CigiDummyIG")
 add_subdirectory("examples/CigiMiniHostCSharp")
-add_subdirectory("examples/CigiDummyIG")
-add_subdirectory("examples/CigiDummyIGCSharp")
+# add_subdirectory("examples/CigiDummyIGCSharp")

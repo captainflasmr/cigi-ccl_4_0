@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Sockets;
 using System.Xml;
 using System.Threading;
@@ -20,16 +21,19 @@ public struct DbInfo
 
 class Network
 {
-    private TcpClient client;
-    private NetworkStream stream;
+    private IPEndPoint remoteEP;
+    private UdpClient udpReceiver;
+    private UdpClient udpSender;
 
     public bool OpenSocket(string hostIpAddr, int portToHost, int localPort)
     {
         try
         {
-            client = new TcpClient();
-            client.Connect(hostIpAddr, 8000);
-            stream = client.GetStream();
+            remoteEP = new IPEndPoint(IPAddress.Any, 8000);
+            udpReceiver = new UdpClient(8001);
+            udpSender = new UdpClient("127.0.0.1", 8000);
+            //udpReceiver.Connect(hostIpAddr, 8000);
+
             Console.WriteLine($"Successfully opened socket for comm with CIGI IG server at {hostIpAddr}:{portToHost}");
             return true;
         }
@@ -43,59 +47,80 @@ class Network
 
     public int Receive(byte[] buffer, int bufferSize)
     {
-        if (stream == null) return 0;
-        return stream.Read(buffer, 0, bufferSize);
+        if (udpReceiver == null) return 0;
+        buffer = udpReceiver.Receive(ref remoteEP);
+        return buffer.Length;
     }
 
     public int Send(byte[] buffer, int bufferSize)
     {
-        if (stream == null) return 0;
-        stream.Write(buffer, 0, bufferSize);
+        if (udpSender == null) return 0;
+        udpSender.Send(buffer, bufferSize);
         return bufferSize;
     }
 
     public void CloseSocket()
     {
-        stream?.Close();
-        client?.Close();
+        udpReceiver.Close();
+        udpSender.Close();
     }
 }
 
 class Program
 {
     static readonly int RECV_BUFFER_SIZE = 32768;
-    static byte[] CInBuf = new byte[RECV_BUFFER_SIZE];
-    static byte[] pCigiOutBuf = new byte[RECV_BUFFER_SIZE];
-    static int CigiInSz;
-    static ushort CigiOutSz;
+    static byte[] CigiInBuf = new byte[RECV_BUFFER_SIZE];
+    static byte[] CigiOutBuf = new byte[RECV_BUFFER_SIZE];
     static int Port_H2IG;
     static int Port_IG2H;
     static string IGAddr;
     static List<DbInfo> dbList = new List<DbInfo>();
     static CigiHostSession HostSn;
-    static CigiOutgoingMsg OmsgPtr;
-    static CigiIncomingMsg ImsgPtr;
+    static CigiOutgoingMsg Omsg;
+    static CigiIncomingMsg Imsg;
     static CigiEntityCtrlV3_3 COwn;
     static CigiIGCtrlV3_2 CIGC;
     static Network network = new Network();
+    static SWIGTYPE_p_p_unsigned___int8 swigBufferOut_p_p;
+    static SWIGTYPE_p_unsigned___int8 swigBufferOut_p;
+    static SWIGTYPE_p_unsigned___int8 swigBuffer_p;
+    static SWIGTYPE_p_int swigOutSize = CreateInstance_int(0);
+    static int CigiInSz;
+    static ushort CigiOutSz;
 
-public static SWIGTYPE_p_p_unsigned___int8 ByteArrayToSWIGTYPE(byte[] byteArray)
-{
-    IntPtr unmanagedArray = Marshal.AllocHGlobal(byteArray.Length);
-    Marshal.Copy(byteArray, 0, unmanagedArray, byteArray.Length);
-    return new SWIGTYPE_p_p_unsigned___int8(unmanagedArray, true);
-}
+    public static SWIGTYPE_p_p_unsigned___int8 ByteArrayToSWIGTYPE_p_p(byte[] byteArray)
+    {
+        IntPtr unmanagedArray = Marshal.AllocHGlobal(byteArray.Length);
+        Marshal.Copy(byteArray, 0, unmanagedArray, byteArray.Length);
+        return new SWIGTYPE_p_p_unsigned___int8(unmanagedArray, true);
+    }
 
-public static byte[] SWIGTYPEToByteArray(SWIGTYPE_p_p_unsigned___int8 swigType, int length)
-{
-    IntPtr ptr = SWIGTYPE_p_p_unsigned___int8.getCPtr(swigType).Handle;
-    byte[] byteArray = new byte[length];
-    Marshal.Copy(ptr, byteArray, 0, length);
-    Marshal.FreeHGlobal(ptr); // Free the unmanaged memory
-    return byteArray;
-}
+    public static SWIGTYPE_p_unsigned___int8 ByteArrayToSWIGTYPE_p(byte[] byteArray)
+    {
+        IntPtr unmanagedArray = Marshal.AllocHGlobal(byteArray.Length);
+        Marshal.Copy(byteArray, 0, unmanagedArray, byteArray.Length);
+        return new SWIGTYPE_p_unsigned___int8(unmanagedArray, true);
+    }
 
-public static SWIGTYPE_p_int CreateInstance_int(ushort value)
+    public static byte[] SWIGTYPEToByteArray_p_p(SWIGTYPE_p_p_unsigned___int8 swigType, int length)
+    {
+        IntPtr ptr = SWIGTYPE_p_p_unsigned___int8.getCPtr(swigType).Handle;
+        byte[] byteArray = new byte[length];
+        Marshal.Copy(ptr, byteArray, 0, length);
+        Marshal.FreeHGlobal(ptr); // Free the unmanaged memory
+        return byteArray;
+    }
+
+    public static byte[] SWIGTYPEToByteArray_p(SWIGTYPE_p_unsigned___int8 swigType, int length)
+    {
+        IntPtr ptr = SWIGTYPE_p_unsigned___int8.getCPtr(swigType).Handle;
+        byte[] byteArray = new byte[length];
+        Marshal.Copy(ptr, byteArray, 0, length);
+        Marshal.FreeHGlobal(ptr); // Free the unmanaged memory
+        return byteArray;
+    }
+
+    public static SWIGTYPE_p_int CreateInstance_int(ushort value)
     {
         GCHandle handle = GCHandle.Alloc(value, GCHandleType.Pinned);
         IntPtr ptr = handle.AddrOfPinnedObject();
@@ -104,7 +129,7 @@ public static SWIGTYPE_p_int CreateInstance_int(ushort value)
         return instance;
     }
 
-    public static SWIGTYPE_p_unsigned___int16 CreateInstance(ushort value)
+    public static SWIGTYPE_p_unsigned___int16 SetValue(ushort value)
     {
         GCHandle handle = GCHandle.Alloc(value, GCHandleType.Pinned);
         IntPtr ptr = handle.AddrOfPinnedObject();
@@ -113,7 +138,7 @@ public static SWIGTYPE_p_int CreateInstance_int(ushort value)
         return instance;
     }
 
-public static ushort GetValue_int(SWIGTYPE_p_int instance)
+    public static ushort GetValue_int(SWIGTYPE_p_int instance)
     {
         IntPtr ptr = SWIGTYPE_p_int.getCPtr(instance).Handle;
         return (ushort)Marshal.ReadInt16(ptr);
@@ -128,6 +153,7 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
     static void Main(string[] args)
     {
         CigiInSz = 0;
+
         ReadConfig();
 
         if (dbList.Count == 0)
@@ -146,50 +172,76 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
         // COwn.SetPitch(0.0);
         // COwn.SetRoll(0.0);
 
-        OmsgPtr.BeginMsg();
+        Omsg.BeginMsg();
 
         while (true)
         {
-            // if (CigiInSz > 0)
-            // {
-            //     try
-            //     {
-            //         ImsgPtr.ProcessIncomingMsg(CInBuf, CigiInSz);
-            //     }
-            //     catch (Exception ex)
-            //     {
-            //         Console.WriteLine($"getNetMessages - Exception: {ex.Message}");
-            //     }
-            // }
+            if (CigiInSz > 0)
+            {
+                try
+                {
+                    swigBuffer_p = ByteArrayToSWIGTYPE_p(CigiInBuf);
+                    SWIGTYPE_p_int swigOutSize = CreateInstance_int(0);
 
-            OmsgPtr.pack(CIGC);
+                    Imsg.ProcessIncomingMsg(swigBuffer_p, CigiInSz);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"getNetMessages - Exception: {ex.Message}");
+                }
+            }
+
+            Omsg.pack(CIGC);
 
             // double olat = COwn.GetLat();
             // COwn.SetLat(olat + 0.0000137);
-            OmsgPtr.pack(COwn);
+            Omsg.pack(COwn);
 
             try
             {
-                // Convert byte array to SWIG type
-                SWIGTYPE_p_p_unsigned___int8 swigPBuffer = ByteArrayToSWIGTYPE(pCigiOutBuf);
-                SWIGTYPE_p_int swigOutSize = CreateInstance_int(0);
+                try
+                {
+                    // Convert byte array to SWIG type
+                    swigBufferOut_p_p = ByteArrayToSWIGTYPE_p_p(CigiOutBuf);
+                    swigBufferOut_p = ByteArrayToSWIGTYPE_p(CigiOutBuf);
+                    swigOutSize = CreateInstance_int(0);
+                    Omsg.PackageMsg(swigBufferOut_p_p, swigOutSize);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"getNetMessages - Exception: {ex.Message}");
+                }
 
-                OmsgPtr.PackageMsg(swigPBuffer, swigOutSize);
                 CigiOutSz = GetValue_int(swigOutSize);
                 Console.WriteLine("PackageMsgSz : " + CigiOutSz);
-                // CigiInSz = network.Receive(CInBuf, RECV_BUFFER_SIZE);
 
-                // if (CigiInSz > 0)
-                // OmsgPtr.UpdateIGCtrl(pCigiOutBuf, CInBuf);
-                // else
-                // OmsgPtr.UpdateIGCtrl(pCigiOutBuf, null);
+                CigiInSz = network.Receive(CigiInBuf, RECV_BUFFER_SIZE);
+
+                try
+                {
+                    swigBuffer_p = ByteArrayToSWIGTYPE_p(CigiInBuf);
+                    swigOutSize = CreateInstance_int(0);
+
+                    if (CigiInSz > 0)
+                        Omsg.UpdateIGCtrl(swigBufferOut_p, swigBuffer_p);
+                    else
+                        Omsg.UpdateIGCtrl(swigBufferOut_p, null);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"UpdateIGCtrl - Exception: {ex.Message}");
+                }
+
 
                 // Convert back to byte array
-                pCigiOutBuf = SWIGTYPEToByteArray(swigPBuffer, CigiOutSz);
+                CigiOutBuf = SWIGTYPEToByteArray_p(swigBufferOut_p, CigiOutSz);
+                string hexString = BitConverter.ToString(CigiOutBuf).Replace("-", " ");
+                Console.WriteLine("Out : " + hexString);
 
-                network.Send(pCigiOutBuf, CigiOutSz);
+
+                network.Send(CigiOutBuf, CigiOutSz);
                 Console.WriteLine("Tick");
-                OmsgPtr.FreeMsg();
+                Omsg.FreeMsg();
             }
             catch (Exception ex)
             {
@@ -199,7 +251,7 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
             Thread.Sleep(1000);
         }
 
-        network.CloseSocket();
+        // network.CloseSocket();
     }
 
     static void ReadConfig()
@@ -233,8 +285,8 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
                 };
                 dbList.Add(dbInfo);
             }
-        }
     }
+        }
 
     static void InitCigiIf()
     {
@@ -249,10 +301,8 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
         }
 
         HostSn = new CigiHostSession(1, 32768, 2, 32768);
-        CigiOutgoingMsg Omsg = HostSn.GetOutgoingMsgMgr();
-        CigiIncomingMsg Imsg = HostSn.GetIncomingMsgMgr();
-        OmsgPtr = Omsg;
-        ImsgPtr = Imsg;
+        Omsg = HostSn.GetOutgoingMsgMgr();
+        Imsg = HostSn.GetIncomingMsgMgr();
 
         HostSn.SetCigiVersion(3, 3);
         HostSn.SetSynchronous(true);
@@ -261,11 +311,13 @@ public static ushort GetValue_int(SWIGTYPE_p_int instance)
         Imsg.UsingIteration(false);
 
         COwn = new CigiEntityCtrlV3_3();
-        COwn.SetEntityID(CreateInstance(43));
-        // COwn.SetEntityType(0);
-        // COwn.SetEntityState(CigiBaseEntityCtrl.Active);
+        COwn.SetEntityID(SetValue(43));
+        COwn.SetEntityType(SetValue(0));
+        COwn.SetEntityState(CigiBaseEntityCtrl.EntityStateGrp.Active);
 
+        // initialize the IG Control
         CIGC = new CigiIGCtrlV3_2();
+        CIGC.SetIGMode(CigiBaseIGCtrl.IGModeGrp.Operate);
 
         Console.WriteLine("Interface Successful...");
     }

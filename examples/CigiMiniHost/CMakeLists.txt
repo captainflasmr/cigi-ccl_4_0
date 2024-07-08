@@ -15,7 +15,7 @@ file(GLOB SOURCE_FILES
      "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 
 if(WIN32)
-  set(LIB_TINYXML "${CMAKE_SOURCE_DIR}/build/windows/debug/lib/Debug/tinyxmlD.lib")
+  set(LIB_TINYXML "${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/lib/Debug/tinyxmlD.lib")
   set(LIB_CCL "${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/lib/Debug/ccl_dllD.lib")
 endif()
 
@@ -34,4 +34,4 @@ endif()
 
 INSTALL(FILES
    ${CMAKE_CURRENT_SOURCE_DIR}/MiniHost.def
-   DESTINATION ${CMAKE_SOURCE_DIR}/build/windows/debug/bin/Debug)
+   DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/bin/Debug)

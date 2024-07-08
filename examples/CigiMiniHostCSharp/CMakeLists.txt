@@ -14,7 +14,7 @@ include_directories(
 )
 
 file(GLOB SOURCE_FILES
-  "${CMAKE_SOURCE_DIR}/csharp/*.cs"
+  "${CMAKE_CURRENT_SOURCE_DIR}/../../csharp/*.cs"
   "${CMAKE_CURRENT_SOURCE_DIR}/*.cs")
 
 if(WIN32)
@@ -46,4 +46,4 @@ set_target_properties("CigiMiniHostCSharp" PROPERTIES
 
 INSTALL(FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/MiniHost.def
-  DESTINATION ${CMAKE_SOURCE_DIR}/build/windows/debug/bin/Debug)
+  DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/bin/Debug)

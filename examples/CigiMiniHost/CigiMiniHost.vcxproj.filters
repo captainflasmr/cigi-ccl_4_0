@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\AnimStop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\DefaultProc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\MiniHost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\Network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\SOFP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1630777-8A5F-325B-955C-9EF65696AFD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

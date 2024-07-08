@@ -1,0 +1,1521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAccelerationCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAerosolRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAerosolRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationStopV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationStopV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAnimationTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiArtPartCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAtmosCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiAtmosCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseAerosolResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseAnimationCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseArtPartCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCircleSymbolData.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCircleSymbolTextureData.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetSegDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetSegResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetVolDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseCollDetVolResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseConfClampEntityCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEarthModelDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEntityCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEntityPositionCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvCondReq.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEnvRgnCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseEventNotification.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseHatHotReq.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseIGCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosSegReq.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseLosVectReq.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMaritimeSurfaceCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMaritimeSurfaceResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseMotionTrackCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBasePositionReq.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBasePositionResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSOF.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSensorCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSensorResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseShortArtPartCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseShortSymbolCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSpecEffDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolCircleDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolClone.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolLineDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolSurfaceDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTextDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTexturedCircleDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseSymbolTexturedPolygonDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseTerrestrialSurfaceCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseTrajectoryDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseViewCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseViewDef.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWaveCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWeatherCondResp.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiBaseWeatherCtrl.cpp">
+      <Filter>Source Files\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCelestialCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCelestialCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolDataV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolDataV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCircleSymbolTextureDataV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetSegRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCollDetVolRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiCompCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiConfClampEntityCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiConfClampEntityCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiDefaultPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEarthModelDefV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEarthModelDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEntityPositionCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCondReqV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCondReqV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvRgnCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEnvRgnCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEventNotificationV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiEventNotificationV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotReqV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatHotXRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatReqV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatReqV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatRespV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHatRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHostSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHotReqV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiHotRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGMsgV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIGSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiIncomingMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosSegReqV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosVectReqV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiLosXRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMaritimeSurfaceRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMotionTrackCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiMotionTrackCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiOutgoingMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionReqV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionReqV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiPositionRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiRateCtrlV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV3_2.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSOFV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorXRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSensorXRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortArtPartCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortArtPartCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortCompCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortSymbolCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiShortSymbolCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSpecEffDefV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSpecEffDefV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSwapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCircleDefV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCircleDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCloneV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCloneV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCtrlV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolLineDefV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolPolygonDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolSurfaceDefV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolSurfaceDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTextDefV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTextDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTexturedCircleDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiSymbolTexturedPolygonDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTerrestrialSurfaceRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiTrajectoryDefV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVelocityCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolDataV3_3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolDataV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiVertexSymbolTextureDataV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiViewDefV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWaveCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWaveCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCondRespV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCondRespV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV1.cpp">
+      <Filter>Source Files\Version1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV2.cpp">
+      <Filter>Source Files\Version2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV3.cpp">
+      <Filter>Source Files\Version3</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV4.cpp">
+      <Filter>Source Files\Version4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\exampleCSHARP_wrap_patch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAccelerationCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAerosolRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAerosolRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAllPackets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationStopV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationStopV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAnimationTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiArtPartCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAtmosCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiAtmosCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAerosolResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAnimationCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseAnimationStop.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseArtPartCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCircleSymbolData.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCircleSymbolTextureData.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetSegDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetSegResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetVolDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCollDetVolResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseCompCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseConfClampEntityCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEarthModelDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEntityCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEntityPositionCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvCondReq.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEnvRgnCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEventNotification.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseEventProcessor.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseHatHotReq.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseHatHotResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseIGCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseIGMsg.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosSegReq.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseLosVectReq.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMaritimeSurfaceCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMaritimeSurfaceResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseMotionTrackCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePacket.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePositionReq.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBasePositionResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseRateCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSOF.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSensorCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSensorResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseShortArtPartCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseShortSymbolCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSignalProcessing.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSpecEffDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolCircleDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolClone.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolLineDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolSurfaceDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTextDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTexturedCircleDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseSymbolTexturedPolygonDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTerrestrialSurfaceCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTerrestrialSurfaceResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseTrajectoryDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseVariableSizePckt.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseVertexSymbolData.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseViewCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseViewDef.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWaveCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWeatherCondResp.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiBaseWeatherCtrl.h">
+      <Filter>Header Files\BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCelestialCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCelestialCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolDataV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolDataV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCircleSymbolTextureDataV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCnvtInfoType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetSegRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCollDetVolRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiCompCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiConfClampEntityCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiConfClampEntityCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiDefaultPacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEarthModelDefV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEarthModelDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEntityPositionCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCondReqV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCondReqV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvRgnCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEnvRgnCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiErrorCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEventNotificationV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiEventNotificationV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotReqV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatHotXRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatReqV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatReqV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatRespV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHatRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHoldEnvCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHostSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHotReqV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiHotRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGMsgV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIGSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiIncomingMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosSegReqV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosVectReqV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiLosXRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMaritimeSurfaceRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMessageBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMotionTrackCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiMotionTrackCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiOutgoingMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionReqV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionReqV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiPositionRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiProcessType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiRateCtrlV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV3_2.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSOFV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorXRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSensorXRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortArtPartCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortArtPartCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortCompCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortSymbolCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiShortSymbolCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSignalType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSpecEffDefV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSpecEffDefV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSwapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCircleDefV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCircleDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCloneV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCloneV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCtrlV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolLineDefV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolPolygonDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolSurfaceDefV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolSurfaceDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTextDefV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTextDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTexturedCircleDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiSymbolTexturedPolygonDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTerrestrialSurfaceRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTrajectoryDefV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes_Default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiTypes_MSVS_Win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVelocityCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVersionID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolDataV3_3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolDataV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiVertexSymbolTextureDataV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiViewDefV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWaveCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWaveCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCondRespV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCondRespV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV1.h">
+      <Filter>Header Files\Version1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV2.h">
+      <Filter>Header Files\Version2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV3.h">
+      <Filter>Header Files\Version3</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\jimbo\source\cigi-ccl_4_0\include\CigiWeatherCtrlV4.h">
+      <Filter>Header Files\Version4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jimbo\source\cigi-ccl_4_0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6F8FA629-8BB8-31DA-9DB9-637BE50AA364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BaseClasses">
+      <UniqueIdentifier>{E1EDEBB5-5046-36E2-9EA5-AA1D79AEB6FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Version1">
+      <UniqueIdentifier>{5FDB791A-2900-3790-8F56-8FA14B3F52BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Version2">
+      <UniqueIdentifier>{AAC49365-800A-3ED3-A3C8-B23EF72D1CA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Version3">
+      <UniqueIdentifier>{37D698FD-F7FF-3791-85FA-EE5AA0A74096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Version4">
+      <UniqueIdentifier>{FB3D75F9-8636-3C84-BEA3-DFC87051C31D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1630777-8A5F-325B-955C-9EF65696AFD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BaseClasses">
+      <UniqueIdentifier>{3A23740D-2290-3866-A293-AA7C2605E543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Version1">
+      <UniqueIdentifier>{654DE7A8-7A59-3088-A728-7DED6C686B05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Version2">
+      <UniqueIdentifier>{55C5E72A-F3FC-3A6E-965D-F127AD13A520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Version3">
+      <UniqueIdentifier>{823354DB-B08F-334B-8BBA-1F9A13C141B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Version4">
+      <UniqueIdentifier>{4E301B6B-886E-353E-A620-8488687745D0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
