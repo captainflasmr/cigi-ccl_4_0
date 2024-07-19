@@ -743,15 +743,7 @@
     <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV2.cpp" />
     <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV3.cpp" />
     <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\source\CigiWeatherCtrlV4.cpp" />
-    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\exampleCSHARP_wrap_patch.cxx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\ZERO_CHECK.vcxproj">
-      <Project>{6771BD96-1134-347E-BA88-7ABE7DB97D7C}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
+    <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\ccl_wrap_patch.cxx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

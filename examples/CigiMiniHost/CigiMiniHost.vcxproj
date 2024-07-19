@@ -263,12 +263,6 @@
     <ClCompile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHost\SOFP.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\ZERO_CHECK.vcxproj">
-      <Project>{6771BD96-1134-347E-BA88-7ABE7DB97D7C}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="C:\Users\jimbo\source\cigi-ccl_4_0\build\windows\debug\cigicl-shared.vcxproj">
       <Project>{A17F165A-D9B8-3D4B-816E-79C1F34E3523}</Project>
       <Name>cigicl-shared</Name>

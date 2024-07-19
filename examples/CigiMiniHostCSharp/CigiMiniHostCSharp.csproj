@@ -934,11 +934,11 @@
     <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\Type.cs">
       <Link>Type.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\example_module.cs">
-      <Link>example_module.cs</Link>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\ccl_dllD.cs">
+      <Link>ccl_dllD.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\example_modulePINVOKE.cs">
-      <Link>example_modulePINVOKE.cs</Link>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\csharp\ccl_dllDPINVOKE.cs">
+      <Link>ccl_dllDPINVOKE.cs</Link>
     </Compile>
     <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHostCSharp\MiniHost.cs">
       <Link>MiniHost.cs</Link>
@@ -975,12 +975,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ZERO_CHECK.vcxproj">
-      <Project>{6771BD96-1134-347E-BA88-7ABE7DB97D7C}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="..\..\cigicl-shared.vcxproj">
       <Project>{A17F165A-D9B8-3D4B-816E-79C1F34E3523}</Project>
       <Name>cigicl-shared</Name>
