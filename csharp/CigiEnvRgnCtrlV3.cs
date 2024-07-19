@@ -12,7 +12,7 @@
 public class CigiEnvRgnCtrlV3 : CigiBaseEnvRgnCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiEnvRgnCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiEnvRgnCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiEnvRgnCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiEnvRgnCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiEnvRgnCtrlV3 : CigiBaseEnvRgnCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiEnvRgnCtrlV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiEnvRgnCtrlV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,16 +46,16 @@ public class CigiEnvRgnCtrlV3 : CigiBaseEnvRgnCtrl {
     }
   }
 
-  public CigiEnvRgnCtrlV3() : this(example_modulePINVOKE.new_CigiEnvRgnCtrlV3(), true) {
+  public CigiEnvRgnCtrlV3() : this(ccl_dllDPINVOKE.new_CigiEnvRgnCtrlV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiEnvRgnCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiEnvRgnCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiEnvRgnCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiEnvRgnCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 

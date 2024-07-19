@@ -12,7 +12,7 @@
 public class CigiBufferTooSmallException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBufferTooSmallException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBufferTooSmallException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBufferTooSmallException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBufferTooSmallException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBufferTooSmallException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBufferTooSmallException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBufferTooSmallException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiBufferTooSmallException : CigiException {
     }
   }
 
-  public CigiBufferTooSmallException() : this(example_modulePINVOKE.new_CigiBufferTooSmallException(), true) {
+  public CigiBufferTooSmallException() : this(ccl_dllDPINVOKE.new_CigiBufferTooSmallException(), true) {
   }
 
 }

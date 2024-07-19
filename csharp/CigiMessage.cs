@@ -49,7 +49,7 @@ public class CigiMessage : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiMessage(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiMessage(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,44 +57,44 @@ public class CigiMessage : global::System.IDisposable {
   }
 
   public bool GetValidIGCtrlSOF() {
-    bool ret = example_modulePINVOKE.CigiMessage_GetValidIGCtrlSOF(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiMessage_GetValidIGCtrlSOF(swigCPtr);
     return ret;
   }
 
   public int CreateBuffer(int NumBuf, int BufLen) {
-    int ret = example_modulePINVOKE.CigiMessage_CreateBuffer__SWIG_0(swigCPtr, NumBuf, BufLen);
+    int ret = ccl_dllDPINVOKE.CigiMessage_CreateBuffer__SWIG_0(swigCPtr, NumBuf, BufLen);
     return ret;
   }
 
   public int CreateBuffer(int NumBuf) {
-    int ret = example_modulePINVOKE.CigiMessage_CreateBuffer__SWIG_1(swigCPtr, NumBuf);
+    int ret = ccl_dllDPINVOKE.CigiMessage_CreateBuffer__SWIG_1(swigCPtr, NumBuf);
     return ret;
   }
 
   public int CreateBuffer() {
-    int ret = example_modulePINVOKE.CigiMessage_CreateBuffer__SWIG_2(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiMessage_CreateBuffer__SWIG_2(swigCPtr);
     return ret;
   }
 
   public void SetVersionChangeCallback(SWIGTYPE_p_f_int_int_p_void__void cb, SWIGTYPE_p_void user) {
-    example_modulePINVOKE.CigiMessage_SetVersionChangeCallback(swigCPtr, SWIGTYPE_p_f_int_int_p_void__void.getCPtr(cb), SWIGTYPE_p_void.getCPtr(user));
+    ccl_dllDPINVOKE.CigiMessage_SetVersionChangeCallback(swigCPtr, SWIGTYPE_p_f_int_int_p_void__void.getCPtr(cb), SWIGTYPE_p_void.getCPtr(user));
   }
 
   public SWIGTYPE_p_f_int_int_p_void__void VersionChangeCallback() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiMessage_VersionChangeCallback(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiMessage_VersionChangeCallback(swigCPtr);
     SWIGTYPE_p_f_int_int_p_void__void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_f_int_int_p_void__void(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_void VersionChangeCallbackUser() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiMessage_VersionChangeCallbackUser(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiMessage_VersionChangeCallbackUser(swigCPtr);
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
     return ret;
   }
 
   public virtual int RegisterUserPacket(CigiBasePacket Packet, SWIGTYPE_p_unsigned___int16 PacketID, bool HostSend, bool IGSend) {
-    int ret = example_modulePINVOKE.CigiMessage_RegisterUserPacket(swigCPtr, CigiBasePacket.getCPtr(Packet), SWIGTYPE_p_unsigned___int16.getCPtr(PacketID), HostSend, IGSend);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiMessage_RegisterUserPacket(swigCPtr, CigiBasePacket.getCPtr(Packet), SWIGTYPE_p_unsigned___int16.getCPtr(PacketID), HostSend, IGSend);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

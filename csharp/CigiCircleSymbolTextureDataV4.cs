@@ -12,7 +12,7 @@
 public class CigiCircleSymbolTextureDataV4 : CigiBaseCircleSymbolTextureData {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiCircleSymbolTextureDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiCircleSymbolTextureDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiCircleSymbolTextureDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiCircleSymbolTextureDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiCircleSymbolTextureDataV4 : CigiBaseCircleSymbolTextureData {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiCircleSymbolTextureDataV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiCircleSymbolTextureDataV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,16 +46,16 @@ public class CigiCircleSymbolTextureDataV4 : CigiBaseCircleSymbolTextureData {
     }
   }
 
-  public CigiCircleSymbolTextureDataV4() : this(example_modulePINVOKE.new_CigiCircleSymbolTextureDataV4(), true) {
+  public CigiCircleSymbolTextureDataV4() : this(ccl_dllDPINVOKE.new_CigiCircleSymbolTextureDataV4(), true) {
   }
 
   public override int Pack(CigiBaseCircleSymbolTextureData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiCircleSymbolTextureDataV4_Pack(swigCPtr, CigiBaseCircleSymbolTextureData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiCircleSymbolTextureDataV4_Pack(swigCPtr, CigiBaseCircleSymbolTextureData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiCircleSymbolTextureDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiCircleSymbolTextureDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 

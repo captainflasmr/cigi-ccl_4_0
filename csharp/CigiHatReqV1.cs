@@ -12,7 +12,7 @@
 public class CigiHatReqV1 : CigiBaseHatHotReq {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiHatReqV1(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiHatReqV1_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiHatReqV1(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiHatReqV1_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiHatReqV1 : CigiBaseHatHotReq {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiHatReqV1(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiHatReqV1(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,37 +46,37 @@ public class CigiHatReqV1 : CigiBaseHatHotReq {
     }
   }
 
-  public CigiHatReqV1() : this(example_modulePINVOKE.new_CigiHatReqV1(), true) {
+  public CigiHatReqV1() : this(ccl_dllDPINVOKE.new_CigiHatReqV1(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiHatReqV1_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiHatReqV1_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiHatReqV1_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiHatReqV1_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiHatReqV1_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiHatReqV1_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetAlt(double AltIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiHatReqV1_SetAlt__SWIG_0(swigCPtr, AltIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiHatReqV1_SetAlt__SWIG_0(swigCPtr, AltIn, bndchk);
     return ret;
   }
 
   public int SetAlt(double AltIn) {
-    int ret = example_modulePINVOKE.CigiHatReqV1_SetAlt__SWIG_1(swigCPtr, AltIn);
+    int ret = ccl_dllDPINVOKE.CigiHatReqV1_SetAlt__SWIG_1(swigCPtr, AltIn);
     return ret;
   }
 
   public double GetAlt() {
-    double ret = example_modulePINVOKE.CigiHatReqV1_GetAlt(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiHatReqV1_GetAlt(swigCPtr);
     return ret;
   }
 

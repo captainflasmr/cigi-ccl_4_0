@@ -12,7 +12,7 @@
 public class CigiTrajectoryDefV3 : CigiBaseTrajectoryDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiTrajectoryDefV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiTrajectoryDefV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiTrajectoryDefV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiTrajectoryDefV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiTrajectoryDefV3 : CigiBaseTrajectoryDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiTrajectoryDefV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiTrajectoryDefV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,61 +46,61 @@ public class CigiTrajectoryDefV3 : CigiBaseTrajectoryDef {
     }
   }
 
-  public CigiTrajectoryDefV3() : this(example_modulePINVOKE.new_CigiTrajectoryDefV3(), true) {
+  public CigiTrajectoryDefV3() : this(ccl_dllDPINVOKE.new_CigiTrajectoryDefV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetAccelX(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelX__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelX__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelX(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelX__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelX__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelX() {
-    float ret = example_modulePINVOKE.CigiTrajectoryDefV3_GetAccelX(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_GetAccelX(swigCPtr);
     return ret;
   }
 
   public int SetAccelY(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelY__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelY__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelY(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelY__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelY__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelY() {
-    float ret = example_modulePINVOKE.CigiTrajectoryDefV3_GetAccelY(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_GetAccelY(swigCPtr);
     return ret;
   }
 
   public int SetAccelZ(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelZ__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelZ__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelZ(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiTrajectoryDefV3_SetAccelZ__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_SetAccelZ__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelZ() {
-    float ret = example_modulePINVOKE.CigiTrajectoryDefV3_GetAccelZ(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiTrajectoryDefV3_GetAccelZ(swigCPtr);
     return ret;
   }
 

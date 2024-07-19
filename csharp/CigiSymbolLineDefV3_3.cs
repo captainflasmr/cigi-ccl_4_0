@@ -12,7 +12,7 @@
 public class CigiSymbolLineDefV3_3 : CigiBaseSymbolLineDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiSymbolLineDefV3_3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiSymbolLineDefV3_3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiSymbolLineDefV3_3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiSymbolLineDefV3_3 : CigiBaseSymbolLineDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiSymbolLineDefV3_3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiSymbolLineDefV3_3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,36 +46,36 @@ public class CigiSymbolLineDefV3_3 : CigiBaseSymbolLineDef {
     }
   }
 
-  public CigiSymbolLineDefV3_3() : this(example_modulePINVOKE.new_CigiSymbolLineDefV3_3__SWIG_0(), true) {
+  public CigiSymbolLineDefV3_3() : this(ccl_dllDPINVOKE.new_CigiSymbolLineDefV3_3__SWIG_0(), true) {
   }
 
-  public CigiSymbolLineDefV3_3(CigiSymbolLineDefV3_3 BaseIn) : this(example_modulePINVOKE.new_CigiSymbolLineDefV3_3__SWIG_1(CigiSymbolLineDefV3_3.getCPtr(BaseIn)), true) {
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+  public CigiSymbolLineDefV3_3(CigiSymbolLineDefV3_3 BaseIn) : this(ccl_dllDPINVOKE.new_CigiSymbolLineDefV3_3__SWIG_1(CigiSymbolLineDefV3_3.getCPtr(BaseIn)), true) {
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolLineDefV3_3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolLineDefV3_3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override CigiBaseVertexSymbolData AddVertex() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiSymbolLineDefV3_3_AddVertex(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_AddVertex(swigCPtr);
     CigiBaseVertexSymbolData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseVertexSymbolData(cPtr, false);
     return ret;
   }
 
   public override int RemoveVertex(int VertexIndex, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSymbolLineDefV3_3_RemoveVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_RemoveVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
     return ret;
   }
 
   public override int RemoveVertex(int VertexIndex) {
-    int ret = example_modulePINVOKE.CigiSymbolLineDefV3_3_RemoveVertex__SWIG_1(swigCPtr, VertexIndex);
+    int ret = ccl_dllDPINVOKE.CigiSymbolLineDefV3_3_RemoveVertex__SWIG_1(swigCPtr, VertexIndex);
     return ret;
   }
 

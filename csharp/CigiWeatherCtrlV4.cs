@@ -12,7 +12,7 @@
 public class CigiWeatherCtrlV4 : CigiBaseWeatherCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiWeatherCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiWeatherCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiWeatherCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiWeatherCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiWeatherCtrlV4 : CigiBaseWeatherCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiWeatherCtrlV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiWeatherCtrlV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,262 +46,262 @@ public class CigiWeatherCtrlV4 : CigiBaseWeatherCtrl {
     }
   }
 
-  public CigiWeatherCtrlV4() : this(example_modulePINVOKE.new_CigiWeatherCtrlV4(), true) {
+  public CigiWeatherCtrlV4() : this(ccl_dllDPINVOKE.new_CigiWeatherCtrlV4(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetRegionID(SWIGTYPE_p_unsigned___int16 RegionIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetRegionID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(RegionIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetRegionID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(RegionIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetRegionID(SWIGTYPE_p_unsigned___int16 RegionIDIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetRegionID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(RegionIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetRegionID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(RegionIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetRegionID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiWeatherCtrlV4_GetRegionID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetRegionID(swigCPtr), true);
     return ret;
   }
 
   public int SetLayerID(SWIGTYPE_p_unsigned___int8 LayerIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetLayerID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(LayerIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetLayerID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(LayerIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetLayerID(SWIGTYPE_p_unsigned___int8 LayerIDIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetLayerID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(LayerIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetLayerID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(LayerIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetLayerID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiWeatherCtrlV4_GetLayerID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetLayerID(swigCPtr), true);
     return ret;
   }
 
   public int SetHumidity(SWIGTYPE_p_unsigned___int8 HumidityIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetHumidity__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetHumidity__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetHumidity(SWIGTYPE_p_unsigned___int8 HumidityIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetHumidity__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetHumidity__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetHumidity() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiWeatherCtrlV4_GetHumidity(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetHumidity(swigCPtr), true);
     return ret;
   }
 
   public int SetRandomLightningEn(bool RandomLightningEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetRandomLightningEn__SWIG_0(swigCPtr, RandomLightningEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetRandomLightningEn__SWIG_0(swigCPtr, RandomLightningEnIn, bndchk);
     return ret;
   }
 
   public int SetRandomLightningEn(bool RandomLightningEnIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetRandomLightningEn__SWIG_1(swigCPtr, RandomLightningEnIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetRandomLightningEn__SWIG_1(swigCPtr, RandomLightningEnIn);
     return ret;
   }
 
   public bool GetRandomLightningEn() {
-    bool ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetRandomLightningEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetRandomLightningEn(swigCPtr);
     return ret;
   }
 
   public int SetCloudType(CigiBaseWeatherCtrl.CloudTypeGrp CloudTypeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetCloudType__SWIG_0(swigCPtr, (int)CloudTypeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetCloudType__SWIG_0(swigCPtr, (int)CloudTypeIn, bndchk);
     return ret;
   }
 
   public int SetCloudType(CigiBaseWeatherCtrl.CloudTypeGrp CloudTypeIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetCloudType__SWIG_1(swigCPtr, (int)CloudTypeIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetCloudType__SWIG_1(swigCPtr, (int)CloudTypeIn);
     return ret;
   }
 
   public CigiBaseWeatherCtrl.CloudTypeGrp GetCloudType() {
-    CigiBaseWeatherCtrl.CloudTypeGrp ret = (CigiBaseWeatherCtrl.CloudTypeGrp)example_modulePINVOKE.CigiWeatherCtrlV4_GetCloudType(swigCPtr);
+    CigiBaseWeatherCtrl.CloudTypeGrp ret = (CigiBaseWeatherCtrl.CloudTypeGrp)ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetCloudType(swigCPtr);
     return ret;
   }
 
   public int SetScope(CigiBaseWeatherCtrl.ScopeGrp ScopeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetScope__SWIG_0(swigCPtr, (int)ScopeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetScope__SWIG_0(swigCPtr, (int)ScopeIn, bndchk);
     return ret;
   }
 
   public int SetScope(CigiBaseWeatherCtrl.ScopeGrp ScopeIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetScope__SWIG_1(swigCPtr, (int)ScopeIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetScope__SWIG_1(swigCPtr, (int)ScopeIn);
     return ret;
   }
 
   public CigiBaseWeatherCtrl.ScopeGrp GetScope() {
-    CigiBaseWeatherCtrl.ScopeGrp ret = (CigiBaseWeatherCtrl.ScopeGrp)example_modulePINVOKE.CigiWeatherCtrlV4_GetScope(swigCPtr);
+    CigiBaseWeatherCtrl.ScopeGrp ret = (CigiBaseWeatherCtrl.ScopeGrp)ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetScope(swigCPtr);
     return ret;
   }
 
   public int SetVertWindSp(float VertWindSpIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetVertWindSp__SWIG_0(swigCPtr, VertWindSpIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetVertWindSp__SWIG_0(swigCPtr, VertWindSpIn, bndchk);
     return ret;
   }
 
   public int SetVertWindSp(float VertWindSpIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetVertWindSp__SWIG_1(swigCPtr, VertWindSpIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetVertWindSp__SWIG_1(swigCPtr, VertWindSpIn);
     return ret;
   }
 
   public float GetVertWindSp() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetVertWindSp(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetVertWindSp(swigCPtr);
     return ret;
   }
 
   public int SetWindDir(float WindDirIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetWindDir__SWIG_0(swigCPtr, WindDirIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetWindDir__SWIG_0(swigCPtr, WindDirIn, bndchk);
     return ret;
   }
 
   public int SetWindDir(float WindDirIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetWindDir__SWIG_1(swigCPtr, WindDirIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetWindDir__SWIG_1(swigCPtr, WindDirIn);
     return ret;
   }
 
   public float GetWindDir() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetWindDir(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetWindDir(swigCPtr);
     return ret;
   }
 
   public int SetBaroPress(float BaroPressIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBaroPress__SWIG_0(swigCPtr, BaroPressIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBaroPress__SWIG_0(swigCPtr, BaroPressIn, bndchk);
     return ret;
   }
 
   public int SetBaroPress(float BaroPressIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBaroPress__SWIG_1(swigCPtr, BaroPressIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBaroPress__SWIG_1(swigCPtr, BaroPressIn);
     return ret;
   }
 
   public float GetBaroPress() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetBaroPress(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetBaroPress(swigCPtr);
     return ret;
   }
 
   public int SetAerosol(float AerosolIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetAerosol__SWIG_0(swigCPtr, AerosolIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetAerosol__SWIG_0(swigCPtr, AerosolIn, bndchk);
     return ret;
   }
 
   public int SetAerosol(float AerosolIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetAerosol__SWIG_1(swigCPtr, AerosolIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetAerosol__SWIG_1(swigCPtr, AerosolIn);
     return ret;
   }
 
   public float GetAerosol() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetAerosol(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetAerosol(swigCPtr);
     return ret;
   }
 
   public int SetBottomScudEn(bool bottomScudEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomScudEn__SWIG_0(swigCPtr, bottomScudEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomScudEn__SWIG_0(swigCPtr, bottomScudEnIn, bndchk);
     return ret;
   }
 
   public int SetBottomScudEn(bool bottomScudEnIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomScudEn__SWIG_1(swigCPtr, bottomScudEnIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomScudEn__SWIG_1(swigCPtr, bottomScudEnIn);
     return ret;
   }
 
   public bool GetBottomScudEn() {
-    bool ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetBottomScudEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetBottomScudEn(swigCPtr);
     return ret;
   }
 
   public int SetBottomScudFreq(float BottomScudFreqIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomScudFreq__SWIG_0(swigCPtr, BottomScudFreqIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomScudFreq__SWIG_0(swigCPtr, BottomScudFreqIn, bndchk);
     return ret;
   }
 
   public int SetBottomScudFreq(float BottomScudFreqIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomScudFreq__SWIG_1(swigCPtr, BottomScudFreqIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomScudFreq__SWIG_1(swigCPtr, BottomScudFreqIn);
     return ret;
   }
 
   public float GetBottomScudFreq() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetBottomScudFreq(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetBottomScudFreq(swigCPtr);
     return ret;
   }
 
   public int SetBottomTransition(float BottomTransitionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomTransition__SWIG_0(swigCPtr, BottomTransitionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomTransition__SWIG_0(swigCPtr, BottomTransitionIn, bndchk);
     return ret;
   }
 
   public int SetBottomTransition(float BottomTransitionIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetBottomTransition__SWIG_1(swigCPtr, BottomTransitionIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetBottomTransition__SWIG_1(swigCPtr, BottomTransitionIn);
     return ret;
   }
 
   public float GetBottomTransition() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetBottomTransition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetBottomTransition(swigCPtr);
     return ret;
   }
 
   public int SetTopScudEn(bool TopScudEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopScudEn__SWIG_0(swigCPtr, TopScudEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopScudEn__SWIG_0(swigCPtr, TopScudEnIn, bndchk);
     return ret;
   }
 
   public int SetTopScudEn(bool TopScudEnIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopScudEn__SWIG_1(swigCPtr, TopScudEnIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopScudEn__SWIG_1(swigCPtr, TopScudEnIn);
     return ret;
   }
 
   public bool GetTopScudEn() {
-    bool ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetTopScudEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetTopScudEn(swigCPtr);
     return ret;
   }
 
   public int SetTopScudFreq(float TopScudFreqIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopScudFreq__SWIG_0(swigCPtr, TopScudFreqIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopScudFreq__SWIG_0(swigCPtr, TopScudFreqIn, bndchk);
     return ret;
   }
 
   public int SetTopScudFreq(float TopScudFreqIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopScudFreq__SWIG_1(swigCPtr, TopScudFreqIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopScudFreq__SWIG_1(swigCPtr, TopScudFreqIn);
     return ret;
   }
 
   public float GetTopScudFreq() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetTopScudFreq(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetTopScudFreq(swigCPtr);
     return ret;
   }
 
   public int SetTopTransition(float TopTransitionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopTransition__SWIG_0(swigCPtr, TopTransitionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopTransition__SWIG_0(swigCPtr, TopTransitionIn, bndchk);
     return ret;
   }
 
   public int SetTopTransition(float TopTransitionIn) {
-    int ret = example_modulePINVOKE.CigiWeatherCtrlV4_SetTopTransition__SWIG_1(swigCPtr, TopTransitionIn);
+    int ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_SetTopTransition__SWIG_1(swigCPtr, TopTransitionIn);
     return ret;
   }
 
   public float GetTopTransition() {
-    float ret = example_modulePINVOKE.CigiWeatherCtrlV4_GetTopTransition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiWeatherCtrlV4_GetTopTransition(swigCPtr);
     return ret;
   }
 

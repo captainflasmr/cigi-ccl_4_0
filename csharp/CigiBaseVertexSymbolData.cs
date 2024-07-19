@@ -49,7 +49,7 @@ public class CigiBaseVertexSymbolData : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseVertexSymbolData(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseVertexSymbolData(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,58 +57,58 @@ public class CigiBaseVertexSymbolData : global::System.IDisposable {
   }
 
   public virtual int Pack(CigiBaseVertexSymbolData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public virtual int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 
   public int SetVertex(float VertexUIn, float VertexVIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertex__SWIG_0(swigCPtr, VertexUIn, VertexVIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertex__SWIG_0(swigCPtr, VertexUIn, VertexVIn, bndchk);
     return ret;
   }
 
   public int SetVertex(float VertexUIn, float VertexVIn) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertex__SWIG_1(swigCPtr, VertexUIn, VertexVIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertex__SWIG_1(swigCPtr, VertexUIn, VertexVIn);
     return ret;
   }
 
   public int GetVertex(SWIGTYPE_p_float VertexUIn, SWIGTYPE_p_float VertexVIn) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_GetVertex(swigCPtr, SWIGTYPE_p_float.getCPtr(VertexUIn), SWIGTYPE_p_float.getCPtr(VertexVIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_GetVertex(swigCPtr, SWIGTYPE_p_float.getCPtr(VertexUIn), SWIGTYPE_p_float.getCPtr(VertexVIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetVertexU(float VertexUIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertexU__SWIG_0(swigCPtr, VertexUIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertexU__SWIG_0(swigCPtr, VertexUIn, bndchk);
     return ret;
   }
 
   public int SetVertexU(float VertexUIn) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertexU__SWIG_1(swigCPtr, VertexUIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertexU__SWIG_1(swigCPtr, VertexUIn);
     return ret;
   }
 
   public float GetVertexU() {
-    float ret = example_modulePINVOKE.CigiBaseVertexSymbolData_GetVertexU(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_GetVertexU(swigCPtr);
     return ret;
   }
 
   public int SetVertexV(float VertexVIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertexV__SWIG_0(swigCPtr, VertexVIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertexV__SWIG_0(swigCPtr, VertexVIn, bndchk);
     return ret;
   }
 
   public int SetVertexV(float VertexVIn) {
-    int ret = example_modulePINVOKE.CigiBaseVertexSymbolData_SetVertexV__SWIG_1(swigCPtr, VertexVIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_SetVertexV__SWIG_1(swigCPtr, VertexVIn);
     return ret;
   }
 
   public float GetVertexV() {
-    float ret = example_modulePINVOKE.CigiBaseVertexSymbolData_GetVertexV(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseVertexSymbolData_GetVertexV(swigCPtr);
     return ret;
   }
 

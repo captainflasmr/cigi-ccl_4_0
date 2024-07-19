@@ -65,20 +65,27 @@
       sorted
       (error "Cycle detected in the dependency graph"))))
 
+(defun get-relative-directory (dir file)
+  "Return the relative directory of FILE with respect to DIR."
+  (let ((dir (file-name-as-directory dir))
+        (file-dir (file-name-directory file)))
+    (file-relative-name dir file-dir)))
+
 (defun swig--generate-include-file-list (include-dir interface-file)
   "Generate an include file list in dependency order for headers in INCLUDE-DIR."
   (let* ((result (swig--build-dependency-graph include-dir))
           (graph (car result))
           (all-headers (cadr result))
-          (sorted-headers (swig--topological-sort graph all-headers)))
+          (sorted-headers (swig--topological-sort graph all-headers))
+          (relative-dir (get-relative-directory include-dir interface-file)))
     (with-temp-buffer
       (insert "%{\n")
       (dolist (header sorted-headers)
-        (insert "#include \"" include-dir "/" header "\"\n"))
+        (insert "#include \"" relative-dir header "\"\n"))
       (insert "%}\n")
-      (insert "\n%module example_module\n\n")
+      (insert "\n%module ccl_dllD\n\n")
       (dolist (header sorted-headers)
-        (insert "%include \"" include-dir "/" header "\"\n"))
+        (insert "%include \"" relative-dir header "\"\n"))
       (write-file interface-file))
     (message "Include file list generated at %s" interface-file)))
 
@@ -88,5 +95,4 @@
   (interactive)
   (swig--generate-include-file-list
     "/home/jdyer/source/repos/cigi-ccl_4_0/include"
-    "/home/jdyer/source/repos/cigi-ccl_4_0/example.i"
-    ))
+    "/home/jdyer/source/repos/cigi-ccl_4_0/ccl.i"))

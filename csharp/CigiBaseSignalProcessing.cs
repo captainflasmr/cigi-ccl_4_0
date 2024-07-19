@@ -49,282 +49,282 @@ public class CigiBaseSignalProcessing : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseSignalProcessing(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseSignalProcessing(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
   }
 
-  public CigiBaseSignalProcessing() : this(example_modulePINVOKE.new_CigiBaseSignalProcessing(), true) {
+  public CigiBaseSignalProcessing() : this(ccl_dllDPINVOKE.new_CigiBaseSignalProcessing(), true) {
   }
 
   public virtual void OnIGCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnIGCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnIGCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnArtPartCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnArtPartCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnArtPartCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnAtmosCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnAtmosCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnAtmosCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCelestialCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCelestialCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCelestialCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCollDetSegDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCollDetSegDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCollDetSegDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCollDetVolDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCollDetVolDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCollDetVolDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCompCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCompCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCompCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnConfClampEntityCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnConfClampEntityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnConfClampEntityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEarthModelDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEarthModelDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEarthModelDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEntityCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEntityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEntityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEnvCondReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEnvCondReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEnvCondReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEnvCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEnvCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEnvCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEnvRgnCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEnvRgnCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEnvRgnCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatHotReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatHotReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatHotReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatHotXReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatHotXReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatHotXReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHotReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHotReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHotReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnLosSegReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnLosSegReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnLosSegReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnLosVectReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnLosVectReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnLosVectReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnMaritimeSurfaceCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnMaritimeSurfaceCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnMaritimeSurfaceCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnMotionTrackCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnMotionTrackCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnMotionTrackCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnPostionReq(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnPostionReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnPostionReq(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnRateCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnRateCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnRateCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSensorCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSensorCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSensorCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnShortArtPartCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnShortArtPartCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnShortArtPartCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnShortCompCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnShortCompCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnShortCompCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnShortSymbolCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnShortSymbolCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnShortSymbolCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSpecEffDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSpecEffDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSpecEffDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolCircleDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolCircleDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolCircleDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolClone(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolClone(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolClone(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolLineDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolLineDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolLineDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolTextDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolTextDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolTextDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolSurfaceDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolSurfaceDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolSurfaceDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnTerrestrialSurfaceCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnTerrestrialSurfaceCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnTerrestrialSurfaceCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnTrajectory(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnTrajectory(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnTrajectory(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnViewCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnViewCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnViewCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnViewDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnViewDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnViewDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnWaveCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnWaveCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnWaveCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnWeatherCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnWeatherCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnWeatherCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnVelocityCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnVelocityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnVelocityCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnAccelerationCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnAccelerationCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnAccelerationCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolPolygonDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolPolygonDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolPolygonDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolTexturedCircleDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolTexturedCircleDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolTexturedCircleDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSymbolTexturedPolygonDef(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSymbolTexturedPolygonDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSymbolTexturedPolygonDef(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEntityPositionCtrl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEntityPositionCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEntityPositionCtrl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnAnimationControl(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnAnimationControl(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnAnimationControl(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSOF(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSOF(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSOF(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnAerosolResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnAerosolResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnAerosolResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnAnimationStop(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnAnimationStop(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnAnimationStop(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCollDetSegResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCollDetSegResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCollDetSegResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnCollDetVolResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnCollDetVolResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnCollDetVolResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnEventNotification(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnEventNotification(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnEventNotification(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatHotResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatHotResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatHotResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHatHotXResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHatHotXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHatHotXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnHotResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnHotResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnHotResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnIGMsg(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnIGMsg(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnIGMsg(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnLosResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnLosResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnLosResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnLosXResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnLosXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnLosXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnMaritimeSurfaceResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnMaritimeSurfaceResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnMaritimeSurfaceResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnPositionResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnPositionResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnPositionResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSensorResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSensorResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSensorResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnSensorXResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnSensorXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnSensorXResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnTerrestrialSurfaceResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnTerrestrialSurfaceResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnTerrestrialSurfaceResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnWeatherCondResp(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnWeatherCondResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnWeatherCondResp(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
   public virtual void OnUnrecognized(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseSignalProcessing_OnUnrecognized(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseSignalProcessing_OnUnrecognized(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
 }

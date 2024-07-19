@@ -12,7 +12,7 @@
 public class CigiHatHotRespV3 : CigiBaseHatHotResp {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiHatHotRespV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiHatHotRespV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiHatHotRespV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiHatHotRespV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiHatHotRespV3 : CigiBaseHatHotResp {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiHatHotRespV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiHatHotRespV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,67 +46,67 @@ public class CigiHatHotRespV3 : CigiBaseHatHotResp {
     }
   }
 
-  public CigiHatHotRespV3() : this(example_modulePINVOKE.new_CigiHatHotRespV3(), true) {
+  public CigiHatHotRespV3() : this(ccl_dllDPINVOKE.new_CigiHatHotRespV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetReqType(CigiBaseHatHotResp.ReqTypeGrp ReqTypeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetReqType__SWIG_0(swigCPtr, (int)ReqTypeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetReqType__SWIG_0(swigCPtr, (int)ReqTypeIn, bndchk);
     return ret;
   }
 
   public int SetReqType(CigiBaseHatHotResp.ReqTypeGrp ReqTypeIn) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetReqType__SWIG_1(swigCPtr, (int)ReqTypeIn);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetReqType__SWIG_1(swigCPtr, (int)ReqTypeIn);
     return ret;
   }
 
   public CigiBaseHatHotResp.ReqTypeGrp GetReqType() {
-    CigiBaseHatHotResp.ReqTypeGrp ret = (CigiBaseHatHotResp.ReqTypeGrp)example_modulePINVOKE.CigiHatHotRespV3_GetReqType(swigCPtr);
+    CigiBaseHatHotResp.ReqTypeGrp ret = (CigiBaseHatHotResp.ReqTypeGrp)ccl_dllDPINVOKE.CigiHatHotRespV3_GetReqType(swigCPtr);
     return ret;
   }
 
   public int SetHat(double HatIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetHat__SWIG_0(swigCPtr, HatIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetHat__SWIG_0(swigCPtr, HatIn, bndchk);
     return ret;
   }
 
   public int SetHat(double HatIn) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetHat__SWIG_1(swigCPtr, HatIn);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetHat__SWIG_1(swigCPtr, HatIn);
     return ret;
   }
 
   public double GetHat() {
-    double ret = example_modulePINVOKE.CigiHatHotRespV3_GetHat(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiHatHotRespV3_GetHat(swigCPtr);
     return ret;
   }
 
   public int SetHot(double HotIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetHot__SWIG_0(swigCPtr, HotIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetHot__SWIG_0(swigCPtr, HotIn, bndchk);
     return ret;
   }
 
   public int SetHot(double HotIn) {
-    int ret = example_modulePINVOKE.CigiHatHotRespV3_SetHot__SWIG_1(swigCPtr, HotIn);
+    int ret = ccl_dllDPINVOKE.CigiHatHotRespV3_SetHot__SWIG_1(swigCPtr, HotIn);
     return ret;
   }
 
   public double GetHot() {
-    double ret = example_modulePINVOKE.CigiHatHotRespV3_GetHot(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiHatHotRespV3_GetHot(swigCPtr);
     return ret;
   }
 

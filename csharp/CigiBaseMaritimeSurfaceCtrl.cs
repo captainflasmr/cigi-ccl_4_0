@@ -12,7 +12,7 @@
 public class CigiBaseMaritimeSurfaceCtrl : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseMaritimeSurfaceCtrl(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseMaritimeSurfaceCtrl(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseMaritimeSurfaceCtrl : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseMaritimeSurfaceCtrl(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseMaritimeSurfaceCtrl(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,125 +47,125 @@ public class CigiBaseMaritimeSurfaceCtrl : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityRgnID(SWIGTYPE_p_unsigned___int16 EntityRgnIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetEntityRgnID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityRgnIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetEntityRgnID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityRgnIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityRgnID(SWIGTYPE_p_unsigned___int16 EntityRgnIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetEntityRgnID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityRgnIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetEntityRgnID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityRgnIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetEntityRgnID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetEntityRgnID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetEntityRgnID(swigCPtr), true);
     return ret;
   }
 
   public int SetSurfaceCondEn(bool SurfaceCondEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceCondEn__SWIG_0(swigCPtr, SurfaceCondEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceCondEn__SWIG_0(swigCPtr, SurfaceCondEnIn, bndchk);
     return ret;
   }
 
   public int SetSurfaceCondEn(bool SurfaceCondEnIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceCondEn__SWIG_1(swigCPtr, SurfaceCondEnIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceCondEn__SWIG_1(swigCPtr, SurfaceCondEnIn);
     return ret;
   }
 
   public bool GetSurfaceCondEn() {
-    bool ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetSurfaceCondEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetSurfaceCondEn(swigCPtr);
     return ret;
   }
 
   public int SetWhitecapEn(bool WhitecapEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWhitecapEn__SWIG_0(swigCPtr, WhitecapEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWhitecapEn__SWIG_0(swigCPtr, WhitecapEnIn, bndchk);
     return ret;
   }
 
   public int SetWhitecapEn(bool WhitecapEnIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWhitecapEn__SWIG_1(swigCPtr, WhitecapEnIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWhitecapEn__SWIG_1(swigCPtr, WhitecapEnIn);
     return ret;
   }
 
   public bool GetWhitecapEn() {
-    bool ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetWhitecapEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetWhitecapEn(swigCPtr);
     return ret;
   }
 
   public int SetScope(CigiBaseMaritimeSurfaceCtrl.ScopeGrp ScopeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetScope__SWIG_0(swigCPtr, (int)ScopeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetScope__SWIG_0(swigCPtr, (int)ScopeIn, bndchk);
     return ret;
   }
 
   public int SetScope(CigiBaseMaritimeSurfaceCtrl.ScopeGrp ScopeIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetScope__SWIG_1(swigCPtr, (int)ScopeIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetScope__SWIG_1(swigCPtr, (int)ScopeIn);
     return ret;
   }
 
   public CigiBaseMaritimeSurfaceCtrl.ScopeGrp GetScope() {
-    CigiBaseMaritimeSurfaceCtrl.ScopeGrp ret = (CigiBaseMaritimeSurfaceCtrl.ScopeGrp)example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetScope(swigCPtr);
+    CigiBaseMaritimeSurfaceCtrl.ScopeGrp ret = (CigiBaseMaritimeSurfaceCtrl.ScopeGrp)ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetScope(swigCPtr);
     return ret;
   }
 
   public int SetSurfaceHeight(float SurfaceHeightIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceHeight__SWIG_0(swigCPtr, SurfaceHeightIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceHeight__SWIG_0(swigCPtr, SurfaceHeightIn, bndchk);
     return ret;
   }
 
   public int SetSurfaceHeight(float SurfaceHeightIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceHeight__SWIG_1(swigCPtr, SurfaceHeightIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetSurfaceHeight__SWIG_1(swigCPtr, SurfaceHeightIn);
     return ret;
   }
 
   public float GetSurfaceHeight() {
-    float ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetSurfaceHeight(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetSurfaceHeight(swigCPtr);
     return ret;
   }
 
   public int SetWaterTemp(float WaterTempIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWaterTemp__SWIG_0(swigCPtr, WaterTempIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWaterTemp__SWIG_0(swigCPtr, WaterTempIn, bndchk);
     return ret;
   }
 
   public int SetWaterTemp(float WaterTempIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWaterTemp__SWIG_1(swigCPtr, WaterTempIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetWaterTemp__SWIG_1(swigCPtr, WaterTempIn);
     return ret;
   }
 
   public float GetWaterTemp() {
-    float ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetWaterTemp(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetWaterTemp(swigCPtr);
     return ret;
   }
 
   public int SetClarity(float ClarityIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetClarity__SWIG_0(swigCPtr, ClarityIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetClarity__SWIG_0(swigCPtr, ClarityIn, bndchk);
     return ret;
   }
 
   public int SetClarity(float ClarityIn) {
-    int ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_SetClarity__SWIG_1(swigCPtr, ClarityIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_SetClarity__SWIG_1(swigCPtr, ClarityIn);
     return ret;
   }
 
   public float GetClarity() {
-    float ret = example_modulePINVOKE.CigiBaseMaritimeSurfaceCtrl_GetClarity(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseMaritimeSurfaceCtrl_GetClarity(swigCPtr);
     return ret;
   }
 

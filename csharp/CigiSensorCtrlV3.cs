@@ -12,7 +12,7 @@
 public class CigiSensorCtrlV3 : CigiBaseSensorCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiSensorCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiSensorCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiSensorCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiSensorCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiSensorCtrlV3 : CigiBaseSensorCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiSensorCtrlV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiSensorCtrlV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,63 +46,63 @@ public class CigiSensorCtrlV3 : CigiBaseSensorCtrl {
     }
   }
 
-  public CigiSensorCtrlV3() : this(example_modulePINVOKE.new_CigiSensorCtrlV3(), true) {
+  public CigiSensorCtrlV3() : this(ccl_dllDPINVOKE.new_CigiSensorCtrlV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int16 ViewIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int16 ViewIDIn) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetViewID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiSensorCtrlV3_GetViewID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiSensorCtrlV3_GetViewID(swigCPtr), true);
     return ret;
   }
 
   public int SetResponseType(CigiBaseSensorCtrl.ResponseTypeGrp ResponseTypeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetResponseType__SWIG_0(swigCPtr, (int)ResponseTypeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetResponseType__SWIG_0(swigCPtr, (int)ResponseTypeIn, bndchk);
     return ret;
   }
 
   public int SetResponseType(CigiBaseSensorCtrl.ResponseTypeGrp ResponseTypeIn) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetResponseType__SWIG_1(swigCPtr, (int)ResponseTypeIn);
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetResponseType__SWIG_1(swigCPtr, (int)ResponseTypeIn);
     return ret;
   }
 
   public CigiBaseSensorCtrl.ResponseTypeGrp GetResponseType() {
-    CigiBaseSensorCtrl.ResponseTypeGrp ret = (CigiBaseSensorCtrl.ResponseTypeGrp)example_modulePINVOKE.CigiSensorCtrlV3_GetResponseType(swigCPtr);
+    CigiBaseSensorCtrl.ResponseTypeGrp ret = (CigiBaseSensorCtrl.ResponseTypeGrp)ccl_dllDPINVOKE.CigiSensorCtrlV3_GetResponseType(swigCPtr);
     return ret;
   }
 
   public int SetGain(float GainIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetGain__SWIG_0(swigCPtr, GainIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetGain__SWIG_0(swigCPtr, GainIn, bndchk);
     return ret;
   }
 
   public int SetGain(float GainIn) {
-    int ret = example_modulePINVOKE.CigiSensorCtrlV3_SetGain__SWIG_1(swigCPtr, GainIn);
+    int ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_SetGain__SWIG_1(swigCPtr, GainIn);
     return ret;
   }
 
   public float GetGain() {
-    float ret = example_modulePINVOKE.CigiSensorCtrlV3_GetGain(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiSensorCtrlV3_GetGain(swigCPtr);
     return ret;
   }
 

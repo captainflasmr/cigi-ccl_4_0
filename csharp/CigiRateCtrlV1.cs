@@ -12,7 +12,7 @@
 public class CigiRateCtrlV1 : CigiBaseRateCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiRateCtrlV1(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiRateCtrlV1_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiRateCtrlV1(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiRateCtrlV1_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiRateCtrlV1 : CigiBaseRateCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiRateCtrlV1(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiRateCtrlV1(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,33 +46,33 @@ public class CigiRateCtrlV1 : CigiBaseRateCtrl {
     }
   }
 
-  public CigiRateCtrlV1() : this(example_modulePINVOKE.new_CigiRateCtrlV1(), true) {
+  public CigiRateCtrlV1() : this(ccl_dllDPINVOKE.new_CigiRateCtrlV1(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV1_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV1_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV1_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV1_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p___int8 ArtPartIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV1_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p___int8.getCPtr(ArtPartIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV1_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p___int8.getCPtr(ArtPartIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p___int8 ArtPartIDIn) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV1_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p___int8.getCPtr(ArtPartIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV1_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p___int8.getCPtr(ArtPartIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p___int8 GetArtPartID() {
-    SWIGTYPE_p___int8 ret = new SWIGTYPE_p___int8(example_modulePINVOKE.CigiRateCtrlV1_GetArtPartID(swigCPtr), true);
+    SWIGTYPE_p___int8 ret = new SWIGTYPE_p___int8(ccl_dllDPINVOKE.CigiRateCtrlV1_GetArtPartID(swigCPtr), true);
     return ret;
   }
 

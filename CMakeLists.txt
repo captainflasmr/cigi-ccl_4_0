@@ -110,10 +110,10 @@ INCLUDE_DIRECTORIES(include)
 
 # set (CMAKE_SWIG_FLAGS "")
 
-# set_property(SOURCE example.i PROPERTY CPLUSPLUS ON)
+# set_property(SOURCE ccl.i PROPERTY CPLUSPLUS ON)
 
-# set(INTERFACE_FILE_TEMPLATE "${CMAKE_SOURCE_DIR}/example.i.in")
-# set(INTERFACE_FILE "${CMAKE_SOURCE_DIR}/example.i")
+# set(INTERFACE_FILE_TEMPLATE "${CMAKE_SOURCE_DIR}/ccl.i.in")
+# set(INTERFACE_FILE "${CMAKE_SOURCE_DIR}/ccl.i")
 
 # file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h")
 
@@ -131,7 +131,7 @@ INCLUDE_DIRECTORIES(include)
 # swig_add_library(cigicl-shared
 #   TYPE SHARED
 #   LANGUAGE CSharp
-#   SOURCES ${CCL_PUBLIC_HDRS} ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4} ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} example.i
+#   SOURCES ${CCL_PUBLIC_HDRS} ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4} ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ccl.i
 #   OUTPUT_DIR ${CMAKE_SOURCE_DIR}/csharp
 #   OUTFILE_DIR ${CMAKE_SOURCE_DIR}
 #   )
@@ -142,7 +142,7 @@ INCLUDE_DIRECTORIES(include)
 
 add_library(cigicl-shared SHARED
  	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
- 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/exampleCSHARP_wrap_patch.cxx)
+ 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/ccl_wrap_patch.cxx)
 
 source_group("Header Files\\BaseClasses"         FILES ${CCL_HDRS_BASE})
 source_group("Header Files\\Version1"            FILES ${CCL_HDRS_V1})

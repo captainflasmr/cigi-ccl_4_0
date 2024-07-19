@@ -49,7 +49,7 @@ public class PackPointer : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_PackPointer(swigCPtr);
+          ccl_dllDPINVOKE.delete_PackPointer(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -58,10 +58,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p_unsigned___int8 c {
     set {
-      example_modulePINVOKE.PackPointer_c_set(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_c_set(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_c_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_c_get(swigCPtr);
       SWIGTYPE_p_unsigned___int8 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned___int8(cPtr, false);
       return ret;
     } 
@@ -69,10 +69,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p___int8 b {
     set {
-      example_modulePINVOKE.PackPointer_b_set(swigCPtr, SWIGTYPE_p___int8.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_b_set(swigCPtr, SWIGTYPE_p___int8.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_b_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_b_get(swigCPtr);
       SWIGTYPE_p___int8 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p___int8(cPtr, false);
       return ret;
     } 
@@ -80,10 +80,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p_unsigned___int16 s {
     set {
-      example_modulePINVOKE.PackPointer_s_set(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_s_set(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_s_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_s_get(swigCPtr);
       SWIGTYPE_p_unsigned___int16 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned___int16(cPtr, false);
       return ret;
     } 
@@ -91,10 +91,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p___int16 h {
     set {
-      example_modulePINVOKE.PackPointer_h_set(swigCPtr, SWIGTYPE_p___int16.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_h_set(swigCPtr, SWIGTYPE_p___int16.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_h_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_h_get(swigCPtr);
       SWIGTYPE_p___int16 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p___int16(cPtr, false);
       return ret;
     } 
@@ -102,10 +102,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p_unsigned___int32 l {
     set {
-      example_modulePINVOKE.PackPointer_l_set(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_l_set(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_l_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_l_get(swigCPtr);
       SWIGTYPE_p_unsigned___int32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned___int32(cPtr, false);
       return ret;
     } 
@@ -113,10 +113,10 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p_float f {
     set {
-      example_modulePINVOKE.PackPointer_f_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_f_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_f_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_f_get(swigCPtr);
       SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
       return ret;
     } 
@@ -124,16 +124,16 @@ public class PackPointer : global::System.IDisposable {
 
   public SWIGTYPE_p_double d {
     set {
-      example_modulePINVOKE.PackPointer_d_set(swigCPtr, SWIGTYPE_p_double.getCPtr(value));
+      ccl_dllDPINVOKE.PackPointer_d_set(swigCPtr, SWIGTYPE_p_double.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = example_modulePINVOKE.PackPointer_d_get(swigCPtr);
+      global::System.IntPtr cPtr = ccl_dllDPINVOKE.PackPointer_d_get(swigCPtr);
       SWIGTYPE_p_double ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_double(cPtr, false);
       return ret;
     } 
   }
 
-  public PackPointer() : this(example_modulePINVOKE.new_PackPointer(), true) {
+  public PackPointer() : this(ccl_dllDPINVOKE.new_PackPointer(), true) {
   }
 
 }

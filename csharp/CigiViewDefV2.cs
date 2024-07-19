@@ -12,7 +12,7 @@
 public class CigiViewDefV2 : CigiBaseViewDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiViewDefV2(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiViewDefV2_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiViewDefV2(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiViewDefV2_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiViewDefV2 : CigiBaseViewDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiViewDefV2(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiViewDefV2(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,155 +46,155 @@ public class CigiViewDefV2 : CigiBaseViewDef {
     }
   }
 
-  public CigiViewDefV2() : this(example_modulePINVOKE.new_CigiViewDefV2(), true) {
+  public CigiViewDefV2() : this(ccl_dllDPINVOKE.new_CigiViewDefV2(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int8 ViewIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ViewIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ViewIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int8 ViewIDIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ViewIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ViewIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetViewID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiViewDefV2_GetViewID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiViewDefV2_GetViewID(swigCPtr), true);
     return ret;
   }
 
   public int SetGroupID(SWIGTYPE_p_unsigned___int8 GroupIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetGroupID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GroupIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetGroupID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GroupIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetGroupID(SWIGTYPE_p_unsigned___int8 GroupIDIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetGroupID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GroupIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetGroupID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GroupIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetGroupID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiViewDefV2_GetGroupID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiViewDefV2_GetGroupID(swigCPtr), true);
     return ret;
   }
 
   public int SetFOVNearEn(bool FOVNearEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVNearEn__SWIG_0(swigCPtr, FOVNearEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVNearEn__SWIG_0(swigCPtr, FOVNearEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVNearEn(bool FOVNearEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVNearEn__SWIG_1(swigCPtr, FOVNearEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVNearEn__SWIG_1(swigCPtr, FOVNearEnIn);
     return ret;
   }
 
   public bool GetFOVNearEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVNearEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVNearEn(swigCPtr);
     return ret;
   }
 
   public int SetFOVFarEn(bool FOVFarEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVFarEn__SWIG_0(swigCPtr, FOVFarEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVFarEn__SWIG_0(swigCPtr, FOVFarEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVFarEn(bool FOVFarEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVFarEn__SWIG_1(swigCPtr, FOVFarEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVFarEn__SWIG_1(swigCPtr, FOVFarEnIn);
     return ret;
   }
 
   public bool GetFOVFarEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVFarEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVFarEn(swigCPtr);
     return ret;
   }
 
   public int SetFOVLeftEn(bool FOVLeftEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVLeftEn__SWIG_0(swigCPtr, FOVLeftEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVLeftEn__SWIG_0(swigCPtr, FOVLeftEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVLeftEn(bool FOVLeftEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVLeftEn__SWIG_1(swigCPtr, FOVLeftEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVLeftEn__SWIG_1(swigCPtr, FOVLeftEnIn);
     return ret;
   }
 
   public bool GetFOVLeftEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVLeftEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVLeftEn(swigCPtr);
     return ret;
   }
 
   public int SetFOVRightEn(bool FOVRightEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVRightEn__SWIG_0(swigCPtr, FOVRightEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVRightEn__SWIG_0(swigCPtr, FOVRightEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVRightEn(bool FOVRightEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVRightEn__SWIG_1(swigCPtr, FOVRightEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVRightEn__SWIG_1(swigCPtr, FOVRightEnIn);
     return ret;
   }
 
   public bool GetFOVRightEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVRightEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVRightEn(swigCPtr);
     return ret;
   }
 
   public int SetFOVTopEn(bool FOVTopEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVTopEn__SWIG_0(swigCPtr, FOVTopEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVTopEn__SWIG_0(swigCPtr, FOVTopEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVTopEn(bool FOVTopEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVTopEn__SWIG_1(swigCPtr, FOVTopEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVTopEn__SWIG_1(swigCPtr, FOVTopEnIn);
     return ret;
   }
 
   public bool GetFOVTopEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVTopEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVTopEn(swigCPtr);
     return ret;
   }
 
   public int SetFOVBottomEn(bool FOVBottomEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVBottomEn__SWIG_0(swigCPtr, FOVBottomEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVBottomEn__SWIG_0(swigCPtr, FOVBottomEnIn, bndchk);
     return ret;
   }
 
   public int SetFOVBottomEn(bool FOVBottomEnIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetFOVBottomEn__SWIG_1(swigCPtr, FOVBottomEnIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetFOVBottomEn__SWIG_1(swigCPtr, FOVBottomEnIn);
     return ret;
   }
 
   public bool GetFOVBottomEn() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetFOVBottomEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetFOVBottomEn(swigCPtr);
     return ret;
   }
 
   public int SetTrackerAssigned(bool TrackerAssignedIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetTrackerAssigned__SWIG_0(swigCPtr, TrackerAssignedIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetTrackerAssigned__SWIG_0(swigCPtr, TrackerAssignedIn, bndchk);
     return ret;
   }
 
   public int SetTrackerAssigned(bool TrackerAssignedIn) {
-    int ret = example_modulePINVOKE.CigiViewDefV2_SetTrackerAssigned__SWIG_1(swigCPtr, TrackerAssignedIn);
+    int ret = ccl_dllDPINVOKE.CigiViewDefV2_SetTrackerAssigned__SWIG_1(swigCPtr, TrackerAssignedIn);
     return ret;
   }
 
   public bool GetTrackerAssigned() {
-    bool ret = example_modulePINVOKE.CigiViewDefV2_GetTrackerAssigned(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiViewDefV2_GetTrackerAssigned(swigCPtr);
     return ret;
   }
 

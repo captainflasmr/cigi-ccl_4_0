@@ -49,53 +49,53 @@ public class CigiVersionID : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiVersionID(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiVersionID(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
   }
 
-  public CigiVersionID() : this(example_modulePINVOKE.new_CigiVersionID__SWIG_0(), true) {
+  public CigiVersionID() : this(ccl_dllDPINVOKE.new_CigiVersionID__SWIG_0(), true) {
   }
 
-  public CigiVersionID(int CigiMajorVersionIn, int CigiMinorVersionIn) : this(example_modulePINVOKE.new_CigiVersionID__SWIG_1(CigiMajorVersionIn, CigiMinorVersionIn), true) {
+  public CigiVersionID(int CigiMajorVersionIn, int CigiMinorVersionIn) : this(ccl_dllDPINVOKE.new_CigiVersionID__SWIG_1(CigiMajorVersionIn, CigiMinorVersionIn), true) {
   }
 
   public void SetCigiVersion(int CigiMajorVersionIn, int CigiMinorVersionIn) {
-    example_modulePINVOKE.CigiVersionID_SetCigiVersion(swigCPtr, CigiMajorVersionIn, CigiMinorVersionIn);
+    ccl_dllDPINVOKE.CigiVersionID_SetCigiVersion(swigCPtr, CigiMajorVersionIn, CigiMinorVersionIn);
   }
 
   public int GetCombinedCigiVersion() {
-    int ret = example_modulePINVOKE.CigiVersionID_GetCombinedCigiVersion(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiVersionID_GetCombinedCigiVersion(swigCPtr);
     return ret;
   }
 
   public bool IsKnownCigiVersion() {
-    bool ret = example_modulePINVOKE.CigiVersionID_IsKnownCigiVersion(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiVersionID_IsKnownCigiVersion(swigCPtr);
     return ret;
   }
 
   public void BestCigiVersion() {
-    example_modulePINVOKE.CigiVersionID_BestCigiVersion(swigCPtr);
+    ccl_dllDPINVOKE.CigiVersionID_BestCigiVersion(swigCPtr);
   }
 
   public int CigiMajorVersion {
     set {
-      example_modulePINVOKE.CigiVersionID_CigiMajorVersion_set(swigCPtr, value);
+      ccl_dllDPINVOKE.CigiVersionID_CigiMajorVersion_set(swigCPtr, value);
     } 
     get {
-      int ret = example_modulePINVOKE.CigiVersionID_CigiMajorVersion_get(swigCPtr);
+      int ret = ccl_dllDPINVOKE.CigiVersionID_CigiMajorVersion_get(swigCPtr);
       return ret;
     } 
   }
 
   public int CigiMinorVersion {
     set {
-      example_modulePINVOKE.CigiVersionID_CigiMinorVersion_set(swigCPtr, value);
+      ccl_dllDPINVOKE.CigiVersionID_CigiMinorVersion_set(swigCPtr, value);
     } 
     get {
-      int ret = example_modulePINVOKE.CigiVersionID_CigiMinorVersion_get(swigCPtr);
+      int ret = ccl_dllDPINVOKE.CigiVersionID_CigiMinorVersion_get(swigCPtr);
       return ret;
     } 
   }

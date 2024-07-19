@@ -49,25 +49,25 @@ public class CigiAnimationTable : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiAnimationTable(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiAnimationTable(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
   }
 
-  public CigiAnimationTable() : this(example_modulePINVOKE.new_CigiAnimationTable(), true) {
+  public CigiAnimationTable() : this(ccl_dllDPINVOKE.new_CigiAnimationTable(), true) {
   }
 
   public SWIGTYPE_p_unsigned___int32 GetPastAnimation(SWIGTYPE_p_unsigned___int16 EntityID) {
-    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(example_modulePINVOKE.CigiAnimationTable_GetPastAnimation(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityID)), true);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(ccl_dllDPINVOKE.CigiAnimationTable_GetPastAnimation(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityID)), true);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetPastAnimation(SWIGTYPE_p_unsigned___int16 EntityID, SWIGTYPE_p_unsigned___int32 State) {
-    int ret = example_modulePINVOKE.CigiAnimationTable_SetPastAnimation(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityID), SWIGTYPE_p_unsigned___int32.getCPtr(State));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAnimationTable_SetPastAnimation(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityID), SWIGTYPE_p_unsigned___int32.getCPtr(State));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

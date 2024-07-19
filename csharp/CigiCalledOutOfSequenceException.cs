@@ -12,7 +12,7 @@
 public class CigiCalledOutOfSequenceException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiCalledOutOfSequenceException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiCalledOutOfSequenceException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiCalledOutOfSequenceException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiCalledOutOfSequenceException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiCalledOutOfSequenceException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiCalledOutOfSequenceException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiCalledOutOfSequenceException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiCalledOutOfSequenceException : CigiException {
     }
   }
 
-  public CigiCalledOutOfSequenceException() : this(example_modulePINVOKE.new_CigiCalledOutOfSequenceException(), true) {
+  public CigiCalledOutOfSequenceException() : this(ccl_dllDPINVOKE.new_CigiCalledOutOfSequenceException(), true) {
   }
 
 }

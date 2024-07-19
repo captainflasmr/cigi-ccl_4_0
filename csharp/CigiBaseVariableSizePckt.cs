@@ -12,7 +12,7 @@
 public class CigiBaseVariableSizePckt : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseVariableSizePckt(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseVariableSizePckt_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseVariableSizePckt(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseVariableSizePckt_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseVariableSizePckt : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseVariableSizePckt(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseVariableSizePckt(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,23 +47,23 @@ public class CigiBaseVariableSizePckt : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseVariableSizePckt_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseVariableSizePckt_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseVariableSizePckt_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseVariableSizePckt_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public virtual int GetTruePacketSize(CigiBaseVariableSizePckt refPacket) {
-    int ret = example_modulePINVOKE.CigiBaseVariableSizePckt_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseVariableSizePckt_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int GetVariableDataSize() {
-    int ret = example_modulePINVOKE.CigiBaseVariableSizePckt_GetVariableDataSize(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiBaseVariableSizePckt_GetVariableDataSize(swigCPtr);
     return ret;
   }
 

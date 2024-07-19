@@ -12,7 +12,7 @@
 public class CigiEntityCtrlV3 : CigiBaseEntityCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiEntityCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiEntityCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiEntityCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiEntityCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiEntityCtrlV3 : CigiBaseEntityCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiEntityCtrlV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiEntityCtrlV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,290 +46,290 @@ public class CigiEntityCtrlV3 : CigiBaseEntityCtrl {
     }
   }
 
-  public CigiEntityCtrlV3() : this(example_modulePINVOKE.new_CigiEntityCtrlV3(), true) {
+  public CigiEntityCtrlV3() : this(ccl_dllDPINVOKE.new_CigiEntityCtrlV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetAlpha(SWIGTYPE_p_unsigned___int8 AlphaIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAlpha__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAlpha__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetAlpha(SWIGTYPE_p_unsigned___int8 AlphaIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAlpha__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAlpha__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetAlpha() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiEntityCtrlV3_GetAlpha(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAlpha(swigCPtr), true);
     return ret;
   }
 
   public int SetYaw(float YawIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
     return ret;
   }
 
   public int SetYaw(float YawIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetYaw__SWIG_1(swigCPtr, YawIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetYaw__SWIG_1(swigCPtr, YawIn);
     return ret;
   }
 
   public float GetYaw() {
-    float ret = example_modulePINVOKE.CigiEntityCtrlV3_GetYaw(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetYaw(swigCPtr);
     return ret;
   }
 
   public int SetParentID(SWIGTYPE_p_unsigned___int16 ParentIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetParentID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ParentIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetParentID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ParentIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetParentID(SWIGTYPE_p_unsigned___int16 ParentIDIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetParentID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ParentIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetParentID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ParentIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetParentID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiEntityCtrlV3_GetParentID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiEntityCtrlV3_GetParentID(swigCPtr), true);
     return ret;
   }
 
   public int SetPitch(float PitchIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
     return ret;
   }
 
   public int SetPitch(float PitchIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetPitch__SWIG_1(swigCPtr, PitchIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetPitch__SWIG_1(swigCPtr, PitchIn);
     return ret;
   }
 
   public float GetPitch() {
-    float ret = example_modulePINVOKE.CigiEntityCtrlV3_GetPitch(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetPitch(swigCPtr);
     return ret;
   }
 
   public int SetRoll(float RollIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
     return ret;
   }
 
   public int SetRoll(float RollIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetRoll__SWIG_1(swigCPtr, RollIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetRoll__SWIG_1(swigCPtr, RollIn);
     return ret;
   }
 
   public float GetRoll() {
-    float ret = example_modulePINVOKE.CigiEntityCtrlV3_GetRoll(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetRoll(swigCPtr);
     return ret;
   }
 
   public int SetLat(double Lat, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetLat__SWIG_0(swigCPtr, Lat, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetLat__SWIG_0(swigCPtr, Lat, bndchk);
     return ret;
   }
 
   public int SetLat(double Lat) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetLat__SWIG_1(swigCPtr, Lat);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetLat__SWIG_1(swigCPtr, Lat);
     return ret;
   }
 
   public double GetLat() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetLat(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetLat(swigCPtr);
     return ret;
   }
 
   public int SetXoff(double Xoff, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetXoff__SWIG_0(swigCPtr, Xoff, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetXoff__SWIG_0(swigCPtr, Xoff, bndchk);
     return ret;
   }
 
   public int SetXoff(double Xoff) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetXoff__SWIG_1(swigCPtr, Xoff);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetXoff__SWIG_1(swigCPtr, Xoff);
     return ret;
   }
 
   public double GetXoff() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetXoff(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetXoff(swigCPtr);
     return ret;
   }
 
   public int SetLon(double Lon, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetLon__SWIG_0(swigCPtr, Lon, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetLon__SWIG_0(swigCPtr, Lon, bndchk);
     return ret;
   }
 
   public int SetLon(double Lon) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetLon__SWIG_1(swigCPtr, Lon);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetLon__SWIG_1(swigCPtr, Lon);
     return ret;
   }
 
   public double GetLon() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetLon(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetLon(swigCPtr);
     return ret;
   }
 
   public int SetYoff(double Yoff, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetYoff__SWIG_0(swigCPtr, Yoff, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetYoff__SWIG_0(swigCPtr, Yoff, bndchk);
     return ret;
   }
 
   public int SetYoff(double Yoff) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetYoff__SWIG_1(swigCPtr, Yoff);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetYoff__SWIG_1(swigCPtr, Yoff);
     return ret;
   }
 
   public double GetYoff() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetYoff(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetYoff(swigCPtr);
     return ret;
   }
 
   public int SetAttachState(CigiBaseEntityCtrl.AttachStateGrp AttachStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAttachState__SWIG_0(swigCPtr, (int)AttachStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAttachState__SWIG_0(swigCPtr, (int)AttachStateIn, bndchk);
     return ret;
   }
 
   public int SetAttachState(CigiBaseEntityCtrl.AttachStateGrp AttachStateIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAttachState__SWIG_1(swigCPtr, (int)AttachStateIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAttachState__SWIG_1(swigCPtr, (int)AttachStateIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.AttachStateGrp GetAttachState() {
-    CigiBaseEntityCtrl.AttachStateGrp ret = (CigiBaseEntityCtrl.AttachStateGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetAttachState(swigCPtr);
+    CigiBaseEntityCtrl.AttachStateGrp ret = (CigiBaseEntityCtrl.AttachStateGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAttachState(swigCPtr);
     return ret;
   }
 
   public int SetAlt(double Alt, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAlt__SWIG_0(swigCPtr, Alt, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAlt__SWIG_0(swigCPtr, Alt, bndchk);
     return ret;
   }
 
   public int SetAlt(double Alt) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAlt__SWIG_1(swigCPtr, Alt);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAlt__SWIG_1(swigCPtr, Alt);
     return ret;
   }
 
   public double GetAlt() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetAlt(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAlt(swigCPtr);
     return ret;
   }
 
   public int SetZoff(double Zoff, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetZoff__SWIG_0(swigCPtr, Zoff, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetZoff__SWIG_0(swigCPtr, Zoff, bndchk);
     return ret;
   }
 
   public int SetZoff(double Zoff) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetZoff__SWIG_1(swigCPtr, Zoff);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetZoff__SWIG_1(swigCPtr, Zoff);
     return ret;
   }
 
   public double GetZoff() {
-    double ret = example_modulePINVOKE.CigiEntityCtrlV3_GetZoff(swigCPtr);
+    double ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_GetZoff(swigCPtr);
     return ret;
   }
 
   public int SetEntityState(CigiBaseEntityCtrl.EntityStateGrp EntityStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetEntityState__SWIG_0(swigCPtr, (int)EntityStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetEntityState__SWIG_0(swigCPtr, (int)EntityStateIn, bndchk);
     return ret;
   }
 
   public int SetEntityState(CigiBaseEntityCtrl.EntityStateGrp EntityStateIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetEntityState__SWIG_1(swigCPtr, (int)EntityStateIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetEntityState__SWIG_1(swigCPtr, (int)EntityStateIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.EntityStateGrp GetEntityState() {
-    CigiBaseEntityCtrl.EntityStateGrp ret = (CigiBaseEntityCtrl.EntityStateGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetEntityState(swigCPtr);
+    CigiBaseEntityCtrl.EntityStateGrp ret = (CigiBaseEntityCtrl.EntityStateGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetEntityState(swigCPtr);
     return ret;
   }
 
   public int SetGrndClamp(CigiBaseEntityCtrl.GrndClampGrp GrndClampIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetGrndClamp__SWIG_0(swigCPtr, (int)GrndClampIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetGrndClamp__SWIG_0(swigCPtr, (int)GrndClampIn, bndchk);
     return ret;
   }
 
   public int SetGrndClamp(CigiBaseEntityCtrl.GrndClampGrp GrndClampIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetGrndClamp__SWIG_1(swigCPtr, (int)GrndClampIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetGrndClamp__SWIG_1(swigCPtr, (int)GrndClampIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.GrndClampGrp GetGrndClamp() {
-    CigiBaseEntityCtrl.GrndClampGrp ret = (CigiBaseEntityCtrl.GrndClampGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetGrndClamp(swigCPtr);
+    CigiBaseEntityCtrl.GrndClampGrp ret = (CigiBaseEntityCtrl.GrndClampGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetGrndClamp(swigCPtr);
     return ret;
   }
 
   public int SetInheritAlpha(CigiBaseEntityCtrl.InheritAlphaGrp InheritAlphaIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetInheritAlpha__SWIG_0(swigCPtr, (int)InheritAlphaIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetInheritAlpha__SWIG_0(swigCPtr, (int)InheritAlphaIn, bndchk);
     return ret;
   }
 
   public int SetInheritAlpha(CigiBaseEntityCtrl.InheritAlphaGrp InheritAlphaIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetInheritAlpha__SWIG_1(swigCPtr, (int)InheritAlphaIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetInheritAlpha__SWIG_1(swigCPtr, (int)InheritAlphaIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.InheritAlphaGrp GetInheritAlpha() {
-    CigiBaseEntityCtrl.InheritAlphaGrp ret = (CigiBaseEntityCtrl.InheritAlphaGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetInheritAlpha(swigCPtr);
+    CigiBaseEntityCtrl.InheritAlphaGrp ret = (CigiBaseEntityCtrl.InheritAlphaGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetInheritAlpha(swigCPtr);
     return ret;
   }
 
   public int SetAnimationDir(CigiBaseEntityCtrl.AnimationDirGrp AnimationDirIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationDir__SWIG_0(swigCPtr, (int)AnimationDirIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationDir__SWIG_0(swigCPtr, (int)AnimationDirIn, bndchk);
     return ret;
   }
 
   public int SetAnimationDir(CigiBaseEntityCtrl.AnimationDirGrp AnimationDirIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationDir__SWIG_1(swigCPtr, (int)AnimationDirIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationDir__SWIG_1(swigCPtr, (int)AnimationDirIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.AnimationDirGrp GetAnimationDir() {
-    CigiBaseEntityCtrl.AnimationDirGrp ret = (CigiBaseEntityCtrl.AnimationDirGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetAnimationDir(swigCPtr);
+    CigiBaseEntityCtrl.AnimationDirGrp ret = (CigiBaseEntityCtrl.AnimationDirGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAnimationDir(swigCPtr);
     return ret;
   }
 
   public int SetAnimationLoopMode(CigiBaseEntityCtrl.AnimationLoopModeGrp AnimationLoopModeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationLoopMode__SWIG_0(swigCPtr, (int)AnimationLoopModeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationLoopMode__SWIG_0(swigCPtr, (int)AnimationLoopModeIn, bndchk);
     return ret;
   }
 
   public int SetAnimationLoopMode(CigiBaseEntityCtrl.AnimationLoopModeGrp AnimationLoopModeIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationLoopMode__SWIG_1(swigCPtr, (int)AnimationLoopModeIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationLoopMode__SWIG_1(swigCPtr, (int)AnimationLoopModeIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.AnimationLoopModeGrp GetAnimationLoopMode() {
-    CigiBaseEntityCtrl.AnimationLoopModeGrp ret = (CigiBaseEntityCtrl.AnimationLoopModeGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetAnimationLoopMode(swigCPtr);
+    CigiBaseEntityCtrl.AnimationLoopModeGrp ret = (CigiBaseEntityCtrl.AnimationLoopModeGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAnimationLoopMode(swigCPtr);
     return ret;
   }
 
   public int SetAnimationState(CigiBaseEntityCtrl.AnimationStateGrp AnimationStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationState__SWIG_0(swigCPtr, (int)AnimationStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationState__SWIG_0(swigCPtr, (int)AnimationStateIn, bndchk);
     return ret;
   }
 
   public int SetAnimationState(CigiBaseEntityCtrl.AnimationStateGrp AnimationStateIn) {
-    int ret = example_modulePINVOKE.CigiEntityCtrlV3_SetAnimationState__SWIG_1(swigCPtr, (int)AnimationStateIn);
+    int ret = ccl_dllDPINVOKE.CigiEntityCtrlV3_SetAnimationState__SWIG_1(swigCPtr, (int)AnimationStateIn);
     return ret;
   }
 
   public CigiBaseEntityCtrl.AnimationStateGrp GetAnimationState() {
-    CigiBaseEntityCtrl.AnimationStateGrp ret = (CigiBaseEntityCtrl.AnimationStateGrp)example_modulePINVOKE.CigiEntityCtrlV3_GetAnimationState(swigCPtr);
+    CigiBaseEntityCtrl.AnimationStateGrp ret = (CigiBaseEntityCtrl.AnimationStateGrp)ccl_dllDPINVOKE.CigiEntityCtrlV3_GetAnimationState(swigCPtr);
     return ret;
   }
 

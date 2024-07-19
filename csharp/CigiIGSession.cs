@@ -12,7 +12,7 @@
 public class CigiIGSession : CigiSession {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiIGSession(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiIGSession_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiIGSession(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiIGSession_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiIGSession : CigiSession {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiIGSession(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiIGSession(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,19 +46,19 @@ public class CigiIGSession : CigiSession {
     }
   }
 
-  public CigiIGSession(int NumInBuf, int InBufLen, int NumOutBuf, int OutBufLen) : this(example_modulePINVOKE.new_CigiIGSession__SWIG_0(NumInBuf, InBufLen, NumOutBuf, OutBufLen), true) {
+  public CigiIGSession(int NumInBuf, int InBufLen, int NumOutBuf, int OutBufLen) : this(ccl_dllDPINVOKE.new_CigiIGSession__SWIG_0(NumInBuf, InBufLen, NumOutBuf, OutBufLen), true) {
   }
 
-  public CigiIGSession(int NumInBuf, int InBufLen, int NumOutBuf) : this(example_modulePINVOKE.new_CigiIGSession__SWIG_1(NumInBuf, InBufLen, NumOutBuf), true) {
+  public CigiIGSession(int NumInBuf, int InBufLen, int NumOutBuf) : this(ccl_dllDPINVOKE.new_CigiIGSession__SWIG_1(NumInBuf, InBufLen, NumOutBuf), true) {
   }
 
-  public CigiIGSession(int NumInBuf, int InBufLen) : this(example_modulePINVOKE.new_CigiIGSession__SWIG_2(NumInBuf, InBufLen), true) {
+  public CigiIGSession(int NumInBuf, int InBufLen) : this(ccl_dllDPINVOKE.new_CigiIGSession__SWIG_2(NumInBuf, InBufLen), true) {
   }
 
-  public CigiIGSession(int NumInBuf) : this(example_modulePINVOKE.new_CigiIGSession__SWIG_3(NumInBuf), true) {
+  public CigiIGSession(int NumInBuf) : this(ccl_dllDPINVOKE.new_CigiIGSession__SWIG_3(NumInBuf), true) {
   }
 
-  public CigiIGSession() : this(example_modulePINVOKE.new_CigiIGSession__SWIG_4(), true) {
+  public CigiIGSession() : this(ccl_dllDPINVOKE.new_CigiIGSession__SWIG_4(), true) {
   }
 
 }

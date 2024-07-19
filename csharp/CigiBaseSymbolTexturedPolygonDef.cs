@@ -12,7 +12,7 @@
 public class CigiBaseSymbolTexturedPolygonDef : CigiBaseVariableSizePckt {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseSymbolTexturedPolygonDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseSymbolTexturedPolygonDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseSymbolTexturedPolygonDef : CigiBaseVariableSizePckt {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseSymbolTexturedPolygonDef(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseSymbolTexturedPolygonDef(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,141 +47,141 @@ public class CigiBaseSymbolTexturedPolygonDef : CigiBaseVariableSizePckt {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetTruePacketSize(CigiBaseVariableSizePckt refPacket) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSymbolID(SWIGTYPE_p_unsigned___int16 SymbolIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetSymbolID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetSymbolID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSymbolID(SWIGTYPE_p_unsigned___int16 SymbolIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetSymbolID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetSymbolID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetSymbolID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetSymbolID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetSymbolID(swigCPtr), true);
     return ret;
   }
 
   public int SetPrimitive(CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp PrimitiveIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetPrimitive__SWIG_0(swigCPtr, (int)PrimitiveIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetPrimitive__SWIG_0(swigCPtr, (int)PrimitiveIn, bndchk);
     return ret;
   }
 
   public int SetPrimitive(CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp PrimitiveIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetPrimitive__SWIG_1(swigCPtr, (int)PrimitiveIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetPrimitive__SWIG_1(swigCPtr, (int)PrimitiveIn);
     return ret;
   }
 
   public CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp GetPrimitive() {
-    CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp ret = (CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp)example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetPrimitive(swigCPtr);
+    CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp ret = (CigiBaseSymbolTexturedPolygonDef.PrimitiveGrp)ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetPrimitive(swigCPtr);
     return ret;
   }
 
   public int SetTextureID(SWIGTYPE_p_unsigned___int16 TextureIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(TextureIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(TextureIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetTextureID(SWIGTYPE_p_unsigned___int16 TextureIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(TextureIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(TextureIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetTextureID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureID(swigCPtr), true);
     return ret;
   }
 
   public int SetTextureFilter(CigiBaseSymbolTexturedPolygonDef.TextureFilterMode TextureFilterIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureFilter__SWIG_0(swigCPtr, (int)TextureFilterIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureFilter__SWIG_0(swigCPtr, (int)TextureFilterIn, bndchk);
     return ret;
   }
 
   public int SetTextureFilter(CigiBaseSymbolTexturedPolygonDef.TextureFilterMode TextureFilterIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureFilter__SWIG_1(swigCPtr, (int)TextureFilterIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureFilter__SWIG_1(swigCPtr, (int)TextureFilterIn);
     return ret;
   }
 
   public CigiBaseSymbolTexturedPolygonDef.TextureFilterMode GetTextureFilter() {
-    CigiBaseSymbolTexturedPolygonDef.TextureFilterMode ret = (CigiBaseSymbolTexturedPolygonDef.TextureFilterMode)example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureFilter(swigCPtr);
+    CigiBaseSymbolTexturedPolygonDef.TextureFilterMode ret = (CigiBaseSymbolTexturedPolygonDef.TextureFilterMode)ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureFilter(swigCPtr);
     return ret;
   }
 
   public int SetTextureWrap(CigiBaseSymbolTexturedPolygonDef.TextureWrapMode TextureWrapIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureWrap__SWIG_0(swigCPtr, (int)TextureWrapIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureWrap__SWIG_0(swigCPtr, (int)TextureWrapIn, bndchk);
     return ret;
   }
 
   public int SetTextureWrap(CigiBaseSymbolTexturedPolygonDef.TextureWrapMode TextureWrapIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureWrap__SWIG_1(swigCPtr, (int)TextureWrapIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_SetTextureWrap__SWIG_1(swigCPtr, (int)TextureWrapIn);
     return ret;
   }
 
   public CigiBaseSymbolTexturedPolygonDef.TextureWrapMode GetTextureWrap() {
-    CigiBaseSymbolTexturedPolygonDef.TextureWrapMode ret = (CigiBaseSymbolTexturedPolygonDef.TextureWrapMode)example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureWrap(swigCPtr);
+    CigiBaseSymbolTexturedPolygonDef.TextureWrapMode ret = (CigiBaseSymbolTexturedPolygonDef.TextureWrapMode)ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetTextureWrap(swigCPtr);
     return ret;
   }
 
   public int GetVertexCount() {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertexCount(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertexCount(swigCPtr);
     return ret;
   }
 
   public virtual CigiBaseVertexSymbolData AddVertex() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_AddVertex(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_AddVertex(swigCPtr);
     CigiBaseVertexSymbolData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseVertexSymbolData(cPtr, false);
     return ret;
   }
 
   public virtual int RemoveVertex(int VertexIndex, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_RemoveVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_RemoveVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
     return ret;
   }
 
   public virtual int RemoveVertex(int VertexIndex) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_RemoveVertex__SWIG_1(swigCPtr, VertexIndex);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_RemoveVertex__SWIG_1(swigCPtr, VertexIndex);
     return ret;
   }
 
   public CigiBaseVertexSymbolData GetVertex(int VertexIndex, bool bndchk) {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertex__SWIG_0(swigCPtr, VertexIndex, bndchk);
     CigiBaseVertexSymbolData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseVertexSymbolData(cPtr, false);
     return ret;
   }
 
   public CigiBaseVertexSymbolData GetVertex(int VertexIndex) {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertex__SWIG_1(swigCPtr, VertexIndex);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_GetVertex__SWIG_1(swigCPtr, VertexIndex);
     CigiBaseVertexSymbolData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseVertexSymbolData(cPtr, false);
     return ret;
   }
 
   public void ClearVertices() {
-    example_modulePINVOKE.CigiBaseSymbolTexturedPolygonDef_ClearVertices(swigCPtr);
+    ccl_dllDPINVOKE.CigiBaseSymbolTexturedPolygonDef_ClearVertices(swigCPtr);
   }
 
   public enum PrimitiveGrp {

@@ -12,7 +12,7 @@
 public class CigiBaseSymbolSurfaceDef : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseSymbolSurfaceDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseSymbolSurfaceDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseSymbolSurfaceDef : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseSymbolSurfaceDef(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseSymbolSurfaceDef(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,369 +47,369 @@ public class CigiBaseSymbolSurfaceDef : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSurfaceID(SWIGTYPE_p_unsigned___int16 SurfaceIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SurfaceIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SurfaceIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSurfaceID(SWIGTYPE_p_unsigned___int16 SurfaceIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SurfaceIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SurfaceIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetSurfaceID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetSurfaceID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetSurfaceID(swigCPtr), true);
     return ret;
   }
 
   public int SetSurfaceState(CigiBaseSymbolSurfaceDef.StateGrp SurfaceStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceState__SWIG_0(swigCPtr, (int)SurfaceStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceState__SWIG_0(swigCPtr, (int)SurfaceStateIn, bndchk);
     return ret;
   }
 
   public int SetSurfaceState(CigiBaseSymbolSurfaceDef.StateGrp SurfaceStateIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceState__SWIG_1(swigCPtr, (int)SurfaceStateIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetSurfaceState__SWIG_1(swigCPtr, (int)SurfaceStateIn);
     return ret;
   }
 
   public CigiBaseSymbolSurfaceDef.StateGrp GetSurfaceState() {
-    CigiBaseSymbolSurfaceDef.StateGrp ret = (CigiBaseSymbolSurfaceDef.StateGrp)example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetSurfaceState(swigCPtr);
+    CigiBaseSymbolSurfaceDef.StateGrp ret = (CigiBaseSymbolSurfaceDef.StateGrp)ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetSurfaceState(swigCPtr);
     return ret;
   }
 
   public int SetAttached(CigiBaseSymbolSurfaceDef.AttachStateGrp AttachedIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetAttached__SWIG_0(swigCPtr, (int)AttachedIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetAttached__SWIG_0(swigCPtr, (int)AttachedIn, bndchk);
     return ret;
   }
 
   public int SetAttached(CigiBaseSymbolSurfaceDef.AttachStateGrp AttachedIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetAttached__SWIG_1(swigCPtr, (int)AttachedIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetAttached__SWIG_1(swigCPtr, (int)AttachedIn);
     return ret;
   }
 
   public CigiBaseSymbolSurfaceDef.AttachStateGrp GetAttached() {
-    CigiBaseSymbolSurfaceDef.AttachStateGrp ret = (CigiBaseSymbolSurfaceDef.AttachStateGrp)example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetAttached(swigCPtr);
+    CigiBaseSymbolSurfaceDef.AttachStateGrp ret = (CigiBaseSymbolSurfaceDef.AttachStateGrp)ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetAttached(swigCPtr);
     return ret;
   }
 
   public int SetBillboardState(CigiBaseSymbolSurfaceDef.BillboardStateGrp BillboardStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetBillboardState__SWIG_0(swigCPtr, (int)BillboardStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetBillboardState__SWIG_0(swigCPtr, (int)BillboardStateIn, bndchk);
     return ret;
   }
 
   public int SetBillboardState(CigiBaseSymbolSurfaceDef.BillboardStateGrp BillboardStateIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetBillboardState__SWIG_1(swigCPtr, (int)BillboardStateIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetBillboardState__SWIG_1(swigCPtr, (int)BillboardStateIn);
     return ret;
   }
 
   public CigiBaseSymbolSurfaceDef.BillboardStateGrp GetBillboardState() {
-    CigiBaseSymbolSurfaceDef.BillboardStateGrp ret = (CigiBaseSymbolSurfaceDef.BillboardStateGrp)example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetBillboardState(swigCPtr);
+    CigiBaseSymbolSurfaceDef.BillboardStateGrp ret = (CigiBaseSymbolSurfaceDef.BillboardStateGrp)ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetBillboardState(swigCPtr);
     return ret;
   }
 
   public int SetPerspectiveGrowth(CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp PerspectiveGrowthIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetPerspectiveGrowth__SWIG_0(swigCPtr, (int)PerspectiveGrowthIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetPerspectiveGrowth__SWIG_0(swigCPtr, (int)PerspectiveGrowthIn, bndchk);
     return ret;
   }
 
   public int SetPerspectiveGrowth(CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp PerspectiveGrowthIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetPerspectiveGrowth__SWIG_1(swigCPtr, (int)PerspectiveGrowthIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetPerspectiveGrowth__SWIG_1(swigCPtr, (int)PerspectiveGrowthIn);
     return ret;
   }
 
   public CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp GetPerspectiveGrowth() {
-    CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp ret = (CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp)example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetPerspectiveGrowth(swigCPtr);
+    CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp ret = (CigiBaseSymbolSurfaceDef.PerspectiveGrowthStateGrp)ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetPerspectiveGrowth(swigCPtr);
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetEntityID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetEntityID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetEntityID(swigCPtr), true);
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int16 ViewIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetViewID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetViewID(SWIGTYPE_p_unsigned___int16 ViewIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetViewID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(ViewIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetViewID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetViewID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetViewID(swigCPtr), true);
     return ret;
   }
 
   public int SetXOffset(float XOffsetIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetXOffset__SWIG_0(swigCPtr, XOffsetIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetXOffset__SWIG_0(swigCPtr, XOffsetIn, bndchk);
     return ret;
   }
 
   public int SetXOffset(float XOffsetIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetXOffset__SWIG_1(swigCPtr, XOffsetIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetXOffset__SWIG_1(swigCPtr, XOffsetIn);
     return ret;
   }
 
   public float GetXOffset() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetXOffset(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetXOffset(swigCPtr);
     return ret;
   }
 
   public int SetYOffset(float YOffsetIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetYOffset__SWIG_0(swigCPtr, YOffsetIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetYOffset__SWIG_0(swigCPtr, YOffsetIn, bndchk);
     return ret;
   }
 
   public int SetYOffset(float YOffsetIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetYOffset__SWIG_1(swigCPtr, YOffsetIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetYOffset__SWIG_1(swigCPtr, YOffsetIn);
     return ret;
   }
 
   public float GetYOffset() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetYOffset(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetYOffset(swigCPtr);
     return ret;
   }
 
   public int SetZOffset(float ZOffsetIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetZOffset__SWIG_0(swigCPtr, ZOffsetIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetZOffset__SWIG_0(swigCPtr, ZOffsetIn, bndchk);
     return ret;
   }
 
   public int SetZOffset(float ZOffsetIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetZOffset__SWIG_1(swigCPtr, ZOffsetIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetZOffset__SWIG_1(swigCPtr, ZOffsetIn);
     return ret;
   }
 
   public float GetZOffset() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetZOffset(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetZOffset(swigCPtr);
     return ret;
   }
 
   public int SetYaw(float YawIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
     return ret;
   }
 
   public int SetYaw(float YawIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetYaw__SWIG_1(swigCPtr, YawIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetYaw__SWIG_1(swigCPtr, YawIn);
     return ret;
   }
 
   public float GetYaw() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetYaw(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetYaw(swigCPtr);
     return ret;
   }
 
   public int SetPitch(float PitchIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
     return ret;
   }
 
   public int SetPitch(float PitchIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetPitch__SWIG_1(swigCPtr, PitchIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetPitch__SWIG_1(swigCPtr, PitchIn);
     return ret;
   }
 
   public float GetPitch() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetPitch(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetPitch(swigCPtr);
     return ret;
   }
 
   public int SetRoll(float RollIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
     return ret;
   }
 
   public int SetRoll(float RollIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetRoll__SWIG_1(swigCPtr, RollIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetRoll__SWIG_1(swigCPtr, RollIn);
     return ret;
   }
 
   public float GetRoll() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetRoll(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetRoll(swigCPtr);
     return ret;
   }
 
   public int SetWidth(float WidthIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetWidth__SWIG_0(swigCPtr, WidthIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetWidth__SWIG_0(swigCPtr, WidthIn, bndchk);
     return ret;
   }
 
   public int SetWidth(float WidthIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetWidth__SWIG_1(swigCPtr, WidthIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetWidth__SWIG_1(swigCPtr, WidthIn);
     return ret;
   }
 
   public float GetWidth() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetWidth(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetWidth(swigCPtr);
     return ret;
   }
 
   public int SetHeight(float HeightIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetHeight__SWIG_0(swigCPtr, HeightIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetHeight__SWIG_0(swigCPtr, HeightIn, bndchk);
     return ret;
   }
 
   public int SetHeight(float HeightIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetHeight__SWIG_1(swigCPtr, HeightIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetHeight__SWIG_1(swigCPtr, HeightIn);
     return ret;
   }
 
   public float GetHeight() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetHeight(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetHeight(swigCPtr);
     return ret;
   }
 
   public int SetLeftEdgePosition(float LeftEdgePosition, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetLeftEdgePosition__SWIG_0(swigCPtr, LeftEdgePosition, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetLeftEdgePosition__SWIG_0(swigCPtr, LeftEdgePosition, bndchk);
     return ret;
   }
 
   public int SetLeftEdgePosition(float LeftEdgePosition) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetLeftEdgePosition__SWIG_1(swigCPtr, LeftEdgePosition);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetLeftEdgePosition__SWIG_1(swigCPtr, LeftEdgePosition);
     return ret;
   }
 
   public float GetLeftEdgePosition() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetLeftEdgePosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetLeftEdgePosition(swigCPtr);
     return ret;
   }
 
   public int SetRightEdgePosition(float RightEdgePosition, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetRightEdgePosition__SWIG_0(swigCPtr, RightEdgePosition, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetRightEdgePosition__SWIG_0(swigCPtr, RightEdgePosition, bndchk);
     return ret;
   }
 
   public int SetRightEdgePosition(float RightEdgePosition) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetRightEdgePosition__SWIG_1(swigCPtr, RightEdgePosition);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetRightEdgePosition__SWIG_1(swigCPtr, RightEdgePosition);
     return ret;
   }
 
   public float GetRightEdgePosition() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetRightEdgePosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetRightEdgePosition(swigCPtr);
     return ret;
   }
 
   public int SetTopEdgePosition(float TopEdgePosition, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetTopEdgePosition__SWIG_0(swigCPtr, TopEdgePosition, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetTopEdgePosition__SWIG_0(swigCPtr, TopEdgePosition, bndchk);
     return ret;
   }
 
   public int SetTopEdgePosition(float TopEdgePosition) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetTopEdgePosition__SWIG_1(swigCPtr, TopEdgePosition);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetTopEdgePosition__SWIG_1(swigCPtr, TopEdgePosition);
     return ret;
   }
 
   public float GetTopEdgePosition() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetTopEdgePosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetTopEdgePosition(swigCPtr);
     return ret;
   }
 
   public int SetBottomEdgePosition(float BottomEdgePosition, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetBottomEdgePosition__SWIG_0(swigCPtr, BottomEdgePosition, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetBottomEdgePosition__SWIG_0(swigCPtr, BottomEdgePosition, bndchk);
     return ret;
   }
 
   public int SetBottomEdgePosition(float BottomEdgePosition) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetBottomEdgePosition__SWIG_1(swigCPtr, BottomEdgePosition);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetBottomEdgePosition__SWIG_1(swigCPtr, BottomEdgePosition);
     return ret;
   }
 
   public float GetBottomEdgePosition() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetBottomEdgePosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetBottomEdgePosition(swigCPtr);
     return ret;
   }
 
   public int SetMinU(float MinUIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMinU__SWIG_0(swigCPtr, MinUIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMinU__SWIG_0(swigCPtr, MinUIn, bndchk);
     return ret;
   }
 
   public int SetMinU(float MinUIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMinU__SWIG_1(swigCPtr, MinUIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMinU__SWIG_1(swigCPtr, MinUIn);
     return ret;
   }
 
   public float GetMinU() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetMinU(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetMinU(swigCPtr);
     return ret;
   }
 
   public int SetMaxU(float MaxUIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMaxU__SWIG_0(swigCPtr, MaxUIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMaxU__SWIG_0(swigCPtr, MaxUIn, bndchk);
     return ret;
   }
 
   public int SetMaxU(float MaxUIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMaxU__SWIG_1(swigCPtr, MaxUIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMaxU__SWIG_1(swigCPtr, MaxUIn);
     return ret;
   }
 
   public float GetMaxU() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetMaxU(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetMaxU(swigCPtr);
     return ret;
   }
 
   public int SetMinV(float MinVIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMinV__SWIG_0(swigCPtr, MinVIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMinV__SWIG_0(swigCPtr, MinVIn, bndchk);
     return ret;
   }
 
   public int SetMinV(float MinVIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMinV__SWIG_1(swigCPtr, MinVIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMinV__SWIG_1(swigCPtr, MinVIn);
     return ret;
   }
 
   public float GetMinV() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetMinV(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetMinV(swigCPtr);
     return ret;
   }
 
   public int SetMaxV(float MaxVIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMaxV__SWIG_0(swigCPtr, MaxVIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMaxV__SWIG_0(swigCPtr, MaxVIn, bndchk);
     return ret;
   }
 
   public int SetMaxV(float MaxVIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_SetMaxV__SWIG_1(swigCPtr, MaxVIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_SetMaxV__SWIG_1(swigCPtr, MaxVIn);
     return ret;
   }
 
   public float GetMaxV() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolSurfaceDef_GetMaxV(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolSurfaceDef_GetMaxV(swigCPtr);
     return ret;
   }
 

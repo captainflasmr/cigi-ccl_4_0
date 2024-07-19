@@ -12,7 +12,7 @@
 public class CigiNullPointerException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiNullPointerException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiNullPointerException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiNullPointerException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiNullPointerException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiNullPointerException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiNullPointerException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiNullPointerException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiNullPointerException : CigiException {
     }
   }
 
-  public CigiNullPointerException() : this(example_modulePINVOKE.new_CigiNullPointerException(), true) {
+  public CigiNullPointerException() : this(ccl_dllDPINVOKE.new_CigiNullPointerException(), true) {
   }
 
 }

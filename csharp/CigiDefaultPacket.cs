@@ -12,7 +12,7 @@
 public class CigiDefaultPacket : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiDefaultPacket(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiDefaultPacket_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiDefaultPacket(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiDefaultPacket_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiDefaultPacket : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiDefaultPacket(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiDefaultPacket(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,21 +46,21 @@ public class CigiDefaultPacket : CigiBasePacket {
     }
   }
 
-  public CigiDefaultPacket() : this(example_modulePINVOKE.new_CigiDefaultPacket(), true) {
+  public CigiDefaultPacket() : this(ccl_dllDPINVOKE.new_CigiDefaultPacket(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiDefaultPacket_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiDefaultPacket_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiDefaultPacket_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiDefaultPacket_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetDataPtr() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiDefaultPacket_GetDataPtr(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiDefaultPacket_GetDataPtr(swigCPtr);
     SWIGTYPE_p_unsigned___int8 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned___int8(cPtr, false);
     return ret;
   }

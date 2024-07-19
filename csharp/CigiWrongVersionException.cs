@@ -12,7 +12,7 @@
 public class CigiWrongVersionException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiWrongVersionException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiWrongVersionException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiWrongVersionException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiWrongVersionException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiWrongVersionException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiWrongVersionException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiWrongVersionException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiWrongVersionException : CigiException {
     }
   }
 
-  public CigiWrongVersionException() : this(example_modulePINVOKE.new_CigiWrongVersionException(), true) {
+  public CigiWrongVersionException() : this(ccl_dllDPINVOKE.new_CigiWrongVersionException(), true) {
   }
 
 }

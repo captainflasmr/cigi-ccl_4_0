@@ -12,7 +12,7 @@
 public class CigiBaseHatHotResp : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseHatHotResp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseHatHotResp_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseHatHotResp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseHatHotResp_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseHatHotResp : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseHatHotResp(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseHatHotResp(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,44 +47,44 @@ public class CigiBaseHatHotResp : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetHatHotID(SWIGTYPE_p_unsigned___int16 HatHotIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_SetHatHotID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(HatHotIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_SetHatHotID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(HatHotIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetHatHotID(SWIGTYPE_p_unsigned___int16 HatHotIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_SetHatHotID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(HatHotIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_SetHatHotID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(HatHotIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetHatHotID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseHatHotResp_GetHatHotID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseHatHotResp_GetHatHotID(swigCPtr), true);
     return ret;
   }
 
   public int SetValid(bool ValidIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_SetValid__SWIG_0(swigCPtr, ValidIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_SetValid__SWIG_0(swigCPtr, ValidIn, bndchk);
     return ret;
   }
 
   public int SetValid(bool ValidIn) {
-    int ret = example_modulePINVOKE.CigiBaseHatHotResp_SetValid__SWIG_1(swigCPtr, ValidIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_SetValid__SWIG_1(swigCPtr, ValidIn);
     return ret;
   }
 
   public bool GetValid() {
-    bool ret = example_modulePINVOKE.CigiBaseHatHotResp_GetValid(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiBaseHatHotResp_GetValid(swigCPtr);
     return ret;
   }
 

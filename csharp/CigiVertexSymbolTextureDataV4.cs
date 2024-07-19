@@ -12,7 +12,7 @@
 public class CigiVertexSymbolTextureDataV4 : CigiBaseVertexSymbolData {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiVertexSymbolTextureDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiVertexSymbolTextureDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiVertexSymbolTextureDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiVertexSymbolTextureDataV4 : CigiBaseVertexSymbolData {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiVertexSymbolTextureDataV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiVertexSymbolTextureDataV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,46 +46,46 @@ public class CigiVertexSymbolTextureDataV4 : CigiBaseVertexSymbolData {
     }
   }
 
-  public CigiVertexSymbolTextureDataV4() : this(example_modulePINVOKE.new_CigiVertexSymbolTextureDataV4(), true) {
+  public CigiVertexSymbolTextureDataV4() : this(ccl_dllDPINVOKE.new_CigiVertexSymbolTextureDataV4(), true) {
   }
 
   public override int Pack(CigiBaseVertexSymbolData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 
   public int SetSTexCoord(float STexCoordIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_SetSTexCoord__SWIG_0(swigCPtr, STexCoordIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_SetSTexCoord__SWIG_0(swigCPtr, STexCoordIn, bndchk);
     return ret;
   }
 
   public int SetSTexCoord(float STexCoordIn) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_SetSTexCoord__SWIG_1(swigCPtr, STexCoordIn);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_SetSTexCoord__SWIG_1(swigCPtr, STexCoordIn);
     return ret;
   }
 
   public float GetSTexCoord() {
-    float ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_GetSTexCoord(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_GetSTexCoord(swigCPtr);
     return ret;
   }
 
   public int SetTTexCoord(float TTexCoordIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_SetTTexCoord__SWIG_0(swigCPtr, TTexCoordIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_SetTTexCoord__SWIG_0(swigCPtr, TTexCoordIn, bndchk);
     return ret;
   }
 
   public int SetTTexCoord(float TTexCoordIn) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_SetTTexCoord__SWIG_1(swigCPtr, TTexCoordIn);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_SetTTexCoord__SWIG_1(swigCPtr, TTexCoordIn);
     return ret;
   }
 
   public float GetTTexCoord() {
-    float ret = example_modulePINVOKE.CigiVertexSymbolTextureDataV4_GetTTexCoord(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiVertexSymbolTextureDataV4_GetTTexCoord(swigCPtr);
     return ret;
   }
 

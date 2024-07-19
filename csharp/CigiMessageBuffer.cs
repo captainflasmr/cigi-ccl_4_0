@@ -49,56 +49,56 @@ public class CigiMessageBuffer : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiMessageBuffer(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiMessageBuffer(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
   }
 
-  public CigiMessageBuffer(int BufLen) : this(example_modulePINVOKE.new_CigiMessageBuffer__SWIG_0(BufLen), true) {
+  public CigiMessageBuffer(int BufLen) : this(ccl_dllDPINVOKE.new_CigiMessageBuffer__SWIG_0(BufLen), true) {
   }
 
-  public CigiMessageBuffer() : this(example_modulePINVOKE.new_CigiMessageBuffer__SWIG_1(), true) {
+  public CigiMessageBuffer() : this(ccl_dllDPINVOKE.new_CigiMessageBuffer__SWIG_1(), true) {
   }
 
   public CigiVersionID GetCigiVersion() {
-    CigiVersionID ret = new CigiVersionID(example_modulePINVOKE.CigiMessageBuffer_GetCigiVersion(swigCPtr), true);
+    CigiVersionID ret = new CigiVersionID(ccl_dllDPINVOKE.CigiMessageBuffer_GetCigiVersion(swigCPtr), true);
     return ret;
   }
 
   public int GetCigiMajorVersion() {
-    int ret = example_modulePINVOKE.CigiMessageBuffer_GetCigiMajorVersion(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiMessageBuffer_GetCigiMajorVersion(swigCPtr);
     return ret;
   }
 
   public int GetCigiMinorVersion() {
-    int ret = example_modulePINVOKE.CigiMessageBuffer_GetCigiMinorVersion(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiMessageBuffer_GetCigiMinorVersion(swigCPtr);
     return ret;
   }
 
   public int GetBufferSize() {
-    int ret = example_modulePINVOKE.CigiMessageBuffer_GetBufferSize(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiMessageBuffer_GetBufferSize(swigCPtr);
     return ret;
   }
 
   public bool IsActive() {
-    bool ret = example_modulePINVOKE.CigiMessageBuffer_IsActive(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiMessageBuffer_IsActive(swigCPtr);
     return ret;
   }
 
   public bool IsLocked() {
-    bool ret = example_modulePINVOKE.CigiMessageBuffer_IsLocked(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiMessageBuffer_IsLocked(swigCPtr);
     return ret;
   }
 
   public bool IsValidIGCtrlSOF() {
-    bool ret = example_modulePINVOKE.CigiMessageBuffer_IsValidIGCtrlSOF(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiMessageBuffer_IsValidIGCtrlSOF(swigCPtr);
     return ret;
   }
 
   public bool IsDataPresent() {
-    bool ret = example_modulePINVOKE.CigiMessageBuffer_IsDataPresent(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiMessageBuffer_IsDataPresent(swigCPtr);
     return ret;
   }
 

@@ -12,7 +12,7 @@
 public class CigiLosVectReqV2 : CigiBaseLosVectReq {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiLosVectReqV2(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiLosVectReqV2_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiLosVectReqV2(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiLosVectReqV2_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiLosVectReqV2 : CigiBaseLosVectReq {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiLosVectReqV2(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiLosVectReqV2(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,46 +46,46 @@ public class CigiLosVectReqV2 : CigiBaseLosVectReq {
     }
   }
 
-  public CigiLosVectReqV2() : this(example_modulePINVOKE.new_CigiLosVectReqV2(), true) {
+  public CigiLosVectReqV2() : this(ccl_dllDPINVOKE.new_CigiLosVectReqV2(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetVectAz(float VectAzIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_SetVectAz__SWIG_0(swigCPtr, VectAzIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_SetVectAz__SWIG_0(swigCPtr, VectAzIn, bndchk);
     return ret;
   }
 
   public int SetVectAz(float VectAzIn) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_SetVectAz__SWIG_1(swigCPtr, VectAzIn);
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_SetVectAz__SWIG_1(swigCPtr, VectAzIn);
     return ret;
   }
 
   public float GetVectAz() {
-    float ret = example_modulePINVOKE.CigiLosVectReqV2_GetVectAz(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiLosVectReqV2_GetVectAz(swigCPtr);
     return ret;
   }
 
   public int SetMinRange(float MinRangeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_SetMinRange__SWIG_0(swigCPtr, MinRangeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_SetMinRange__SWIG_0(swigCPtr, MinRangeIn, bndchk);
     return ret;
   }
 
   public int SetMinRange(float MinRangeIn) {
-    int ret = example_modulePINVOKE.CigiLosVectReqV2_SetMinRange__SWIG_1(swigCPtr, MinRangeIn);
+    int ret = ccl_dllDPINVOKE.CigiLosVectReqV2_SetMinRange__SWIG_1(swigCPtr, MinRangeIn);
     return ret;
   }
 
   public float GetMinRange() {
-    float ret = example_modulePINVOKE.CigiLosVectReqV2_GetMinRange(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiLosVectReqV2_GetMinRange(swigCPtr);
     return ret;
   }
 

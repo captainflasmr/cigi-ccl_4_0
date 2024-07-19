@@ -12,7 +12,7 @@
 public class CigiAccelerationCtrlV4 : CigiBaseTrajectoryDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiAccelerationCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiAccelerationCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiAccelerationCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiAccelerationCtrlV4 : CigiBaseTrajectoryDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiAccelerationCtrlV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiAccelerationCtrlV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,138 +46,138 @@ public class CigiAccelerationCtrlV4 : CigiBaseTrajectoryDef {
     }
   }
 
-  public CigiAccelerationCtrlV4() : this(example_modulePINVOKE.new_CigiAccelerationCtrlV4(), true) {
+  public CigiAccelerationCtrlV4() : this(ccl_dllDPINVOKE.new_CigiAccelerationCtrlV4(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p_unsigned___int8 ArtPartIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p_unsigned___int8 ArtPartIDIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetArtPartID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiAccelerationCtrlV4_GetArtPartID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetArtPartID(swigCPtr), true);
     return ret;
   }
 
   public int SetCoordSys(CigiBaseTrajectoryDef.CoordGrp CoordSysIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetCoordSys__SWIG_0(swigCPtr, (int)CoordSysIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetCoordSys__SWIG_0(swigCPtr, (int)CoordSysIn, bndchk);
     return ret;
   }
 
   public int SetCoordSys(CigiBaseTrajectoryDef.CoordGrp CoordSysIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetCoordSys__SWIG_1(swigCPtr, (int)CoordSysIn);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetCoordSys__SWIG_1(swigCPtr, (int)CoordSysIn);
     return ret;
   }
 
   public CigiBaseTrajectoryDef.CoordGrp GetCoordSys() {
-    CigiBaseTrajectoryDef.CoordGrp ret = (CigiBaseTrajectoryDef.CoordGrp)example_modulePINVOKE.CigiAccelerationCtrlV4_GetCoordSys(swigCPtr);
+    CigiBaseTrajectoryDef.CoordGrp ret = (CigiBaseTrajectoryDef.CoordGrp)ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetCoordSys(swigCPtr);
     return ret;
   }
 
   public int SetArtPartApply(bool ArtPartApplyEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetArtPartApply__SWIG_0(swigCPtr, ArtPartApplyEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetArtPartApply__SWIG_0(swigCPtr, ArtPartApplyEnIn, bndchk);
     return ret;
   }
 
   public int SetArtPartApply(bool ArtPartApplyEnIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetArtPartApply__SWIG_1(swigCPtr, ArtPartApplyEnIn);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetArtPartApply__SWIG_1(swigCPtr, ArtPartApplyEnIn);
     return ret;
   }
 
   public bool GetArtPartApply() {
-    bool ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetArtPartApply(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetArtPartApply(swigCPtr);
     return ret;
   }
 
   public int SetAccelX(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelX__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelX__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelX(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelX__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelX__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelX() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelX(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelX(swigCPtr);
     return ret;
   }
 
   public int SetAccelY(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelY__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelY__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelY(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelY__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelY__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelY() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelY(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelY(swigCPtr);
     return ret;
   }
 
   public int SetAccelZ(float AccelIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelZ__SWIG_0(swigCPtr, AccelIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelZ__SWIG_0(swigCPtr, AccelIn, bndchk);
     return ret;
   }
 
   public int SetAccelZ(float AccelIn) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelZ__SWIG_1(swigCPtr, AccelIn);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelZ__SWIG_1(swigCPtr, AccelIn);
     return ret;
   }
 
   public float GetAccelZ() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelZ(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelZ(swigCPtr);
     return ret;
   }
 
   public int SetAccelRoll(float AccelRollIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelRoll(swigCPtr, AccelRollIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelRoll(swigCPtr, AccelRollIn, bndchk);
     return ret;
   }
 
   public float GetAccelRoll() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelRoll(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelRoll(swigCPtr);
     return ret;
   }
 
   public int SetAccelPitch(float AccelPitchIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelPitch(swigCPtr, AccelPitchIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelPitch(swigCPtr, AccelPitchIn, bndchk);
     return ret;
   }
 
   public float GetAccelPitch() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelPitch(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelPitch(swigCPtr);
     return ret;
   }
 
   public int SetAccelYaw(float AccelYawIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAccelerationCtrlV4_SetAccelYaw(swigCPtr, AccelYawIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_SetAccelYaw(swigCPtr, AccelYawIn, bndchk);
     return ret;
   }
 
   public float GetAccelYaw() {
-    float ret = example_modulePINVOKE.CigiAccelerationCtrlV4_GetAccelYaw(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAccelerationCtrlV4_GetAccelYaw(swigCPtr);
     return ret;
   }
 

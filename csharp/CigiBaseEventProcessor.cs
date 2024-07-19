@@ -49,7 +49,7 @@ public class CigiBaseEventProcessor : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseEventProcessor(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseEventProcessor(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,7 +57,7 @@ public class CigiBaseEventProcessor : global::System.IDisposable {
   }
 
   public virtual void OnPacketReceived(CigiBasePacket Packet) {
-    example_modulePINVOKE.CigiBaseEventProcessor_OnPacketReceived(swigCPtr, CigiBasePacket.getCPtr(Packet));
+    ccl_dllDPINVOKE.CigiBaseEventProcessor_OnPacketReceived(swigCPtr, CigiBasePacket.getCPtr(Packet));
   }
 
 }

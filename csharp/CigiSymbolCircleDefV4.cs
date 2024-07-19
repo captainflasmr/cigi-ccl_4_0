@@ -12,7 +12,7 @@
 public class CigiSymbolCircleDefV4 : CigiBaseSymbolCircleDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiSymbolCircleDefV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiSymbolCircleDefV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiSymbolCircleDefV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiSymbolCircleDefV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiSymbolCircleDefV4 : CigiBaseSymbolCircleDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiSymbolCircleDefV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiSymbolCircleDefV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,36 +46,36 @@ public class CigiSymbolCircleDefV4 : CigiBaseSymbolCircleDef {
     }
   }
 
-  public CigiSymbolCircleDefV4() : this(example_modulePINVOKE.new_CigiSymbolCircleDefV4__SWIG_0(), true) {
+  public CigiSymbolCircleDefV4() : this(ccl_dllDPINVOKE.new_CigiSymbolCircleDefV4__SWIG_0(), true) {
   }
 
-  public CigiSymbolCircleDefV4(CigiSymbolCircleDefV4 BaseIn) : this(example_modulePINVOKE.new_CigiSymbolCircleDefV4__SWIG_1(CigiSymbolCircleDefV4.getCPtr(BaseIn)), true) {
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+  public CigiSymbolCircleDefV4(CigiSymbolCircleDefV4 BaseIn) : this(ccl_dllDPINVOKE.new_CigiSymbolCircleDefV4__SWIG_1(CigiSymbolCircleDefV4.getCPtr(BaseIn)), true) {
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolCircleDefV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolCircleDefV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolCircleDefV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolCircleDefV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override CigiBaseCircleSymbolData AddCircle() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiSymbolCircleDefV4_AddCircle(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiSymbolCircleDefV4_AddCircle(swigCPtr);
     CigiBaseCircleSymbolData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseCircleSymbolData(cPtr, false);
     return ret;
   }
 
   public override int RemoveCircle(int CircleIndex, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSymbolCircleDefV4_RemoveCircle__SWIG_0(swigCPtr, CircleIndex, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSymbolCircleDefV4_RemoveCircle__SWIG_0(swigCPtr, CircleIndex, bndchk);
     return ret;
   }
 
   public override int RemoveCircle(int CircleIndex) {
-    int ret = example_modulePINVOKE.CigiSymbolCircleDefV4_RemoveCircle__SWIG_1(swigCPtr, CircleIndex);
+    int ret = ccl_dllDPINVOKE.CigiSymbolCircleDefV4_RemoveCircle__SWIG_1(swigCPtr, CircleIndex);
     return ret;
   }
 

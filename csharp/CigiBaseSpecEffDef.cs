@@ -12,7 +12,7 @@
 public class CigiBaseSpecEffDef : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseSpecEffDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseSpecEffDef_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseSpecEffDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseSpecEffDef_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseSpecEffDef : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseSpecEffDef(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseSpecEffDef(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,238 +47,238 @@ public class CigiBaseSpecEffDef : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetEntityID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSpecEffDef_GetEntityID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetEntityID(swigCPtr), true);
     return ret;
   }
 
   public int SetSeqDir(CigiBaseSpecEffDef.SeqDirGrp SeqDirIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetSeqDir__SWIG_0(swigCPtr, (int)SeqDirIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetSeqDir__SWIG_0(swigCPtr, (int)SeqDirIn, bndchk);
     return ret;
   }
 
   public int SetSeqDir(CigiBaseSpecEffDef.SeqDirGrp SeqDirIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetSeqDir__SWIG_1(swigCPtr, (int)SeqDirIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetSeqDir__SWIG_1(swigCPtr, (int)SeqDirIn);
     return ret;
   }
 
   public CigiBaseSpecEffDef.SeqDirGrp GetSeqDir() {
-    CigiBaseSpecEffDef.SeqDirGrp ret = (CigiBaseSpecEffDef.SeqDirGrp)example_modulePINVOKE.CigiBaseSpecEffDef_GetSeqDir(swigCPtr);
+    CigiBaseSpecEffDef.SeqDirGrp ret = (CigiBaseSpecEffDef.SeqDirGrp)ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetSeqDir(swigCPtr);
     return ret;
   }
 
   public int SetColorEn(bool ColorEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetColorEn__SWIG_0(swigCPtr, ColorEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetColorEn__SWIG_0(swigCPtr, ColorEnIn, bndchk);
     return ret;
   }
 
   public int SetColorEn(bool ColorEnIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetColorEn__SWIG_1(swigCPtr, ColorEnIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetColorEn__SWIG_1(swigCPtr, ColorEnIn);
     return ret;
   }
 
   public bool GetColorEn() {
-    bool ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetColorEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetColorEn(swigCPtr);
     return ret;
   }
 
   public int SetRed(SWIGTYPE_p_unsigned___int8 RedIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetRed__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(RedIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetRed__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(RedIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetRed(SWIGTYPE_p_unsigned___int8 RedIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetRed__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(RedIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetRed__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(RedIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetRed() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiBaseSpecEffDef_GetRed(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetRed(swigCPtr), true);
     return ret;
   }
 
   public int SetGreen(SWIGTYPE_p_unsigned___int8 GreenIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetGreen__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GreenIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetGreen__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GreenIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetGreen(SWIGTYPE_p_unsigned___int8 GreenIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetGreen__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GreenIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetGreen__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(GreenIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetGreen() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiBaseSpecEffDef_GetGreen(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetGreen(swigCPtr), true);
     return ret;
   }
 
   public int SetBlue(SWIGTYPE_p_unsigned___int8 BlueIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetBlue__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(BlueIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetBlue__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(BlueIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetBlue(SWIGTYPE_p_unsigned___int8 BlueIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetBlue__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(BlueIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetBlue__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(BlueIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetBlue() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiBaseSpecEffDef_GetBlue(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetBlue(swigCPtr), true);
     return ret;
   }
 
   public int SetXScale(float XScaleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetXScale__SWIG_0(swigCPtr, XScaleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetXScale__SWIG_0(swigCPtr, XScaleIn, bndchk);
     return ret;
   }
 
   public int SetXScale(float XScaleIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetXScale__SWIG_1(swigCPtr, XScaleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetXScale__SWIG_1(swigCPtr, XScaleIn);
     return ret;
   }
 
   public float GetXScale() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetXScale(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetXScale(swigCPtr);
     return ret;
   }
 
   public int SetYScale(float YScaleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetYScale__SWIG_0(swigCPtr, YScaleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetYScale__SWIG_0(swigCPtr, YScaleIn, bndchk);
     return ret;
   }
 
   public int SetYScale(float YScaleIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetYScale__SWIG_1(swigCPtr, YScaleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetYScale__SWIG_1(swigCPtr, YScaleIn);
     return ret;
   }
 
   public float GetYScale() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetYScale(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetYScale(swigCPtr);
     return ret;
   }
 
   public int SetZScale(float ZScaleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetZScale__SWIG_0(swigCPtr, ZScaleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetZScale__SWIG_0(swigCPtr, ZScaleIn, bndchk);
     return ret;
   }
 
   public int SetZScale(float ZScaleIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetZScale__SWIG_1(swigCPtr, ZScaleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetZScale__SWIG_1(swigCPtr, ZScaleIn);
     return ret;
   }
 
   public float GetZScale() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetZScale(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetZScale(swigCPtr);
     return ret;
   }
 
   public int SetTimeScale(float TimeScaleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetTimeScale__SWIG_0(swigCPtr, TimeScaleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetTimeScale__SWIG_0(swigCPtr, TimeScaleIn, bndchk);
     return ret;
   }
 
   public int SetTimeScale(float TimeScaleIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetTimeScale__SWIG_1(swigCPtr, TimeScaleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetTimeScale__SWIG_1(swigCPtr, TimeScaleIn);
     return ret;
   }
 
   public float GetTimeScale() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetTimeScale(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetTimeScale(swigCPtr);
     return ret;
   }
 
   public int SetEffectCnt(SWIGTYPE_p_unsigned___int16 EffectCntIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetEffectCnt__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EffectCntIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetEffectCnt__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EffectCntIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEffectCnt(SWIGTYPE_p_unsigned___int16 EffectCntIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetEffectCnt__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EffectCntIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetEffectCnt__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EffectCntIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetEffectCnt() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSpecEffDef_GetEffectCnt(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetEffectCnt(swigCPtr), true);
     return ret;
   }
 
   public int SetSeparation(float SeparationIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetSeparation__SWIG_0(swigCPtr, SeparationIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetSeparation__SWIG_0(swigCPtr, SeparationIn, bndchk);
     return ret;
   }
 
   public int SetSeparation(float SeparationIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetSeparation__SWIG_1(swigCPtr, SeparationIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetSeparation__SWIG_1(swigCPtr, SeparationIn);
     return ret;
   }
 
   public float GetSeparation() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetSeparation(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetSeparation(swigCPtr);
     return ret;
   }
 
   public int SetBurstRate(float BurstRateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetBurstRate__SWIG_0(swigCPtr, BurstRateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetBurstRate__SWIG_0(swigCPtr, BurstRateIn, bndchk);
     return ret;
   }
 
   public int SetBurstRate(float BurstRateIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetBurstRate__SWIG_1(swigCPtr, BurstRateIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetBurstRate__SWIG_1(swigCPtr, BurstRateIn);
     return ret;
   }
 
   public float GetBurstRate() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetBurstRate(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetBurstRate(swigCPtr);
     return ret;
   }
 
   public int SetDuration(float DurationIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetDuration__SWIG_0(swigCPtr, DurationIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetDuration__SWIG_0(swigCPtr, DurationIn, bndchk);
     return ret;
   }
 
   public int SetDuration(float DurationIn) {
-    int ret = example_modulePINVOKE.CigiBaseSpecEffDef_SetDuration__SWIG_1(swigCPtr, DurationIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_SetDuration__SWIG_1(swigCPtr, DurationIn);
     return ret;
   }
 
   public float GetDuration() {
-    float ret = example_modulePINVOKE.CigiBaseSpecEffDef_GetDuration(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSpecEffDef_GetDuration(swigCPtr);
     return ret;
   }
 

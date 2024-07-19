@@ -12,7 +12,7 @@
 public class CigiBufferOverrunException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBufferOverrunException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBufferOverrunException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBufferOverrunException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBufferOverrunException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBufferOverrunException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBufferOverrunException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBufferOverrunException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiBufferOverrunException : CigiException {
     }
   }
 
-  public CigiBufferOverrunException() : this(example_modulePINVOKE.new_CigiBufferOverrunException(), true) {
+  public CigiBufferOverrunException() : this(ccl_dllDPINVOKE.new_CigiBufferOverrunException(), true) {
   }
 
 }

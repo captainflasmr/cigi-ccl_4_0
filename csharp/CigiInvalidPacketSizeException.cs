@@ -12,7 +12,7 @@
 public class CigiInvalidPacketSizeException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiInvalidPacketSizeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiInvalidPacketSizeException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiInvalidPacketSizeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiInvalidPacketSizeException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiInvalidPacketSizeException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiInvalidPacketSizeException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiInvalidPacketSizeException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiInvalidPacketSizeException : CigiException {
     }
   }
 
-  public CigiInvalidPacketSizeException() : this(example_modulePINVOKE.new_CigiInvalidPacketSizeException(), true) {
+  public CigiInvalidPacketSizeException() : this(ccl_dllDPINVOKE.new_CigiInvalidPacketSizeException(), true) {
   }
 
 }

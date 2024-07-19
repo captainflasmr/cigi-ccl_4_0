@@ -12,7 +12,7 @@
 public class CigiCircleSymbolDataV4 : CigiBaseCircleSymbolData {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiCircleSymbolDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiCircleSymbolDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiCircleSymbolDataV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiCircleSymbolDataV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiCircleSymbolDataV4 : CigiBaseCircleSymbolData {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiCircleSymbolDataV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiCircleSymbolDataV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,16 +46,16 @@ public class CigiCircleSymbolDataV4 : CigiBaseCircleSymbolData {
     }
   }
 
-  public CigiCircleSymbolDataV4() : this(example_modulePINVOKE.new_CigiCircleSymbolDataV4(), true) {
+  public CigiCircleSymbolDataV4() : this(ccl_dllDPINVOKE.new_CigiCircleSymbolDataV4(), true) {
   }
 
   public override int Pack(CigiBaseCircleSymbolData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiCircleSymbolDataV4_Pack(swigCPtr, CigiBaseCircleSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiCircleSymbolDataV4_Pack(swigCPtr, CigiBaseCircleSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiCircleSymbolDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiCircleSymbolDataV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 

@@ -19,7 +19,7 @@ public struct DbInfo
     }
 }
 
-class Network
+class Network : IDisposable
 {
     private IPEndPoint remoteEP;
     private UdpClient udpReceiver;
@@ -29,10 +29,10 @@ class Network
     {
         try
         {
-            remoteEP = new IPEndPoint(IPAddress.Any, 8000);
-            udpReceiver = new UdpClient(8001);
-            udpSender = new UdpClient("127.0.0.1", 8000);
-            //udpReceiver.Connect(hostIpAddr, 8000);
+            remoteEP = new IPEndPoint(IPAddress.Parse(hostIpAddr), portToHost);
+            udpReceiver = new UdpClient(localPort);
+            udpSender = new UdpClient();
+            udpSender.Connect(remoteEP);
 
             Console.WriteLine($"Successfully opened socket for comm with CIGI IG server at {hostIpAddr}:{portToHost}");
             return true;
@@ -40,21 +40,18 @@ class Network
         catch (Exception ex)
         {
             Console.WriteLine($"Could not open socket for comm with CIGI IG server. Exception: {ex.Message}");
-            Environment.Exit(1);
             return false;
         }
     }
 
-    public int Receive(byte[] buffer, int bufferSize)
+    public int Receive(out byte[] buffer, int bufferSize)
     {
-        if (udpReceiver == null) return 0;
         buffer = udpReceiver.Receive(ref remoteEP);
         return buffer.Length;
     }
 
     public int Send(byte[] buffer, int bufferSize)
     {
-        if (udpSender == null) return 0;
         udpSender.Send(buffer, bufferSize);
         return bufferSize;
     }
@@ -63,6 +60,11 @@ class Network
     {
         udpReceiver.Close();
         udpSender.Close();
+    }
+
+    public void Dispose()
+    {
+        CloseSocket();
     }
 }
 
@@ -138,7 +140,7 @@ class Program
         return instance;
     }
 
-    public static ushort GetValue_int(SWIGTYPE_p_int instance)
+    public static ushort GetValue(SWIGTYPE_p_int instance)
     {
         IntPtr ptr = SWIGTYPE_p_int.getCPtr(instance).Handle;
         return (ushort)Marshal.ReadInt16(ptr);
@@ -164,14 +166,6 @@ class Program
 
         InitCigiIf();
 
-        // var idbl = dbList[0];
-        // COwn.SetLat(idbl.Lat);
-        // COwn.SetLon(idbl.Lon);
-        // COwn.SetAlt(idbl.Alt);
-        // COwn.SetYaw(0.0);
-        // COwn.SetPitch(0.0);
-        // COwn.SetRoll(0.0);
-
         Omsg.BeginMsg();
 
         while (true)
@@ -180,10 +174,9 @@ class Program
             {
                 try
                 {
-                    swigBuffer_p = ByteArrayToSWIGTYPE_p(CigiInBuf);
-                    SWIGTYPE_p_int swigOutSize = CreateInstance_int(0);
+                    SWIGTYPE_p_unsigned___int8 swigInBuffer = ByteArrayToSWIGTYPE_p(CigiInBuf);
 
-                    Imsg.ProcessIncomingMsg(swigBuffer_p, CigiInSz);
+                    Imsg.ProcessIncomingMsg(swigInBuffer, CigiInSz);
                 }
                 catch (Exception ex)
                 {
@@ -193,8 +186,6 @@ class Program
 
             Omsg.pack(CIGC);
 
-            // double olat = COwn.GetLat();
-            // COwn.SetLat(olat + 0.0000137);
             Omsg.pack(COwn);
 
             try
@@ -202,24 +193,24 @@ class Program
                 try
                 {
                     // Convert byte array to SWIG type
-                    swigBufferOut_p_p = ByteArrayToSWIGTYPE_p_p(CigiOutBuf);
-                    swigBufferOut_p = ByteArrayToSWIGTYPE_p(CigiOutBuf);
+                    SWIGTYPE_p_p_unsigned___int8 swigOutBuffer = ByteArrayToSWIGTYPE_p_p(CigiOutBuf);
                     swigOutSize = CreateInstance_int(0);
-                    Omsg.PackageMsg(swigBufferOut_p_p, swigOutSize);
+                    Omsg.PackageMsg(swigOutBuffer, swigOutSize);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"getNetMessages - Exception: {ex.Message}");
                 }
 
-                CigiOutSz = GetValue_int(swigOutSize);
+                CigiOutSz = GetValue(swigOutSize);
                 Console.WriteLine("PackageMsgSz : " + CigiOutSz);
 
-                CigiInSz = network.Receive(CigiInBuf, RECV_BUFFER_SIZE);
+                CigiInSz = network.Receive(out CigiInBuf, RECV_BUFFER_SIZE);
 
                 try
                 {
                     swigBuffer_p = ByteArrayToSWIGTYPE_p(CigiInBuf);
+                    swigBufferOut_p = ByteArrayToSWIGTYPE_p(CigiOutBuf);
                     swigOutSize = CreateInstance_int(0);
 
                     if (CigiInSz > 0)
@@ -232,12 +223,10 @@ class Program
                     Console.WriteLine($"UpdateIGCtrl - Exception: {ex.Message}");
                 }
 
-
                 // Convert back to byte array
                 CigiOutBuf = SWIGTYPEToByteArray_p(swigBufferOut_p, CigiOutSz);
                 string hexString = BitConverter.ToString(CigiOutBuf).Replace("-", " ");
                 Console.WriteLine("Out : " + hexString);
-
 
                 network.Send(CigiOutBuf, CigiOutSz);
                 Console.WriteLine("Tick");
@@ -250,43 +239,48 @@ class Program
 
             Thread.Sleep(1000);
         }
-
-        // network.CloseSocket();
     }
 
     static void ReadConfig()
     {
-        XmlDocument doc = new XmlDocument();
-        doc.Load("MiniHost.def");
-        XmlNode bnode = doc.SelectSingleNode("MiniHostInitialization");
-
-        Port_H2IG = 8000;
-        Port_IG2H = 8001;
-        IGAddr = "127.0.0.1";
-
-        if (bnode != null)
+        try
         {
-            XmlNode configNode = bnode.SelectSingleNode("Config");
-            if (configNode != null)
-            {
-                IGAddr = configNode["IG_Addr"]?.InnerText ?? IGAddr;
-                Port_H2IG = int.Parse(configNode["Port_To_IG"]?.InnerText ?? "8000");
-                Port_IG2H = int.Parse(configNode["Port_From_IG"]?.InnerText ?? "8001");
-            }
+            XmlDocument doc = new XmlDocument();
+            doc.Load("MiniHost.def");
+            XmlNode bnode = doc.SelectSingleNode("MiniHostInitialization");
 
-            foreach (XmlNode dbNode in bnode.SelectNodes("DBase"))
+            Port_H2IG = 8000;
+            Port_IG2H = 8001;
+            IGAddr = "127.0.0.1";
+
+            if (bnode != null)
             {
-                DbInfo dbInfo = new DbInfo
+                XmlNode configNode = bnode.SelectSingleNode("Config");
+                if (configNode != null)
                 {
-                    Id = int.Parse(dbNode["ID"]?.InnerText ?? "0"),
-                    Lat = double.Parse(dbNode["Lat"]?.InnerText ?? "0"),
-                    Lon = double.Parse(dbNode["Lon"]?.InnerText ?? "0"),
-                    Alt = double.Parse(dbNode["Alt"]?.InnerText ?? "0")
-                };
-                dbList.Add(dbInfo);
+                    IGAddr = configNode["IG_Addr"]?.InnerText ?? IGAddr;
+                    Port_H2IG = int.Parse(configNode["Port_To_IG"]?.InnerText ?? "8000");
+                    Port_IG2H = int.Parse(configNode["Port_From_IG"]?.InnerText ?? "8001");
+                }
+
+                foreach (XmlNode dbNode in bnode.SelectNodes("DBase"))
+                {
+                    DbInfo dbInfo = new DbInfo
+                    {
+                        Id = int.Parse(dbNode["ID"]?.InnerText ?? "0"),
+                        Lat = double.Parse(dbNode["Lat"]?.InnerText ?? "0"),
+                        Lon = double.Parse(dbNode["Lon"]?.InnerText ?? "0"),
+                        Alt = double.Parse(dbNode["Alt"]?.InnerText ?? "0")
+                    };
+                    dbList.Add(dbInfo);
+                }
             }
-    }
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error reading config: {ex.Message}");
+        }
+    }
 
     static void InitCigiIf()
     {

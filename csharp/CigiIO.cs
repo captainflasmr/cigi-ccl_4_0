@@ -49,7 +49,7 @@ public class CigiIO : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiIO(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiIO(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,17 +57,17 @@ public class CigiIO : global::System.IDisposable {
   }
 
   public int Send() {
-    int ret = example_modulePINVOKE.CigiIO_Send(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiIO_Send(swigCPtr);
     return ret;
   }
 
   public int Receive() {
-    int ret = example_modulePINVOKE.CigiIO_Receive(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiIO_Receive(swigCPtr);
     return ret;
   }
 
   public int Recv() {
-    int ret = example_modulePINVOKE.CigiIO_Recv(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiIO_Recv(swigCPtr);
     return ret;
   }
 

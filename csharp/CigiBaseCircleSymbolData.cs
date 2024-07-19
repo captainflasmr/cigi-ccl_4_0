@@ -49,7 +49,7 @@ public class CigiBaseCircleSymbolData : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseCircleSymbolData(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseCircleSymbolData(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,102 +57,102 @@ public class CigiBaseCircleSymbolData : global::System.IDisposable {
   }
 
   public virtual int Pack(CigiBaseCircleSymbolData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_Pack(swigCPtr, CigiBaseCircleSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_Pack(swigCPtr, CigiBaseCircleSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public virtual int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 
   public int SetCenterUPosition(float CenterUPositionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetCenterUPosition__SWIG_0(swigCPtr, CenterUPositionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetCenterUPosition__SWIG_0(swigCPtr, CenterUPositionIn, bndchk);
     return ret;
   }
 
   public int SetCenterUPosition(float CenterUPositionIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetCenterUPosition__SWIG_1(swigCPtr, CenterUPositionIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetCenterUPosition__SWIG_1(swigCPtr, CenterUPositionIn);
     return ret;
   }
 
   public float GetCenterUPosition() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetCenterUPosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetCenterUPosition(swigCPtr);
     return ret;
   }
 
   public int SetCenterVPosition(float CenterVPositionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetCenterVPosition__SWIG_0(swigCPtr, CenterVPositionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetCenterVPosition__SWIG_0(swigCPtr, CenterVPositionIn, bndchk);
     return ret;
   }
 
   public int SetCenterVPosition(float CenterVPositionIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetCenterVPosition__SWIG_1(swigCPtr, CenterVPositionIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetCenterVPosition__SWIG_1(swigCPtr, CenterVPositionIn);
     return ret;
   }
 
   public float GetCenterVPosition() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetCenterVPosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetCenterVPosition(swigCPtr);
     return ret;
   }
 
   public int SetRadius(float RadiusIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetRadius__SWIG_0(swigCPtr, RadiusIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetRadius__SWIG_0(swigCPtr, RadiusIn, bndchk);
     return ret;
   }
 
   public int SetRadius(float RadiusIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetRadius__SWIG_1(swigCPtr, RadiusIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetRadius__SWIG_1(swigCPtr, RadiusIn);
     return ret;
   }
 
   public float GetRadius() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetRadius(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetRadius(swigCPtr);
     return ret;
   }
 
   public int SetInnerRadius(float InnerRadiusIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetInnerRadius__SWIG_0(swigCPtr, InnerRadiusIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetInnerRadius__SWIG_0(swigCPtr, InnerRadiusIn, bndchk);
     return ret;
   }
 
   public int SetInnerRadius(float InnerRadiusIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetInnerRadius__SWIG_1(swigCPtr, InnerRadiusIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetInnerRadius__SWIG_1(swigCPtr, InnerRadiusIn);
     return ret;
   }
 
   public float GetInnerRadius() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetInnerRadius(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetInnerRadius(swigCPtr);
     return ret;
   }
 
   public int SetStartAngle(float StartAngleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetStartAngle__SWIG_0(swigCPtr, StartAngleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetStartAngle__SWIG_0(swigCPtr, StartAngleIn, bndchk);
     return ret;
   }
 
   public int SetStartAngle(float StartAngleIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetStartAngle__SWIG_1(swigCPtr, StartAngleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetStartAngle__SWIG_1(swigCPtr, StartAngleIn);
     return ret;
   }
 
   public float GetStartAngle() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetStartAngle(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetStartAngle(swigCPtr);
     return ret;
   }
 
   public int SetEndAngle(float EndAngleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetEndAngle__SWIG_0(swigCPtr, EndAngleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetEndAngle__SWIG_0(swigCPtr, EndAngleIn, bndchk);
     return ret;
   }
 
   public int SetEndAngle(float EndAngleIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolData_SetEndAngle__SWIG_1(swigCPtr, EndAngleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_SetEndAngle__SWIG_1(swigCPtr, EndAngleIn);
     return ret;
   }
 
   public float GetEndAngle() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolData_GetEndAngle(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolData_GetEndAngle(swigCPtr);
     return ret;
   }
 

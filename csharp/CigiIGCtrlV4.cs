@@ -12,7 +12,7 @@
 public class CigiIGCtrlV4 : CigiBaseIGCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiIGCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiIGCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiIGCtrlV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiIGCtrlV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiIGCtrlV4 : CigiBaseIGCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiIGCtrlV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiIGCtrlV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,107 +46,107 @@ public class CigiIGCtrlV4 : CigiBaseIGCtrl {
     }
   }
 
-  public CigiIGCtrlV4() : this(example_modulePINVOKE.new_CigiIGCtrlV4(), true) {
+  public CigiIGCtrlV4() : this(ccl_dllDPINVOKE.new_CigiIGCtrlV4(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetFrameCntr(SWIGTYPE_p_unsigned___int32 FrameCntrIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetFrameCntr__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(FrameCntrIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetFrameCntr__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(FrameCntrIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetFrameCntr(SWIGTYPE_p_unsigned___int32 FrameCntrIn) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetFrameCntr__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(FrameCntrIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetFrameCntr__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(FrameCntrIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int32 GetTimeStamp() {
-    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(example_modulePINVOKE.CigiIGCtrlV4_GetTimeStamp(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(ccl_dllDPINVOKE.CigiIGCtrlV4_GetTimeStamp(swigCPtr), true);
     return ret;
   }
 
   public int SetTimeStamp(SWIGTYPE_p_unsigned___int32 TimeStamp, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetTimeStamp__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(TimeStamp), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetTimeStamp__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(TimeStamp), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetTimeStamp(SWIGTYPE_p_unsigned___int32 TimeStamp) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetTimeStamp__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(TimeStamp));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetTimeStamp__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(TimeStamp));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public bool GetTimeStampValid() {
-    bool ret = example_modulePINVOKE.CigiIGCtrlV4_GetTimeStampValid(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiIGCtrlV4_GetTimeStampValid(swigCPtr);
     return ret;
   }
 
   public int SetTimeStampValid(bool TimeStampValidIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetTimeStampValid__SWIG_0(swigCPtr, TimeStampValidIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetTimeStampValid__SWIG_0(swigCPtr, TimeStampValidIn, bndchk);
     return ret;
   }
 
   public int SetTimeStampValid(bool TimeStampValidIn) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetTimeStampValid__SWIG_1(swigCPtr, TimeStampValidIn);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetTimeStampValid__SWIG_1(swigCPtr, TimeStampValidIn);
     return ret;
   }
 
   public bool GetEntityTypeSubEn() {
-    bool ret = example_modulePINVOKE.CigiIGCtrlV4_GetEntityTypeSubEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiIGCtrlV4_GetEntityTypeSubEn(swigCPtr);
     return ret;
   }
 
   public int SetEntityTypeSubEn(bool SubstitutionEnabled, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetEntityTypeSubEn__SWIG_0(swigCPtr, SubstitutionEnabled, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetEntityTypeSubEn__SWIG_0(swigCPtr, SubstitutionEnabled, bndchk);
     return ret;
   }
 
   public int SetEntityTypeSubEn(bool SubstitutionEnabled) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetEntityTypeSubEn__SWIG_1(swigCPtr, SubstitutionEnabled);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetEntityTypeSubEn__SWIG_1(swigCPtr, SubstitutionEnabled);
     return ret;
   }
 
   public bool GetSmoothingEn() {
-    bool ret = example_modulePINVOKE.CigiIGCtrlV4_GetSmoothingEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiIGCtrlV4_GetSmoothingEn(swigCPtr);
     return ret;
   }
 
   public int SetSmoothingEn(bool SmoothingEnabled, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetSmoothingEn__SWIG_0(swigCPtr, SmoothingEnabled, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetSmoothingEn__SWIG_0(swigCPtr, SmoothingEnabled, bndchk);
     return ret;
   }
 
   public int SetSmoothingEn(bool SmoothingEnabled) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetSmoothingEn__SWIG_1(swigCPtr, SmoothingEnabled);
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetSmoothingEn__SWIG_1(swigCPtr, SmoothingEnabled);
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int32 GetLastRcvdIGFrame() {
-    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(example_modulePINVOKE.CigiIGCtrlV4_GetLastRcvdIGFrame(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int32 ret = new SWIGTYPE_p_unsigned___int32(ccl_dllDPINVOKE.CigiIGCtrlV4_GetLastRcvdIGFrame(swigCPtr), true);
     return ret;
   }
 
   public int SetLastRcvdIGFrame(SWIGTYPE_p_unsigned___int32 LastRcvdIGFrameIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetLastRcvdIGFrame__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(LastRcvdIGFrameIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetLastRcvdIGFrame__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(LastRcvdIGFrameIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetLastRcvdIGFrame(SWIGTYPE_p_unsigned___int32 LastRcvdIGFrameIn) {
-    int ret = example_modulePINVOKE.CigiIGCtrlV4_SetLastRcvdIGFrame__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(LastRcvdIGFrameIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGCtrlV4_SetLastRcvdIGFrame__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int32.getCPtr(LastRcvdIGFrameIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

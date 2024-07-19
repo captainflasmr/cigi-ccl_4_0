@@ -12,7 +12,7 @@
 public class CigiBaseSymbolTextDef : CigiBaseVariableSizePckt {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseSymbolTextDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseSymbolTextDef_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseSymbolTextDef(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseSymbolTextDef : CigiBaseVariableSizePckt {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseSymbolTextDef(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseSymbolTextDef(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,125 +47,125 @@ public class CigiBaseSymbolTextDef : CigiBaseVariableSizePckt {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetTruePacketSize(CigiBaseVariableSizePckt refPacket) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSymbolID(SWIGTYPE_p_unsigned___int16 SymbolIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetSymbolID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetSymbolID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetSymbolID(SWIGTYPE_p_unsigned___int16 SymbolIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetSymbolID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetSymbolID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(SymbolIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetSymbolID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseSymbolTextDef_GetSymbolID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetSymbolID(swigCPtr), true);
     return ret;
   }
 
   public int SetAlignment(CigiBaseSymbolTextDef.AlignmentGrp AlignmentIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetAlignment__SWIG_0(swigCPtr, (int)AlignmentIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetAlignment__SWIG_0(swigCPtr, (int)AlignmentIn, bndchk);
     return ret;
   }
 
   public int SetAlignment(CigiBaseSymbolTextDef.AlignmentGrp AlignmentIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetAlignment__SWIG_1(swigCPtr, (int)AlignmentIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetAlignment__SWIG_1(swigCPtr, (int)AlignmentIn);
     return ret;
   }
 
   public CigiBaseSymbolTextDef.AlignmentGrp GetAlignment() {
-    CigiBaseSymbolTextDef.AlignmentGrp ret = (CigiBaseSymbolTextDef.AlignmentGrp)example_modulePINVOKE.CigiBaseSymbolTextDef_GetAlignment(swigCPtr);
+    CigiBaseSymbolTextDef.AlignmentGrp ret = (CigiBaseSymbolTextDef.AlignmentGrp)ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetAlignment(swigCPtr);
     return ret;
   }
 
   public int SetOrientation(CigiBaseSymbolTextDef.OrientationGrp OrientationIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetOrientation__SWIG_0(swigCPtr, (int)OrientationIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetOrientation__SWIG_0(swigCPtr, (int)OrientationIn, bndchk);
     return ret;
   }
 
   public int SetOrientation(CigiBaseSymbolTextDef.OrientationGrp OrientationIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetOrientation__SWIG_1(swigCPtr, (int)OrientationIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetOrientation__SWIG_1(swigCPtr, (int)OrientationIn);
     return ret;
   }
 
   public CigiBaseSymbolTextDef.OrientationGrp GetOrientation() {
-    CigiBaseSymbolTextDef.OrientationGrp ret = (CigiBaseSymbolTextDef.OrientationGrp)example_modulePINVOKE.CigiBaseSymbolTextDef_GetOrientation(swigCPtr);
+    CigiBaseSymbolTextDef.OrientationGrp ret = (CigiBaseSymbolTextDef.OrientationGrp)ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetOrientation(swigCPtr);
     return ret;
   }
 
   public int SetFontID(SWIGTYPE_p_unsigned___int8 FontIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetFontID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(FontIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetFontID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(FontIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetFontID(SWIGTYPE_p_unsigned___int8 FontIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetFontID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(FontIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetFontID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(FontIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetFontID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiBaseSymbolTextDef_GetFontID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetFontID(swigCPtr), true);
     return ret;
   }
 
   public int SetFontSize(float FontSizeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetFontSize__SWIG_0(swigCPtr, FontSizeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetFontSize__SWIG_0(swigCPtr, FontSizeIn, bndchk);
     return ret;
   }
 
   public int SetFontSize(float FontSizeIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetFontSize__SWIG_1(swigCPtr, FontSizeIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetFontSize__SWIG_1(swigCPtr, FontSizeIn);
     return ret;
   }
 
   public float GetFontSize() {
-    float ret = example_modulePINVOKE.CigiBaseSymbolTextDef_GetFontSize(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetFontSize(swigCPtr);
     return ret;
   }
 
   public int SetText(SWIGTYPE_p_std__string TextIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetText__SWIG_0(swigCPtr, SWIGTYPE_p_std__string.getCPtr(TextIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetText__SWIG_0(swigCPtr, SWIGTYPE_p_std__string.getCPtr(TextIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetText(SWIGTYPE_p_std__string TextIn) {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_SetText__SWIG_1(swigCPtr, SWIGTYPE_p_std__string.getCPtr(TextIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_SetText__SWIG_1(swigCPtr, SWIGTYPE_p_std__string.getCPtr(TextIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int GetTextSize() {
-    int ret = example_modulePINVOKE.CigiBaseSymbolTextDef_GetTextSize(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetTextSize(swigCPtr);
     return ret;
   }
 
   public SWIGTYPE_p_std__string GetText() {
-    SWIGTYPE_p_std__string ret = new SWIGTYPE_p_std__string(example_modulePINVOKE.CigiBaseSymbolTextDef_GetText(swigCPtr), false);
+    SWIGTYPE_p_std__string ret = new SWIGTYPE_p_std__string(ccl_dllDPINVOKE.CigiBaseSymbolTextDef_GetText(swigCPtr), false);
     return ret;
   }
 

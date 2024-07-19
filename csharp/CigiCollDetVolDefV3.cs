@@ -12,7 +12,7 @@
 public class CigiCollDetVolDefV3 : CigiBaseCollDetVolDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiCollDetVolDefV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiCollDetVolDefV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiCollDetVolDefV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiCollDetVolDefV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiCollDetVolDefV3 : CigiBaseCollDetVolDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiCollDetVolDefV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiCollDetVolDefV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,76 +46,76 @@ public class CigiCollDetVolDefV3 : CigiBaseCollDetVolDef {
     }
   }
 
-  public CigiCollDetVolDefV3() : this(example_modulePINVOKE.new_CigiCollDetVolDefV3(), true) {
+  public CigiCollDetVolDefV3() : this(ccl_dllDPINVOKE.new_CigiCollDetVolDefV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetVolType(CigiBaseCollDetVolDef.VolTypeGrp VolTypeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetVolType__SWIG_0(swigCPtr, (int)VolTypeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetVolType__SWIG_0(swigCPtr, (int)VolTypeIn, bndchk);
     return ret;
   }
 
   public int SetVolType(CigiBaseCollDetVolDef.VolTypeGrp VolTypeIn) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetVolType__SWIG_1(swigCPtr, (int)VolTypeIn);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetVolType__SWIG_1(swigCPtr, (int)VolTypeIn);
     return ret;
   }
 
   public CigiBaseCollDetVolDef.VolTypeGrp GetVolType() {
-    CigiBaseCollDetVolDef.VolTypeGrp ret = (CigiBaseCollDetVolDef.VolTypeGrp)example_modulePINVOKE.CigiCollDetVolDefV3_GetVolType(swigCPtr);
+    CigiBaseCollDetVolDef.VolTypeGrp ret = (CigiBaseCollDetVolDef.VolTypeGrp)ccl_dllDPINVOKE.CigiCollDetVolDefV3_GetVolType(swigCPtr);
     return ret;
   }
 
   public int SetRoll(float RollIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetRoll__SWIG_0(swigCPtr, RollIn, bndchk);
     return ret;
   }
 
   public int SetRoll(float RollIn) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetRoll__SWIG_1(swigCPtr, RollIn);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetRoll__SWIG_1(swigCPtr, RollIn);
     return ret;
   }
 
   public float GetRoll() {
-    float ret = example_modulePINVOKE.CigiCollDetVolDefV3_GetRoll(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_GetRoll(swigCPtr);
     return ret;
   }
 
   public int SetPitch(float PitchIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetPitch__SWIG_0(swigCPtr, PitchIn, bndchk);
     return ret;
   }
 
   public int SetPitch(float PitchIn) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetPitch__SWIG_1(swigCPtr, PitchIn);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetPitch__SWIG_1(swigCPtr, PitchIn);
     return ret;
   }
 
   public float GetPitch() {
-    float ret = example_modulePINVOKE.CigiCollDetVolDefV3_GetPitch(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_GetPitch(swigCPtr);
     return ret;
   }
 
   public int SetYaw(float YawIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetYaw__SWIG_0(swigCPtr, YawIn, bndchk);
     return ret;
   }
 
   public int SetYaw(float YawIn) {
-    int ret = example_modulePINVOKE.CigiCollDetVolDefV3_SetYaw__SWIG_1(swigCPtr, YawIn);
+    int ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_SetYaw__SWIG_1(swigCPtr, YawIn);
     return ret;
   }
 
   public float GetYaw() {
-    float ret = example_modulePINVOKE.CigiCollDetVolDefV3_GetYaw(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiCollDetVolDefV3_GetYaw(swigCPtr);
     return ret;
   }
 

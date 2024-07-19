@@ -49,33 +49,33 @@ public class CigiException : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
   }
 
-  public CigiException() : this(example_modulePINVOKE.new_CigiException(), true) {
+  public CigiException() : this(ccl_dllDPINVOKE.new_CigiException(), true) {
   }
 
   public bool HasMessage() {
-    bool ret = example_modulePINVOKE.CigiException_HasMessage(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiException_HasMessage(swigCPtr);
     return ret;
   }
 
   public int GetErrorCode() {
-    int ret = example_modulePINVOKE.CigiException_GetErrorCode(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiException_GetErrorCode(swigCPtr);
     return ret;
   }
 
   public bool HasErrorCode() {
-    bool ret = example_modulePINVOKE.CigiException_HasErrorCode(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiException_HasErrorCode(swigCPtr);
     return ret;
   }
 
   public virtual string what() {
-    string ret = example_modulePINVOKE.CigiException_what(swigCPtr);
+    string ret = ccl_dllDPINVOKE.CigiException_what(swigCPtr);
     return ret;
   }
 

@@ -49,7 +49,7 @@ public class CigiSession : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiSession(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiSession(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,103 +57,103 @@ public class CigiSession : global::System.IDisposable {
   }
 
   public int SetCigiVersion(int CigiVersionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_0(swigCPtr, CigiVersionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_0(swigCPtr, CigiVersionIn, bndchk);
     return ret;
   }
 
   public int SetCigiVersion(int CigiVersionIn) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_1(swigCPtr, CigiVersionIn);
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_1(swigCPtr, CigiVersionIn);
     return ret;
   }
 
   public int SetCigiVersion(int CigiVersionIn, int CigiMinorVersionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_2(swigCPtr, CigiVersionIn, CigiMinorVersionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_2(swigCPtr, CigiVersionIn, CigiMinorVersionIn, bndchk);
     return ret;
   }
 
   public int SetCigiVersion(int CigiVersionIn, int CigiMinorVersionIn) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_3(swigCPtr, CigiVersionIn, CigiMinorVersionIn);
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_3(swigCPtr, CigiVersionIn, CigiMinorVersionIn);
     return ret;
   }
 
   public int SetCigiVersion(CigiVersionID CigiVersionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_4(swigCPtr, CigiVersionID.getCPtr(CigiVersionIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_4(swigCPtr, CigiVersionID.getCPtr(CigiVersionIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetCigiVersion(CigiVersionID CigiVersionIn) {
-    int ret = example_modulePINVOKE.CigiSession_SetCigiVersion__SWIG_5(swigCPtr, CigiVersionID.getCPtr(CigiVersionIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiSession_SetCigiVersion__SWIG_5(swigCPtr, CigiVersionID.getCPtr(CigiVersionIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public void SetMostMatureReceivedCigiVersion(CigiVersionID Version) {
-    example_modulePINVOKE.CigiSession_SetMostMatureReceivedCigiVersion(swigCPtr, CigiVersionID.getCPtr(Version));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    ccl_dllDPINVOKE.CigiSession_SetMostMatureReceivedCigiVersion(swigCPtr, CigiVersionID.getCPtr(Version));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public CigiVersionID GetCompleteCigiVersion() {
-    CigiVersionID ret = new CigiVersionID(example_modulePINVOKE.CigiSession_GetCompleteCigiVersion(swigCPtr), true);
+    CigiVersionID ret = new CigiVersionID(ccl_dllDPINVOKE.CigiSession_GetCompleteCigiVersion(swigCPtr), true);
     return ret;
   }
 
   public int GetCigiVersion() {
-    int ret = example_modulePINVOKE.CigiSession_GetCigiVersion(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiSession_GetCigiVersion(swigCPtr);
     return ret;
   }
 
   public int GetCigiMinorVersion() {
-    int ret = example_modulePINVOKE.CigiSession_GetCigiMinorVersion(swigCPtr);
+    int ret = ccl_dllDPINVOKE.CigiSession_GetCigiMinorVersion(swigCPtr);
     return ret;
   }
 
   public CigiOutgoingMsg GetOutgoingMsgMgr() {
-    CigiOutgoingMsg ret = new CigiOutgoingMsg(example_modulePINVOKE.CigiSession_GetOutgoingMsgMgr(swigCPtr), false);
+    CigiOutgoingMsg ret = new CigiOutgoingMsg(ccl_dllDPINVOKE.CigiSession_GetOutgoingMsgMgr(swigCPtr), false);
     return ret;
   }
 
   public CigiIncomingMsg GetIncomingMsgMgr() {
-    CigiIncomingMsg ret = new CigiIncomingMsg(example_modulePINVOKE.CigiSession_GetIncomingMsgMgr(swigCPtr), false);
+    CigiIncomingMsg ret = new CigiIncomingMsg(ccl_dllDPINVOKE.CigiSession_GetIncomingMsgMgr(swigCPtr), false);
     return ret;
   }
 
   public CigiAnimationTable GetAnimationTableMgr() {
-    CigiAnimationTable ret = new CigiAnimationTable(example_modulePINVOKE.CigiSession_GetAnimationTableMgr(swigCPtr), false);
+    CigiAnimationTable ret = new CigiAnimationTable(ccl_dllDPINVOKE.CigiSession_GetAnimationTableMgr(swigCPtr), false);
     return ret;
   }
 
   public void SetSynchronous(bool Sync) {
-    example_modulePINVOKE.CigiSession_SetSynchronous(swigCPtr, Sync);
+    ccl_dllDPINVOKE.CigiSession_SetSynchronous(swigCPtr, Sync);
   }
 
   public bool IsSynchronous() {
-    bool ret = example_modulePINVOKE.CigiSession_IsSynchronous(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiSession_IsSynchronous(swigCPtr);
     return ret;
   }
 
   public int RegisterUserPacket(CigiBasePacket Packet, SWIGTYPE_p_unsigned___int16 PacketID, bool HostSend, bool IGSend) {
-    int ret = example_modulePINVOKE.CigiSession_RegisterUserPacket(swigCPtr, CigiBasePacket.getCPtr(Packet), SWIGTYPE_p_unsigned___int16.getCPtr(PacketID), HostSend, IGSend);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiSession_RegisterUserPacket(swigCPtr, CigiBasePacket.getCPtr(Packet), SWIGTYPE_p_unsigned___int16.getCPtr(PacketID), HostSend, IGSend);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public bool IsHost() {
-    bool ret = example_modulePINVOKE.CigiSession_IsHost(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiSession_IsHost(swigCPtr);
     return ret;
   }
 
   public bool IsIG() {
-    bool ret = example_modulePINVOKE.CigiSession_IsIG(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiSession_IsIG(swigCPtr);
     return ret;
   }
 
   public CigiSession.SessionTypeEnum SessionType {
     set {
-      example_modulePINVOKE.CigiSession_SessionType_set(swigCPtr, (int)value);
+      ccl_dllDPINVOKE.CigiSession_SessionType_set(swigCPtr, (int)value);
     } 
     get {
-      CigiSession.SessionTypeEnum ret = (CigiSession.SessionTypeEnum)example_modulePINVOKE.CigiSession_SessionType_get(swigCPtr);
+      CigiSession.SessionTypeEnum ret = (CigiSession.SessionTypeEnum)ccl_dllDPINVOKE.CigiSession_SessionType_get(swigCPtr);
       return ret;
     } 
   }

@@ -12,7 +12,7 @@
 public class CigiPacketTooLargeException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiPacketTooLargeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiPacketTooLargeException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiPacketTooLargeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiPacketTooLargeException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiPacketTooLargeException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiPacketTooLargeException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiPacketTooLargeException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiPacketTooLargeException : CigiException {
     }
   }
 
-  public CigiPacketTooLargeException() : this(example_modulePINVOKE.new_CigiPacketTooLargeException(), true) {
+  public CigiPacketTooLargeException() : this(ccl_dllDPINVOKE.new_CigiPacketTooLargeException(), true) {
   }
 
 }

@@ -12,7 +12,7 @@
 public class CigiMissingStartOfFrameException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiMissingStartOfFrameException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiMissingStartOfFrameException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiMissingStartOfFrameException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiMissingStartOfFrameException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiMissingStartOfFrameException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiMissingStartOfFrameException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiMissingStartOfFrameException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiMissingStartOfFrameException : CigiException {
     }
   }
 
-  public CigiMissingStartOfFrameException() : this(example_modulePINVOKE.new_CigiMissingStartOfFrameException(), true) {
+  public CigiMissingStartOfFrameException() : this(ccl_dllDPINVOKE.new_CigiMissingStartOfFrameException(), true) {
   }
 
 }

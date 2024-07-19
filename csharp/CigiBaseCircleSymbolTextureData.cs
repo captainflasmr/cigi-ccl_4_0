@@ -49,7 +49,7 @@ public class CigiBaseCircleSymbolTextureData : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseCircleSymbolTextureData(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseCircleSymbolTextureData(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -57,162 +57,162 @@ public class CigiBaseCircleSymbolTextureData : global::System.IDisposable {
   }
 
   public virtual int Pack(CigiBaseCircleSymbolTextureData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_Pack(swigCPtr, CigiBaseCircleSymbolTextureData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_Pack(swigCPtr, CigiBaseCircleSymbolTextureData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public virtual int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 
   public int SetCenterUPosition(float CenterUPositionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetCenterUPosition__SWIG_0(swigCPtr, CenterUPositionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetCenterUPosition__SWIG_0(swigCPtr, CenterUPositionIn, bndchk);
     return ret;
   }
 
   public int SetCenterUPosition(float CenterUPositionIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetCenterUPosition__SWIG_1(swigCPtr, CenterUPositionIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetCenterUPosition__SWIG_1(swigCPtr, CenterUPositionIn);
     return ret;
   }
 
   public float GetCenterUPosition() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetCenterUPosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetCenterUPosition(swigCPtr);
     return ret;
   }
 
   public int SetCenterVPosition(float CenterVPositionIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetCenterVPosition__SWIG_0(swigCPtr, CenterVPositionIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetCenterVPosition__SWIG_0(swigCPtr, CenterVPositionIn, bndchk);
     return ret;
   }
 
   public int SetCenterVPosition(float CenterVPositionIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetCenterVPosition__SWIG_1(swigCPtr, CenterVPositionIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetCenterVPosition__SWIG_1(swigCPtr, CenterVPositionIn);
     return ret;
   }
 
   public float GetCenterVPosition() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetCenterVPosition(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetCenterVPosition(swigCPtr);
     return ret;
   }
 
   public int SetRadius(float RadiusIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetRadius__SWIG_0(swigCPtr, RadiusIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetRadius__SWIG_0(swigCPtr, RadiusIn, bndchk);
     return ret;
   }
 
   public int SetRadius(float RadiusIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetRadius__SWIG_1(swigCPtr, RadiusIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetRadius__SWIG_1(swigCPtr, RadiusIn);
     return ret;
   }
 
   public float GetRadius() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetRadius(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetRadius(swigCPtr);
     return ret;
   }
 
   public int SetInnerRadius(float InnerRadiusIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetInnerRadius__SWIG_0(swigCPtr, InnerRadiusIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetInnerRadius__SWIG_0(swigCPtr, InnerRadiusIn, bndchk);
     return ret;
   }
 
   public int SetInnerRadius(float InnerRadiusIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetInnerRadius__SWIG_1(swigCPtr, InnerRadiusIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetInnerRadius__SWIG_1(swigCPtr, InnerRadiusIn);
     return ret;
   }
 
   public float GetInnerRadius() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetInnerRadius(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetInnerRadius(swigCPtr);
     return ret;
   }
 
   public int SetStartAngle(float StartAngleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetStartAngle__SWIG_0(swigCPtr, StartAngleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetStartAngle__SWIG_0(swigCPtr, StartAngleIn, bndchk);
     return ret;
   }
 
   public int SetStartAngle(float StartAngleIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetStartAngle__SWIG_1(swigCPtr, StartAngleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetStartAngle__SWIG_1(swigCPtr, StartAngleIn);
     return ret;
   }
 
   public float GetStartAngle() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetStartAngle(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetStartAngle(swigCPtr);
     return ret;
   }
 
   public int SetEndAngle(float EndAngleIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetEndAngle__SWIG_0(swigCPtr, EndAngleIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetEndAngle__SWIG_0(swigCPtr, EndAngleIn, bndchk);
     return ret;
   }
 
   public int SetEndAngle(float EndAngleIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetEndAngle__SWIG_1(swigCPtr, EndAngleIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetEndAngle__SWIG_1(swigCPtr, EndAngleIn);
     return ret;
   }
 
   public float GetEndAngle() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetEndAngle(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetEndAngle(swigCPtr);
     return ret;
   }
 
   public int SetSTexCoord(float STexCoordIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetSTexCoord__SWIG_0(swigCPtr, STexCoordIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetSTexCoord__SWIG_0(swigCPtr, STexCoordIn, bndchk);
     return ret;
   }
 
   public int SetSTexCoord(float STexCoordIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetSTexCoord__SWIG_1(swigCPtr, STexCoordIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetSTexCoord__SWIG_1(swigCPtr, STexCoordIn);
     return ret;
   }
 
   public float GetSTexCoord() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetSTexCoord(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetSTexCoord(swigCPtr);
     return ret;
   }
 
   public int SetTTexCoord(float TTexCoordIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTTexCoord__SWIG_0(swigCPtr, TTexCoordIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTTexCoord__SWIG_0(swigCPtr, TTexCoordIn, bndchk);
     return ret;
   }
 
   public int SetTTexCoord(float TTexCoordIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTTexCoord__SWIG_1(swigCPtr, TTexCoordIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTTexCoord__SWIG_1(swigCPtr, TTexCoordIn);
     return ret;
   }
 
   public float GetTTexCoord() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetTTexCoord(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetTTexCoord(swigCPtr);
     return ret;
   }
 
   public int SetTextureRadius(float TextureRadiusIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRadius__SWIG_0(swigCPtr, TextureRadiusIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRadius__SWIG_0(swigCPtr, TextureRadiusIn, bndchk);
     return ret;
   }
 
   public int SetTextureRadius(float TextureRadiusIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRadius__SWIG_1(swigCPtr, TextureRadiusIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRadius__SWIG_1(swigCPtr, TextureRadiusIn);
     return ret;
   }
 
   public float GetTextureRadius() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetTextureRadius(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetTextureRadius(swigCPtr);
     return ret;
   }
 
   public int SetTextureRotation(float TextureRotationIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRotation__SWIG_0(swigCPtr, TextureRotationIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRotation__SWIG_0(swigCPtr, TextureRotationIn, bndchk);
     return ret;
   }
 
   public int SetTextureRotation(float TextureRotationIn) {
-    int ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRotation__SWIG_1(swigCPtr, TextureRotationIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_SetTextureRotation__SWIG_1(swigCPtr, TextureRotationIn);
     return ret;
   }
 
   public float GetTextureRotation() {
-    float ret = example_modulePINVOKE.CigiBaseCircleSymbolTextureData_GetTextureRotation(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseCircleSymbolTextureData_GetTextureRotation(swigCPtr);
     return ret;
   }
 

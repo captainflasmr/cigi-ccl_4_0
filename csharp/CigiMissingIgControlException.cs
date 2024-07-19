@@ -12,7 +12,7 @@
 public class CigiMissingIgControlException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiMissingIgControlException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiMissingIgControlException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiMissingIgControlException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiMissingIgControlException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiMissingIgControlException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiMissingIgControlException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiMissingIgControlException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiMissingIgControlException : CigiException {
     }
   }
 
-  public CigiMissingIgControlException() : this(example_modulePINVOKE.new_CigiMissingIgControlException(), true) {
+  public CigiMissingIgControlException() : this(ccl_dllDPINVOKE.new_CigiMissingIgControlException(), true) {
   }
 
 }

@@ -12,7 +12,7 @@
 public class CigiBaseAnimationCtrl : CigiBasePacket {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiBaseAnimationCtrl(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiBaseAnimationCtrl_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiBaseAnimationCtrl(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiBaseAnimationCtrl : CigiBasePacket {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiBaseAnimationCtrl(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiBaseAnimationCtrl(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -47,144 +47,144 @@ public class CigiBaseAnimationCtrl : CigiBasePacket {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetEntityID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetEntityID(SWIGTYPE_p_unsigned___int16 EntityIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetEntityID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(EntityIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetEntityID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseAnimationCtrl_GetEntityID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetEntityID(swigCPtr), true);
     return ret;
   }
 
   public int SetAnimationID(SWIGTYPE_p_unsigned___int16 AnimationIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(AnimationIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(AnimationIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetAnimationID(SWIGTYPE_p_unsigned___int16 AnimationIDIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(AnimationIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int16.getCPtr(AnimationIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int16 GetAnimationID() {
-    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(example_modulePINVOKE.CigiBaseAnimationCtrl_GetAnimationID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int16 ret = new SWIGTYPE_p_unsigned___int16(ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAnimationID(swigCPtr), true);
     return ret;
   }
 
   public int SetAlpha(SWIGTYPE_p_unsigned___int8 AlphaIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAlpha__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAlpha__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetAlpha(SWIGTYPE_p_unsigned___int8 AlphaIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAlpha__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAlpha__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(AlphaIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetAlpha() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiBaseAnimationCtrl_GetAlpha(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAlpha(swigCPtr), true);
     return ret;
   }
 
   public int SetAnimationSpeed(float AnimationSpeedIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationSpeed__SWIG_0(swigCPtr, AnimationSpeedIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationSpeed__SWIG_0(swigCPtr, AnimationSpeedIn, bndchk);
     return ret;
   }
 
   public int SetAnimationSpeed(float AnimationSpeedIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationSpeed__SWIG_1(swigCPtr, AnimationSpeedIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationSpeed__SWIG_1(swigCPtr, AnimationSpeedIn);
     return ret;
   }
 
   public float GetAnimationSpeed() {
-    float ret = example_modulePINVOKE.CigiBaseAnimationCtrl_GetAnimationSpeed(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAnimationSpeed(swigCPtr);
     return ret;
   }
 
   public int SetInheritAlpha(CigiBaseAnimationCtrl.InheritAlphaGrp InheritAlphaIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetInheritAlpha__SWIG_0(swigCPtr, (int)InheritAlphaIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetInheritAlpha__SWIG_0(swigCPtr, (int)InheritAlphaIn, bndchk);
     return ret;
   }
 
   public int SetInheritAlpha(CigiBaseAnimationCtrl.InheritAlphaGrp InheritAlphaIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetInheritAlpha__SWIG_1(swigCPtr, (int)InheritAlphaIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetInheritAlpha__SWIG_1(swigCPtr, (int)InheritAlphaIn);
     return ret;
   }
 
   public CigiBaseAnimationCtrl.InheritAlphaGrp GetInheritAlpha() {
-    CigiBaseAnimationCtrl.InheritAlphaGrp ret = (CigiBaseAnimationCtrl.InheritAlphaGrp)example_modulePINVOKE.CigiBaseAnimationCtrl_GetInheritAlpha(swigCPtr);
+    CigiBaseAnimationCtrl.InheritAlphaGrp ret = (CigiBaseAnimationCtrl.InheritAlphaGrp)ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetInheritAlpha(swigCPtr);
     return ret;
   }
 
   public int SetAnimationState(CigiBaseAnimationCtrl.AnimationStateGrp AnimationStateIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationState__SWIG_0(swigCPtr, (int)AnimationStateIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationState__SWIG_0(swigCPtr, (int)AnimationStateIn, bndchk);
     return ret;
   }
 
   public int SetAnimationState(CigiBaseAnimationCtrl.AnimationStateGrp AnimationStateIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationState__SWIG_1(swigCPtr, (int)AnimationStateIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationState__SWIG_1(swigCPtr, (int)AnimationStateIn);
     return ret;
   }
 
   public CigiBaseAnimationCtrl.AnimationStateGrp GetAnimationState() {
-    CigiBaseAnimationCtrl.AnimationStateGrp ret = (CigiBaseAnimationCtrl.AnimationStateGrp)example_modulePINVOKE.CigiBaseAnimationCtrl_GetAnimationState(swigCPtr);
+    CigiBaseAnimationCtrl.AnimationStateGrp ret = (CigiBaseAnimationCtrl.AnimationStateGrp)ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAnimationState(swigCPtr);
     return ret;
   }
 
   public int SetAnimationFrameResetMode(CigiBaseAnimationCtrl.AnimationFramePositionResetGrp AnimationFrameResetModeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationFrameResetMode__SWIG_0(swigCPtr, (int)AnimationFrameResetModeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationFrameResetMode__SWIG_0(swigCPtr, (int)AnimationFrameResetModeIn, bndchk);
     return ret;
   }
 
   public int SetAnimationFrameResetMode(CigiBaseAnimationCtrl.AnimationFramePositionResetGrp AnimationFrameResetModeIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationFrameResetMode__SWIG_1(swigCPtr, (int)AnimationFrameResetModeIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationFrameResetMode__SWIG_1(swigCPtr, (int)AnimationFrameResetModeIn);
     return ret;
   }
 
   public CigiBaseAnimationCtrl.AnimationFramePositionResetGrp GetAnimationFrameResetMode() {
-    CigiBaseAnimationCtrl.AnimationFramePositionResetGrp ret = (CigiBaseAnimationCtrl.AnimationFramePositionResetGrp)example_modulePINVOKE.CigiBaseAnimationCtrl_GetAnimationFrameResetMode(swigCPtr);
+    CigiBaseAnimationCtrl.AnimationFramePositionResetGrp ret = (CigiBaseAnimationCtrl.AnimationFramePositionResetGrp)ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAnimationFrameResetMode(swigCPtr);
     return ret;
   }
 
   public int SetAnimationLoopMode(CigiBaseAnimationCtrl.AnimationLoopModeGrp AnimationLoopModeIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationLoopMode__SWIG_0(swigCPtr, (int)AnimationLoopModeIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationLoopMode__SWIG_0(swigCPtr, (int)AnimationLoopModeIn, bndchk);
     return ret;
   }
 
   public int SetAnimationLoopMode(CigiBaseAnimationCtrl.AnimationLoopModeGrp AnimationLoopModeIn) {
-    int ret = example_modulePINVOKE.CigiBaseAnimationCtrl_SetAnimationLoopMode__SWIG_1(swigCPtr, (int)AnimationLoopModeIn);
+    int ret = ccl_dllDPINVOKE.CigiBaseAnimationCtrl_SetAnimationLoopMode__SWIG_1(swigCPtr, (int)AnimationLoopModeIn);
     return ret;
   }
 
   public CigiBaseAnimationCtrl.AnimationLoopModeGrp GetAnimationLoopMode() {
-    CigiBaseAnimationCtrl.AnimationLoopModeGrp ret = (CigiBaseAnimationCtrl.AnimationLoopModeGrp)example_modulePINVOKE.CigiBaseAnimationCtrl_GetAnimationLoopMode(swigCPtr);
+    CigiBaseAnimationCtrl.AnimationLoopModeGrp ret = (CigiBaseAnimationCtrl.AnimationLoopModeGrp)ccl_dllDPINVOKE.CigiBaseAnimationCtrl_GetAnimationLoopMode(swigCPtr);
     return ret;
   }
 

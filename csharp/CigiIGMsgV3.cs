@@ -12,7 +12,7 @@
 public class CigiIGMsgV3 : CigiBaseIGMsg {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiIGMsgV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiIGMsgV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiIGMsgV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiIGMsgV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiIGMsgV3 : CigiBaseIGMsg {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiIGMsgV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiIGMsgV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,36 +46,36 @@ public class CigiIGMsgV3 : CigiBaseIGMsg {
     }
   }
 
-  public CigiIGMsgV3() : this(example_modulePINVOKE.new_CigiIGMsgV3(), true) {
+  public CigiIGMsgV3() : this(ccl_dllDPINVOKE.new_CigiIGMsgV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiIGMsgV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiIGMsgV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiIGMsgV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiIGMsgV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetTruePacketSize(CigiBaseVariableSizePckt refPacket) {
-    int ret = example_modulePINVOKE.CigiIGMsgV3_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiIGMsgV3_GetTruePacketSize(swigCPtr, CigiBaseVariableSizePckt.getCPtr(refPacket));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetMsg(string MsgIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiIGMsgV3_SetMsg__SWIG_0(swigCPtr, MsgIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiIGMsgV3_SetMsg__SWIG_0(swigCPtr, MsgIn, bndchk);
     return ret;
   }
 
   public int SetMsg(string MsgIn) {
-    int ret = example_modulePINVOKE.CigiIGMsgV3_SetMsg__SWIG_1(swigCPtr, MsgIn);
+    int ret = ccl_dllDPINVOKE.CigiIGMsgV3_SetMsg__SWIG_1(swigCPtr, MsgIn);
     return ret;
   }
 
-  public static readonly int PacketHeaderSize = example_modulePINVOKE.CigiIGMsgV3_PacketHeaderSize_get();
-  public static readonly int MaxMessageSize = example_modulePINVOKE.CigiIGMsgV3_MaxMessageSize_get();
+  public static readonly int PacketHeaderSize = ccl_dllDPINVOKE.CigiIGMsgV3_PacketHeaderSize_get();
+  public static readonly int MaxMessageSize = ccl_dllDPINVOKE.CigiIGMsgV3_MaxMessageSize_get();
 
 }

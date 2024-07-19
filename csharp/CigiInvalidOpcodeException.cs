@@ -12,7 +12,7 @@
 public class CigiInvalidOpcodeException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiInvalidOpcodeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiInvalidOpcodeException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiInvalidOpcodeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiInvalidOpcodeException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiInvalidOpcodeException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiInvalidOpcodeException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiInvalidOpcodeException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiInvalidOpcodeException : CigiException {
     }
   }
 
-  public CigiInvalidOpcodeException() : this(example_modulePINVOKE.new_CigiInvalidOpcodeException(), true) {
+  public CigiInvalidOpcodeException() : this(ccl_dllDPINVOKE.new_CigiInvalidOpcodeException(), true) {
   }
 
 }

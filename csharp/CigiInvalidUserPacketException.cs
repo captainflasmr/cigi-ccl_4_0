@@ -12,7 +12,7 @@
 public class CigiInvalidUserPacketException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiInvalidUserPacketException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiInvalidUserPacketException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiInvalidUserPacketException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiInvalidUserPacketException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiInvalidUserPacketException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiInvalidUserPacketException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiInvalidUserPacketException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,11 +46,11 @@ public class CigiInvalidUserPacketException : CigiException {
     }
   }
 
-  public CigiInvalidUserPacketException() : this(example_modulePINVOKE.new_CigiInvalidUserPacketException__SWIG_0(), true) {
+  public CigiInvalidUserPacketException() : this(ccl_dllDPINVOKE.new_CigiInvalidUserPacketException__SWIG_0(), true) {
   }
 
-  public CigiInvalidUserPacketException(SWIGTYPE_p_unsigned___int8 PacketID) : this(example_modulePINVOKE.new_CigiInvalidUserPacketException__SWIG_1(SWIGTYPE_p_unsigned___int8.getCPtr(PacketID)), true) {
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+  public CigiInvalidUserPacketException(SWIGTYPE_p_unsigned___int8 PacketID) : this(ccl_dllDPINVOKE.new_CigiInvalidUserPacketException__SWIG_1(SWIGTYPE_p_unsigned___int8.getCPtr(PacketID)), true) {
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
   }
 
 }

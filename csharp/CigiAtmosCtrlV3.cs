@@ -12,7 +12,7 @@
 public class CigiAtmosCtrlV3 : CigiBaseEnvCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiAtmosCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiAtmosCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiAtmosCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiAtmosCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiAtmosCtrlV3 : CigiBaseEnvCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiAtmosCtrlV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiAtmosCtrlV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,148 +46,148 @@ public class CigiAtmosCtrlV3 : CigiBaseEnvCtrl {
     }
   }
 
-  public CigiAtmosCtrlV3() : this(example_modulePINVOKE.new_CigiAtmosCtrlV3(), true) {
+  public CigiAtmosCtrlV3() : this(ccl_dllDPINVOKE.new_CigiAtmosCtrlV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int GetCnvt(CigiVersionID CnvtVersion, SWIGTYPE_p_CigiCnvtInfoType__Type CnvtInfo) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetCnvt(swigCPtr, CigiVersionID.getCPtr(CnvtVersion), SWIGTYPE_p_CigiCnvtInfoType__Type.getCPtr(CnvtInfo));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public override void FillHold(CigiBaseEnvCtrl Hold) {
-    example_modulePINVOKE.CigiAtmosCtrlV3_FillHold(swigCPtr, CigiBaseEnvCtrl.getCPtr(Hold));
+    ccl_dllDPINVOKE.CigiAtmosCtrlV3_FillHold(swigCPtr, CigiBaseEnvCtrl.getCPtr(Hold));
   }
 
   public int SetAtmosEn(bool AtmosEnIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetAtmosEn__SWIG_0(swigCPtr, AtmosEnIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetAtmosEn__SWIG_0(swigCPtr, AtmosEnIn, bndchk);
     return ret;
   }
 
   public int SetAtmosEn(bool AtmosEnIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetAtmosEn__SWIG_1(swigCPtr, AtmosEnIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetAtmosEn__SWIG_1(swigCPtr, AtmosEnIn);
     return ret;
   }
 
   public bool GetAtmosEn() {
-    bool ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetAtmosEn(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetAtmosEn(swigCPtr);
     return ret;
   }
 
   public int SetHumidity(SWIGTYPE_p_unsigned___int8 HumidityIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetHumidity__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetHumidity__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetHumidity(SWIGTYPE_p_unsigned___int8 HumidityIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetHumidity__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetHumidity__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(HumidityIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetHumidity() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiAtmosCtrlV3_GetHumidity(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetHumidity(swigCPtr), true);
     return ret;
   }
 
   public int SetAirTemp(float AirTempIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetAirTemp__SWIG_0(swigCPtr, AirTempIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetAirTemp__SWIG_0(swigCPtr, AirTempIn, bndchk);
     return ret;
   }
 
   public int SetAirTemp(float AirTempIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetAirTemp__SWIG_1(swigCPtr, AirTempIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetAirTemp__SWIG_1(swigCPtr, AirTempIn);
     return ret;
   }
 
   public float GetAirTemp() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetAirTemp(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetAirTemp(swigCPtr);
     return ret;
   }
 
   public int SetVisibility(float VisibilityIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetVisibility__SWIG_0(swigCPtr, VisibilityIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetVisibility__SWIG_0(swigCPtr, VisibilityIn, bndchk);
     return ret;
   }
 
   public int SetVisibility(float VisibilityIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetVisibility__SWIG_1(swigCPtr, VisibilityIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetVisibility__SWIG_1(swigCPtr, VisibilityIn);
     return ret;
   }
 
   public float GetVisibility() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetVisibility(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetVisibility(swigCPtr);
     return ret;
   }
 
   public int SetHorizWindSp(float HorizWindSpIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetHorizWindSp__SWIG_0(swigCPtr, HorizWindSpIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetHorizWindSp__SWIG_0(swigCPtr, HorizWindSpIn, bndchk);
     return ret;
   }
 
   public int SetHorizWindSp(float HorizWindSpIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetHorizWindSp__SWIG_1(swigCPtr, HorizWindSpIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetHorizWindSp__SWIG_1(swigCPtr, HorizWindSpIn);
     return ret;
   }
 
   public float GetHorizWindSp() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetHorizWindSp(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetHorizWindSp(swigCPtr);
     return ret;
   }
 
   public int SetVertWindSp(float VertWindSpIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetVertWindSp__SWIG_0(swigCPtr, VertWindSpIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetVertWindSp__SWIG_0(swigCPtr, VertWindSpIn, bndchk);
     return ret;
   }
 
   public int SetVertWindSp(float VertWindSpIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetVertWindSp__SWIG_1(swigCPtr, VertWindSpIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetVertWindSp__SWIG_1(swigCPtr, VertWindSpIn);
     return ret;
   }
 
   public float GetVertWindSp() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetVertWindSp(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetVertWindSp(swigCPtr);
     return ret;
   }
 
   public int SetWindDir(float WindDirIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetWindDir__SWIG_0(swigCPtr, WindDirIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetWindDir__SWIG_0(swigCPtr, WindDirIn, bndchk);
     return ret;
   }
 
   public int SetWindDir(float WindDirIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetWindDir__SWIG_1(swigCPtr, WindDirIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetWindDir__SWIG_1(swigCPtr, WindDirIn);
     return ret;
   }
 
   public float GetWindDir() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetWindDir(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetWindDir(swigCPtr);
     return ret;
   }
 
   public int SetBaroPress(float BaroPressIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetBaroPress__SWIG_0(swigCPtr, BaroPressIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetBaroPress__SWIG_0(swigCPtr, BaroPressIn, bndchk);
     return ret;
   }
 
   public int SetBaroPress(float BaroPressIn) {
-    int ret = example_modulePINVOKE.CigiAtmosCtrlV3_SetBaroPress__SWIG_1(swigCPtr, BaroPressIn);
+    int ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_SetBaroPress__SWIG_1(swigCPtr, BaroPressIn);
     return ret;
   }
 
   public float GetBaroPress() {
-    float ret = example_modulePINVOKE.CigiAtmosCtrlV3_GetBaroPress(swigCPtr);
+    float ret = ccl_dllDPINVOKE.CigiAtmosCtrlV3_GetBaroPress(swigCPtr);
     return ret;
   }
 

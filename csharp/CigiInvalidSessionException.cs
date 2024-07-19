@@ -12,7 +12,7 @@
 public class CigiInvalidSessionException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiInvalidSessionException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiInvalidSessionException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiInvalidSessionException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiInvalidSessionException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiInvalidSessionException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiInvalidSessionException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiInvalidSessionException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiInvalidSessionException : CigiException {
     }
   }
 
-  public CigiInvalidSessionException() : this(example_modulePINVOKE.new_CigiInvalidSessionException(), true) {
+  public CigiInvalidSessionException() : this(ccl_dllDPINVOKE.new_CigiInvalidSessionException(), true) {
   }
 
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# swig -csharp -c++ ../../../example.i -outdir ../../../csharp -outfile ../../../exampleCSHARP_wrap.cxx
+# swig -csharp -c++ ../../../ccl.i -outdir ../../../csharp -outfile ../../../cclCSHARP_wrap.cxx
 
 mkdir -p ../../csharp
-swig -outdir ../../csharp -csharp -c++ ../../example.i
+swig -outdir ../../csharp -csharp -c++ ../../ccl.i

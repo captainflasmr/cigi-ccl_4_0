@@ -12,7 +12,7 @@
 public class CigiVertexSymbolDataV3_3 : CigiBaseVertexSymbolData {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiVertexSymbolDataV3_3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiVertexSymbolDataV3_3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiVertexSymbolDataV3_3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiVertexSymbolDataV3_3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiVertexSymbolDataV3_3 : CigiBaseVertexSymbolData {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiVertexSymbolDataV3_3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiVertexSymbolDataV3_3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,16 +46,16 @@ public class CigiVertexSymbolDataV3_3 : CigiBaseVertexSymbolData {
     }
   }
 
-  public CigiVertexSymbolDataV3_3() : this(example_modulePINVOKE.new_CigiVertexSymbolDataV3_3(), true) {
+  public CigiVertexSymbolDataV3_3() : this(ccl_dllDPINVOKE.new_CigiVertexSymbolDataV3_3(), true) {
   }
 
   public override int Pack(CigiBaseVertexSymbolData Base, SWIGTYPE_p_unsigned___int8 Buff) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolDataV3_3_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolDataV3_3_Pack(swigCPtr, CigiBaseVertexSymbolData.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap) {
-    int ret = example_modulePINVOKE.CigiVertexSymbolDataV3_3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
+    int ret = ccl_dllDPINVOKE.CigiVertexSymbolDataV3_3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap);
     return ret;
   }
 

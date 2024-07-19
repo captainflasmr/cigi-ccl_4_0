@@ -12,7 +12,7 @@
 public class CigiRateCtrlV3 : CigiBaseRateCtrl {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiRateCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiRateCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiRateCtrlV3(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiRateCtrlV3_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiRateCtrlV3 : CigiBaseRateCtrl {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiRateCtrlV3(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiRateCtrlV3(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,48 +46,48 @@ public class CigiRateCtrlV3 : CigiBaseRateCtrl {
     }
   }
 
-  public CigiRateCtrlV3() : this(example_modulePINVOKE.new_CigiRateCtrlV3(), true) {
+  public CigiRateCtrlV3() : this(ccl_dllDPINVOKE.new_CigiRateCtrlV3(), true) {
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p_unsigned___int8 ArtPartIDIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn), bndchk);
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_SetArtPartID__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn), bndchk);
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int SetArtPartID(SWIGTYPE_p_unsigned___int8 ArtPartIDIn) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn));
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_SetArtPartID__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(ArtPartIDIn));
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public SWIGTYPE_p_unsigned___int8 GetArtPartID() {
-    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(example_modulePINVOKE.CigiRateCtrlV3_GetArtPartID(swigCPtr), true);
+    SWIGTYPE_p_unsigned___int8 ret = new SWIGTYPE_p_unsigned___int8(ccl_dllDPINVOKE.CigiRateCtrlV3_GetArtPartID(swigCPtr), true);
     return ret;
   }
 
   public int SetApplyToArtPart(bool ApplyToArtPartIn, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_SetApplyToArtPart__SWIG_0(swigCPtr, ApplyToArtPartIn, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_SetApplyToArtPart__SWIG_0(swigCPtr, ApplyToArtPartIn, bndchk);
     return ret;
   }
 
   public int SetApplyToArtPart(bool ApplyToArtPartIn) {
-    int ret = example_modulePINVOKE.CigiRateCtrlV3_SetApplyToArtPart__SWIG_1(swigCPtr, ApplyToArtPartIn);
+    int ret = ccl_dllDPINVOKE.CigiRateCtrlV3_SetApplyToArtPart__SWIG_1(swigCPtr, ApplyToArtPartIn);
     return ret;
   }
 
   public bool GetApplyToArtPart() {
-    bool ret = example_modulePINVOKE.CigiRateCtrlV3_GetApplyToArtPart(swigCPtr);
+    bool ret = ccl_dllDPINVOKE.CigiRateCtrlV3_GetApplyToArtPart(swigCPtr);
     return ret;
   }
 

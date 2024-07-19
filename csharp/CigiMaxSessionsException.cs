@@ -12,7 +12,7 @@
 public class CigiMaxSessionsException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiMaxSessionsException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiMaxSessionsException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiMaxSessionsException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiMaxSessionsException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiMaxSessionsException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiMaxSessionsException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiMaxSessionsException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,7 +46,7 @@ public class CigiMaxSessionsException : CigiException {
     }
   }
 
-  public CigiMaxSessionsException() : this(example_modulePINVOKE.new_CigiMaxSessionsException(), true) {
+  public CigiMaxSessionsException() : this(ccl_dllDPINVOKE.new_CigiMaxSessionsException(), true) {
   }
 
 }

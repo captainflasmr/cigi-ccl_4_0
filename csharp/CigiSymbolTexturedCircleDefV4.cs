@@ -12,7 +12,7 @@
 public class CigiSymbolTexturedCircleDefV4 : CigiBaseSymbolTexturedCircleDef {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiSymbolTexturedCircleDefV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiSymbolTexturedCircleDefV4(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiSymbolTexturedCircleDefV4 : CigiBaseSymbolTexturedCircleDef {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiSymbolTexturedCircleDefV4(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiSymbolTexturedCircleDefV4(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,36 +46,36 @@ public class CigiSymbolTexturedCircleDefV4 : CigiBaseSymbolTexturedCircleDef {
     }
   }
 
-  public CigiSymbolTexturedCircleDefV4() : this(example_modulePINVOKE.new_CigiSymbolTexturedCircleDefV4__SWIG_0(), true) {
+  public CigiSymbolTexturedCircleDefV4() : this(ccl_dllDPINVOKE.new_CigiSymbolTexturedCircleDefV4__SWIG_0(), true) {
   }
 
-  public CigiSymbolTexturedCircleDefV4(CigiSymbolTexturedCircleDefV4 BaseIn) : this(example_modulePINVOKE.new_CigiSymbolTexturedCircleDefV4__SWIG_1(CigiSymbolTexturedCircleDefV4.getCPtr(BaseIn)), true) {
-    if (example_modulePINVOKE.SWIGPendingException.Pending) throw example_modulePINVOKE.SWIGPendingException.Retrieve();
+  public CigiSymbolTexturedCircleDefV4(CigiSymbolTexturedCircleDefV4 BaseIn) : this(ccl_dllDPINVOKE.new_CigiSymbolTexturedCircleDefV4__SWIG_1(CigiSymbolTexturedCircleDefV4.getCPtr(BaseIn)), true) {
+    if (ccl_dllDPINVOKE.SWIGPendingException.Pending) throw ccl_dllDPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public override int Pack(CigiBasePacket Base, SWIGTYPE_p_unsigned___int8 Buff, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_Pack(swigCPtr, CigiBasePacket.getCPtr(Base), SWIGTYPE_p_unsigned___int8.getCPtr(Buff), SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override int Unpack(SWIGTYPE_p_unsigned___int8 Buff, bool Swap, SWIGTYPE_p_void Spec) {
-    int ret = example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
+    int ret = ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_Unpack(swigCPtr, SWIGTYPE_p_unsigned___int8.getCPtr(Buff), Swap, SWIGTYPE_p_void.getCPtr(Spec));
     return ret;
   }
 
   public override CigiBaseCircleSymbolTextureData AddCircle() {
-    global::System.IntPtr cPtr = example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_AddCircle(swigCPtr);
+    global::System.IntPtr cPtr = ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_AddCircle(swigCPtr);
     CigiBaseCircleSymbolTextureData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CigiBaseCircleSymbolTextureData(cPtr, false);
     return ret;
   }
 
   public override int RemoveCircle(int CircleIndex, bool bndchk) {
-    int ret = example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_RemoveCircle__SWIG_0(swigCPtr, CircleIndex, bndchk);
+    int ret = ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_RemoveCircle__SWIG_0(swigCPtr, CircleIndex, bndchk);
     return ret;
   }
 
   public override int RemoveCircle(int CircleIndex) {
-    int ret = example_modulePINVOKE.CigiSymbolTexturedCircleDefV4_RemoveCircle__SWIG_1(swigCPtr, CircleIndex);
+    int ret = ccl_dllDPINVOKE.CigiSymbolTexturedCircleDefV4_RemoveCircle__SWIG_1(swigCPtr, CircleIndex);
     return ret;
   }
 

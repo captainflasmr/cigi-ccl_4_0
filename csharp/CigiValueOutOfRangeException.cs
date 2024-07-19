@@ -12,7 +12,7 @@
 public class CigiValueOutOfRangeException : CigiException {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CigiValueOutOfRangeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(example_modulePINVOKE.CigiValueOutOfRangeException_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CigiValueOutOfRangeException(global::System.IntPtr cPtr, bool cMemoryOwn) : base(ccl_dllDPINVOKE.CigiValueOutOfRangeException_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -38,7 +38,7 @@ public class CigiValueOutOfRangeException : CigiException {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          example_modulePINVOKE.delete_CigiValueOutOfRangeException(swigCPtr);
+          ccl_dllDPINVOKE.delete_CigiValueOutOfRangeException(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -46,16 +46,16 @@ public class CigiValueOutOfRangeException : CigiException {
     }
   }
 
-  public CigiValueOutOfRangeException() : this(example_modulePINVOKE.new_CigiValueOutOfRangeException__SWIG_0(), true) {
+  public CigiValueOutOfRangeException() : this(ccl_dllDPINVOKE.new_CigiValueOutOfRangeException__SWIG_0(), true) {
   }
 
-  public CigiValueOutOfRangeException(string ParameterName, int Value, int Low, int High) : this(example_modulePINVOKE.new_CigiValueOutOfRangeException__SWIG_1(ParameterName, Value, Low, High), true) {
+  public CigiValueOutOfRangeException(string ParameterName, int Value, int Low, int High) : this(ccl_dllDPINVOKE.new_CigiValueOutOfRangeException__SWIG_1(ParameterName, Value, Low, High), true) {
   }
 
-  public CigiValueOutOfRangeException(string ParameterName, double Value, double Low, double High) : this(example_modulePINVOKE.new_CigiValueOutOfRangeException__SWIG_2(ParameterName, Value, Low, High), true) {
+  public CigiValueOutOfRangeException(string ParameterName, double Value, double Low, double High) : this(ccl_dllDPINVOKE.new_CigiValueOutOfRangeException__SWIG_2(ParameterName, Value, Low, High), true) {
   }
 
-  public CigiValueOutOfRangeException(string ParameterName, double Value, string Mod, double Limit) : this(example_modulePINVOKE.new_CigiValueOutOfRangeException__SWIG_3(ParameterName, Value, Mod, Limit), true) {
+  public CigiValueOutOfRangeException(string ParameterName, double Value, string Mod, double Limit) : this(ccl_dllDPINVOKE.new_CigiValueOutOfRangeException__SWIG_3(ParameterName, Value, Mod, Limit), true) {
   }
 
 }
