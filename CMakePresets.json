@@ -1,62 +1,83 @@
 {
-  "version": 3,
-  "cmakeMinimumRequired": {
-    "major": 3,
-    "minor": 19,
-    "patch": 0
-  },
-  "configurePresets": [
-    {
-      "name": "windows-debug",
-      "description": "Use this preset for Windows Debug builds",
-      "generator": "Visual Studio 17 2022",
-      "binaryDir": "${sourceDir}/build/windows/debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
-      },
-      "hidden": false
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 19,
+        "patch": 0
     },
-    {
-      "name": "linux-debug",
-      "description": "Use this preset for Linux Debug builds",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/linux/debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
-      },
-      "hidden": true
-    },
-    {
-      "name": "linux-release",
-      "description": "Use this preset for Linux Release builds",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/linux/release",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
-      },
-      "hidden": true
-    }
-  ],
-  "buildPresets": [
-    {
-      "name": "windows-debug-build",
-      "configurePreset": "windows-debug",
-      "jobs": 8,
-      "hidden": false
-    },
-    {
-      "name": "linux-debug-build",
-      "configurePreset": "linux-debug",
-      "hidden": true
-    },
-    {
-      "name": "linux-release-build",
-      "configurePreset": "linux-release",
-      "hidden": true
-    }
-  ],
-  "testPresets": []
+    "configurePresets": [
+        {
+            "name": "default",
+            "generator": "Ninja"
+        },
+        {
+            "name": "build/windows/debug",
+            "inherits": "default",
+            "description": "Use this preset for Windows Debug builds",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build/windows/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "build/linux/debug",
+            "inherits": "default",
+            "description": "Use this preset for Linux Debug builds",
+            "binaryDir": "${sourceDir}/build/linux/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
+        },
+        {
+            "name": "build/linux/release",
+            "inherits": "default",
+            "description": "Use this preset for Linux Release builds",
+            "binaryDir": "${sourceDir}/build/linux/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "default",
+            "jobs": 8
+        },
+        {
+            "name": "build/windows/debug",
+            "inherits": "default",
+            "configurePreset": "build/windows/debug"
+        },
+        {
+            "name": "build/linux/debug",
+            "inherits": "default",
+            "configurePreset": "build/linux/debug"
+        },
+        {
+            "name": "build/linux/release",
+            "inherits": "default",
+            "configurePreset": "build/linux/release"
+        }
+    ],
+    "testPresets": []
 }

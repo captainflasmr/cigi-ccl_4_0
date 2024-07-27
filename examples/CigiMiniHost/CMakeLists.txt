@@ -12,11 +12,14 @@ include_directories(
 )
 
 file(GLOB SOURCE_FILES
-     "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+
+set(LIB_TINYXML "${LIBRARY_OUTPUT_PATH}/libtinyxml.a")
+set(LIB_CCL "${LIBRARY_OUTPUT_PATH}/libccl_dll.a")
 
 if(WIN32)
-  set(LIB_TINYXML "${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/lib/Debug/tinyxmlD.lib")
-  set(LIB_CCL "${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/lib/Debug/ccl_dllD.lib")
+  set(LIB_TINYXML "${CMAKE_SOURCE_DIR}/build/windows/debug/lib/Debug/tinyxmlD.lib")
+  set(LIB_CCL "${CMAKE_SOURCE_DIR}/build/windows/debug/lib/Debug/ccl_dllD.lib")
 endif()
 
 set(LIB_FILES ${LIB_TINYXML} ${LIB_CCL})
@@ -32,6 +35,12 @@ else()
   target_link_libraries(CigiMiniHost ${LIB_FILES})
 endif()
 
-INSTALL(FILES
-   ${CMAKE_CURRENT_SOURCE_DIR}/MiniHost.def
-   DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../../build/windows/debug/bin/Debug)
+if(WIN32)
+  INSTALL(FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/MiniHost.def
+    DESTINATION ${EXECUTABLE_OUTPUT_PATH}/Debug)
+else()
+  INSTALL(FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/MiniHost.def
+    DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+endif()

@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.28)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.30)
 PROJECT(ccl)
 SET(VERSION 4.0.2)
 
@@ -139,10 +139,15 @@ INCLUDE_DIRECTORIES(include)
 # #
 # # Compiling the CCL as a shared library
 # #
-
-add_library(cigicl-shared SHARED
- 	${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
- 	${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/ccl_wrap_patch.cxx)
+if(MSVC OR MINGW)
+  add_library(cigicl-shared SHARED
+ 	 ${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
+ 	 ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/ccl_wrap_patch.cxx)
+else()
+  add_library(cigicl-shared STATIC
+ 	 ${CCL_PUBLIC_HDRS}  ${CCL_HDRS_BASE} ${CCL_HDRS_V1} ${CCL_HDRS_V2} ${CCL_HDRS_V3} ${CCL_HDRS_V4}
+ 	 ${CCL_SRCS} ${CCL_SRCS_BASE} ${CCL_SRCS_V1} ${CCL_SRCS_V2} ${CCL_SRCS_V3} ${CCL_SRCS_V4} ${CMAKE_SOURCE_DIR}/ccl_wrap_patch.cxx)
+endif()
 
 source_group("Header Files\\BaseClasses"         FILES ${CCL_HDRS_BASE})
 source_group("Header Files\\Version1"            FILES ${CCL_HDRS_V1})
@@ -207,5 +212,7 @@ SET_TARGET_PROPERTIES(cigicl-shared PROPERTIES
 add_subdirectory("examples/tinyxml")
 add_subdirectory("examples/CigiMiniHost")
 add_subdirectory("examples/CigiDummyIG")
-add_subdirectory("examples/CigiMiniHostCSharp")
-add_subdirectory("examples/CigiDummyIGCSharp")
+if(WIN32)
+  add_subdirectory("examples/CigiMiniHostCSharp")
+  add_subdirectory("examples/CigiDummyIGCSharp")
+endif()
