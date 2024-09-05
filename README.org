@@ -59,15 +59,15 @@ SWIG is particularly useful in scenarios where you have a substantial amount of 
 #+begin: kanban :layout ("..." . 50) :scope nil :range ("TODO" . "DONE") :sort "O" :depth 3 :compressed t
 | TODO                                             | DOING                                        | DONE                                               |
 |--------------------------------------------------+----------------------------------------------+----------------------------------------------------|
-| [[file:README.org::*add better support for targets][add better support for targets]]                   | [[file:README.org::*CigiMiniHostCSharp to generate CIGI messages][CigiMiniHostCSharp to generate CIGI messages]] | [[file:README.org::*generate swig interface dependancy file list using script][generate swig interface dependancy file list us...]] |
-| [[file:README.org::*generate swig other languages][generate swig other languages]]                    | [[file:README.org::*generate swig files using scripts][generate swig files using scripts]]            | [[file:README.org::*C# xml and socket connection implemented for CIGI host][C# xml and socket connection implemented for CI...]] |
-| [[file:README.org::*- swig python][- swig python]]                                    | [[file:README.org::*generate swig other languages][generate swig other languages]]                | [[file:README.org::*C# examples imported swig C# files][C# examples imported swig C# files]]                 |
-| [[file:README.org::*- swig tcl][- swig tcl]]                                       | [[file:README.org::*- swig C#][- swig C#]]                                    | [[file:README.org::*example swig concept explored with animal and kermit][example swig concept explored with animal and k...]] |
-| [[file:README.org::*possibly remove ALL_BUILD and ZERO_CHECK vcxproj][possibly remove ALL_BUILD and ZERO_CHECK vcxproj]] | [[file:README.org::*generate linux and windows builds][generate linux and windows builds]]            | [[file:README.org::*swig generated C# files][swig generated C# files]]                            |
-| [[file:README.org::*update README files][update README files]]                              | [[file:README.org::*emacs transient for interacting with cmake][emacs transient for interacting with cmake]]   | [[file:README.org::*wireshark to monitor CIGI messages][wireshark to monitor CIGI messages]]                 |
-| [[file:README.org::*sln to install files][sln to install files]]                             | [[file:README.org::*clean up top level build files][clean up top level build files]]               | [[file:README.org::*CigiDummyIG and CigiMiniHost sending CIGI][CigiDummyIG and CigiMiniHost sending CIGI]]          |
-| [[file:README.org::*Turn on / off cmake SWIG generation][Turn on / off cmake SWIG generation]]              |                                              | [[file:README.org::*visual studio sln to build whole ccl project with examples][visual studio sln to build whole ccl project wi...]] |
-| [[file:README.org::*clean up visual studio solution files][clean up visual studio solution files]]            |                                              | [[file:README.org::*cmake building whole ccl project with examples][cmake building whole ccl project with examples]]     |
+| [[file:README.org::*generate swig other languages][generate swig other languages]]                    | [[file:README.org::*CigiMiniHostCSharp to generate CIGI messages][CigiMiniHostCSharp to generate CIGI messages]] | [[file:README.org::*generate swig interface dependancy file list using script][generate swig interface dependancy file list us...]] |
+| [[file:README.org::*- swig python][- swig python]]                                    | [[file:README.org::*generate swig files using scripts][generate swig files using scripts]]            | [[file:README.org::*C# xml and socket connection implemented for CIGI host][C# xml and socket connection implemented for CI...]] |
+| [[file:README.org::*- swig tcl][- swig tcl]]                                       | [[file:README.org::*generate swig other languages][generate swig other languages]]                | [[file:README.org::*C# examples imported swig C# files][C# examples imported swig C# files]]                 |
+| [[file:README.org::*possibly remove ALL_BUILD and ZERO_CHECK vcxproj][possibly remove ALL_BUILD and ZERO_CHECK vcxproj]] | [[file:README.org::*- swig C#][- swig C#]]                                    | [[file:README.org::*example swig concept explored with animal and kermit][example swig concept explored with animal and k...]] |
+| [[file:README.org::*update README files][update README files]]                              |                                              | [[file:README.org::*swig generated C# files][swig generated C# files]]                            |
+| [[file:README.org::*sln to install files][sln to install files]]                             |                                              | [[file:README.org::*wireshark to monitor CIGI messages][wireshark to monitor CIGI messages]]                 |
+| [[file:README.org::*Turn on / off cmake SWIG generation][Turn on / off cmake SWIG generation]]              |                                              | [[file:README.org::*CigiDummyIG and CigiMiniHost sending CIGI][CigiDummyIG and CigiMiniHost sending CIGI]]          |
+| [[file:README.org::*clean up visual studio solution files][clean up visual studio solution files]]            |                                              | [[file:README.org::*visual studio sln to build whole ccl project with examples][visual studio sln to build whole ccl project wi...]] |
+| [[file:README.org::*clean up top level build files][clean up top level build files]]                   |                                              | [[file:README.org::*cmake building whole ccl project with examples][cmake building whole ccl project with examples]]     |
 | [[file:README.org::*rename swig interface / modules to ccl][rename swig interface / modules to ccl]]           |                                              |                                                    |
 #+end:
 
@@ -76,9 +76,6 @@ SWIG is particularly useful in scenarios where you have a substantial amount of 
 ** DOING generate swig files using scripts
 ** DOING generate swig other languages
 *** DOING - swig C#
-** DOING generate linux and windows builds
-** DOING emacs transient for interacting with cmake
-** TODO add better support for targets
 ** TODO generate swig other languages
 *** TODO - swig python
 *** TODO - swig tcl
@@ -87,7 +84,7 @@ SWIG is particularly useful in scenarios where you have a substantial amount of 
 ** TODO sln to install files
 ** TODO Turn on / off cmake SWIG generation
 ** TODO clean up visual studio solution files
-** DOING clean up top level build files
+** TODO clean up top level build files
 ** TODO rename swig interface / modules to ccl
 ** DONE generate swig interface dependancy file list using script
 ** DONE C# xml and socket connection implemented for CIGI host

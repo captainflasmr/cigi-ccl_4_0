@@ -943,6 +943,9 @@
     <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHostCSharp\MiniHost.cs">
       <Link>MiniHost.cs</Link>
     </Compile>
+    <Compile Include="C:\Users\jimbo\source\cigi-ccl_4_0\examples\CigiMiniHostCSharp\MiniHostCIGI.cs">
+      <Link>MiniHostCIGI.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">
