@@ -1,0 +1,15 @@
+project Project_test is
+    for Source_Dirs use (".");
+    for Object_Dir use "obj";
+    for Exec_Dir use ".";
+    for Main use ("my_func_test.adb");
+
+    package Builder is
+      for Executable ("my_func_test.adb") use "./main";
+    end Builder;
+
+    package Linker is
+        for Default_Switches ("Ada") use
+            ("./my_cpp_function.o");
+    end Linker;
+end Project_test;

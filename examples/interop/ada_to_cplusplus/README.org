@@ -1,0 +1,12 @@
+#+title: README
+
+To automatically generate Ada bindings to C++ functions through gcc
+
+* build
+
+g++ -c my_cpp_function.cpp -fdump-ada-spec
+gprbuild
+
+* clean
+
+gprclean
