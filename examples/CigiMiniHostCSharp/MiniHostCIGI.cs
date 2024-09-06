@@ -1,11 +1,8 @@
 using System;
-using System.IO;
 using System.Text;
-using System.Threading;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
-using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 
@@ -34,9 +31,9 @@ namespace MiniHostBuild
 
         // int seconds = 0;
 		  // static int minutes = 0;
-        static double hours = 6.0;
+        // static double hours = 6.0;
         static int cigi_sensor = 0;
-        static bool black_hot = true;
+        // static bool black_hot = true;
 
         class Network
         {
@@ -319,8 +316,8 @@ namespace MiniHostBuild
 
             CigiSetSymbolCtrl(id, layer, x, y, red, green, blue, alpha, 1.0, 1.0, graticule);
 
-            Omsg.pack(CSymbolText);
-            Omsg.pack(CSymbolCtrl);
+            // Omsg.pack(CSymbolText);
+            // Omsg.pack(CSymbolCtrl);
         }
 
         static void CigiSetCircle (ushort id, ushort layer, double innerRadius, double radius, double x, double y,
@@ -338,8 +335,8 @@ namespace MiniHostBuild
 
             CigiSetSymbolCtrl(id, layer, x, y, red, green, blue, alpha, 1.0, 1.0, graticule);
 
-            Omsg.pack(CSymbolCircle);
-            Omsg.pack(CSymbolCtrl);
+            // Omsg.pack(CSymbolCircle);
+            // Omsg.pack(CSymbolCtrl);
         }
 
         static void CigiSetPoly (ushort id, ushort layer, ushort stipple, double stipplePatternLength,
@@ -354,9 +351,9 @@ namespace MiniHostBuild
 
             CigiSetSymbolCtrl(id, layer, x, y, red, green, blue, alpha, scaleX, scaleY, graticule);
 
-            Omsg.pack(CSymbolPoly);
-            Omsg.pack(CSymbolCompLineStyle);
-            Omsg.pack(CSymbolCtrl);
+            // Omsg.pack(CSymbolPoly);
+            // Omsg.pack(CSymbolCompLineStyle);
+            // Omsg.pack(CSymbolCtrl);
         }
 
         public MiniHostCIGI()
@@ -570,7 +567,6 @@ namespace MiniHostBuild
             // now the sensor view
             // first we need to map the sensor to something CIGI like
             cigi_sensor = 0;
-            black_hot = true;
 
             CSensor.SetViewID(SetValue_int16(1));
             CSensor.SetViewType(SetValue_int8((ushort)cigi_sensor));
@@ -674,7 +670,7 @@ namespace MiniHostBuild
             // CVeh.SetLon(olon + 0.000001);
 
             Omsg.pack(COwn);
-            Omsg.pack(COwnCtrl);
+            // Omsg.pack(COwnCtrl);
 
             Console.WriteLine("poop: 7");
             if (ftt) {
@@ -683,8 +679,8 @@ namespace MiniHostBuild
                 for (int tnum=1; tnum <= 10; tnum++) {
                     CVehCtrl.SetEntityID(SetValue_int16((ushort)tnum));
                     CVehCtrl.SetEntityState(CigiBaseEntityCtrl.EntityStateGrp.Remove);
-                    Omsg.pack(CVeh);
-                    Omsg.pack(CVehCtrl);
+                    // Omsg.pack(CVeh);
+                    // Omsg.pack(CVehCtrl);
                 }
                 ftt = false;
             }
@@ -703,25 +699,25 @@ namespace MiniHostBuild
 
                 CVehCtrl.SetEntityState(CigiBaseEntityCtrl.EntityStateGrp.Active);
 
-                Omsg.pack(CVeh);
-                Omsg.pack(CVehCtrl);
+                // Omsg.pack(CVeh);
+                // Omsg.pack(CVehCtrl);
             }
 
             Console.WriteLine("poop: 8");
-            Omsg.pack(CView);
-            Omsg.pack(CSensor);
-            Omsg.pack(CSensorCtrlGain);
+            // Omsg.pack(CView);
+            // Omsg.pack(CSensor);
+            // Omsg.pack(CSensorCtrlGain);
             Console.WriteLine("poop: 9");
-            Omsg.pack(CSensorCtrlContrast);
-            Omsg.pack(CEnv);
-            Omsg.pack(CCompSeaState);
-            Omsg.pack(CAtmos);
+            // Omsg.pack(CSensorCtrlContrast);
+            // Omsg.pack(CEnv);
+            // Omsg.pack(CCompSeaState);
+            // Omsg.pack(CAtmos);
             Console.WriteLine("poop: 10");
-            Omsg.pack(CWeather);
-            Omsg.pack(CWeatherCloud);
+            // Omsg.pack(CWeather);
+            // Omsg.pack(CWeatherCloud);
 
             // now the overlays!
-            Omsg.pack(CSymbolSurface);
+            // Omsg.pack(CSymbolSurface);
 
             // some lines - polygons - simulating graticule split
             CSymbolPolyData = CSymbolPoly.GetVertex(2);
@@ -809,7 +805,7 @@ namespace MiniHostBuild
                 Console.WriteLine("PLONG #5");
                 CigiOutBuf = SWIGTYPEToByteArray_p_p(swigOutBuffer_p_p, CigiOutSz);
                 HexStr = BitConverter.ToString(CigiOutBuf).Replace("-", " ");
-                // Console.WriteLine("Send size : " + CigiOutSz + " : " + HexStr);
+                Console.WriteLine("Send size : " + CigiOutSz + " : " + HexStr);
                 network.Send(CigiOutBuf, CigiOutSz);
                 Console.WriteLine("PLONG #6");
 

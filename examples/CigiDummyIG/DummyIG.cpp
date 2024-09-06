@@ -1,34 +1,34 @@
 /** <pre>
  *  The CIGI Dummy IG
  *  Copyright (c) 2004 The Boeing Company
- *  
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation.
- *  
+ *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
- *  
+ *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *  
- *  
+ *
+ *
  *  FILENAME:   DummyIG.cpp
  *  LANGUAGE:   C++
  *  CLASS:      UNCLASSIFIED
  *  PROJECT:    Multi-Purpose Viewer
- *  
- *  PROGRAM DESCRIPTION: 
+ *
+ *  PROGRAM DESCRIPTION:
  *  This class contains the data and methods necessary to
  *   handle the network interface.
- *  
+ *
  *  MODIFICATION NOTES:
  *  DATE     NAME                                SCR NUMBER
  *  DESCRIPTION OF CHANGE........................
- *  
+ *
  *  03/29/2004 Andrew Sampson                       MPV_CR_DR_1
  *  Initial Release.
  * </pre>
@@ -133,7 +133,7 @@ using namespace std;
 // Networking class/object
 Network network;
 
-// CIGI specific 
+// CIGI specific
 static CigiIGSession *IGSn;
 static CigiOutgoingMsg *OmsgPtr;
 static CigiIncomingMsg *ImsgPtr;
@@ -218,11 +218,11 @@ float timevaldiff( struct timeval *t1, struct timeval *t2 );
 int main(int argc, char* argv[])
 {
    CigiInSz = 0;
-   
+
    ReadConfig();
-   
+
    init_cigi_if();
-   
+
    /* CIGI messaging */
    CigiOutgoingMsg &Omsg = *OmsgPtr;
 
@@ -259,7 +259,7 @@ int main(int argc, char* argv[])
       waitUntilBeginningOfFrame();
 
 
-      // Do packaging here to 
+      // Do packaging here to
       // Package msg
       try {
          Omsg.PackageMsg(&pCigiOutBuf,CigiOutSz);
@@ -309,9 +309,9 @@ int main(int argc, char* argv[])
 
    // shut down the network
    network.closeSocket();
-   
+
    delete IGSn;
-   
+
    return 0;
 }
 
@@ -322,58 +322,58 @@ int main(int argc, char* argv[])
 // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 void ReadConfig(void)
 {
-   
+
    TiXmlNode *bnode = NULL;  // base node
-   
+
    TiXmlText *Port_To_IG = NULL;
    TiXmlText *Port_To_Host = NULL;
    TiXmlText *Host_Addr = NULL;
    TiXmlText *Hertz_rate = NULL;
-   
+
    TiXmlHandle *hConfig = NULL; // pointer to a Config handle
-   
+
    TiXmlElement *Config = NULL;
-   
+
    TiXmlText *DbDta = NULL;
-   
-   
-   
-   
+
+
+
+
    TiXmlDocument doc("CigiDummyIG.def");
    bool stat = doc.LoadFile();
-   
+
    //set default values
    Port_H2IG = 8000;
    Port_IG2H = 8001;
    HostAddr = "127.0.0.1";
-  
-   
+
+
    if(stat)
    {
       bnode = doc.FirstChild("MiniHostInitialization");
-      
+
       if(bnode == NULL)
          stat = false;  // The file is not a Mission Function Initialization file
    }
-   
-   
+
+
    if(stat)
    {
       // get base configuration
       Config = bnode->FirstChildElement("Config");
-      
+
       if(Config != NULL)
       {
          hConfig = new TiXmlHandle(Config);
-         
-         
+
+
          Host_Addr = hConfig->FirstChildElement("Host_Addr").Child(0).Text();
          if(Host_Addr)
             HostAddr = Host_Addr->Value();
-         
+
          Port_To_IG = hConfig->FirstChildElement("Port_To_IG").Child(0).Text();
          Port_H2IG = (Port_To_IG) ? atoi(Port_To_IG->Value()) : 8000;
-         
+
          Port_To_Host = hConfig->FirstChildElement("Port_To_Host").Child(0).Text();
          Port_IG2H = (Port_To_Host) ? atoi(Port_To_Host->Value()) : 8001;
 
@@ -382,11 +382,11 @@ void ReadConfig(void)
          timeDelayLimit = 1.0f/((float)Hz);
 
          delete hConfig;
-         
+
       }
 
    }
-   
+
 }
 
 
@@ -396,37 +396,37 @@ void ReadConfig(void)
 // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 int init_cigi_if(void){
    int err_status = 0;
-   
+
    /* open sockets to CIGI */
    // hostemu-ip-addr, hostemu-socket, local-socket
    printf("init_cigi_if: initializing ports to CIGI\n");
-   bool netstatus = network.openSocket( 
-      HostAddr.c_str(), 
+   bool netstatus = network.openSocket(
+      HostAddr.c_str(),
       Port_IG2H,
       Port_H2IG );
-   
+
    if( !netstatus ) {
       printf( "could not connect to CIGI host server\n" );
       exit( 1 );
    } else {
       printf( "successfully connected to CIGI host server\n" );
    }
-   
-   
+
+
    IGSn = new CigiIGSession(1,32768,2,32768);
    // Add packet event handlers here!
- 
+
    CigiOutgoingMsg &Omsg = IGSn->GetOutgoingMsgMgr();
    CigiIncomingMsg &Imsg = IGSn->GetIncomingMsgMgr();
    OmsgPtr = &Omsg;
    ImsgPtr = &Imsg;
-   
-   IGSn->SetCigiVersion(3,3);
+
+   IGSn->SetCigiVersion(4,0);
    IGSn->SetSynchronous(true);
-   
-   Imsg.SetReaderCigiVersion(3,3);
+
+   Imsg.SetReaderCigiVersion(4,0);
    Imsg.UsingIteration(false);
-   
+
    // set up a default handler for unhandled packets
    Imsg.RegisterEventProcessor(0, (CigiBaseEventProcessor *) &DefaultPckt);
 
@@ -513,8 +513,8 @@ int init_cigi_if(void){
    CSOF.SetEarthRefModel(CigiBaseSOF::WGS84);
    CSOF.SetTimeStamp(0);
    CSOF.SetFrameCntr(0);
-   
-   
+
+
    return err_status;
 }
 
@@ -590,9 +590,3 @@ float timevaldiff( struct timeval *t1, struct timeval *t2 ) {
 }
 
 #endif
-
-
-
-
-
-

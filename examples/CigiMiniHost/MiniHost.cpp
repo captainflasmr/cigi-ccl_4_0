@@ -417,12 +417,3 @@ int init_cigi_if(void){
 
    return err_status;
 }
-
-
-
-
-
-
-
-
-
