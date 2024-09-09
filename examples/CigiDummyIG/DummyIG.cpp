@@ -431,75 +431,76 @@ int init_cigi_if(void){
    Imsg.RegisterEventProcessor(0, (CigiBaseEventProcessor *) &DefaultPckt);
 
    // Register all the Event processors
-   Imsg.RegisterEventProcessor(CIGI_IG_CTRL_PACKET_ID_V3_2,
+   Imsg.RegisterEventProcessor(CIGI_IG_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_IGCtrl);
-   Imsg.RegisterEventProcessor(CIGI_ENTITY_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_ENTITY_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_EntityCtrl);
-   Imsg.RegisterEventProcessor(CIGI_CONF_CLAMP_ENTITY_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_CONF_CLAMP_ENTITY_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ConfClampEntityCtrl);
-   Imsg.RegisterEventProcessor(CIGI_COMP_CTRL_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_COMP_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_CompCtrl);
-   Imsg.RegisterEventProcessor(CIGI_SHORT_COMP_CTRL_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SHORT_COMP_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ShortCompCtrl);
-   Imsg.RegisterEventProcessor(CIGI_ART_PART_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_ART_PART_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ArtPartCtrl);
-   Imsg.RegisterEventProcessor(CIGI_SHORT_ART_PART_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_SHORT_ART_PART_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ShortArtPartCtrl);
-   Imsg.RegisterEventProcessor(CIGI_RATE_CTRL_PACKET_ID_V3_2,
-                              (CigiBaseEventProcessor *) &Pr_RateCtrl);
-   Imsg.RegisterEventProcessor(CIGI_CELESTIAL_CTRL_PACKET_ID_V3,
+   // Imsg.RegisterEventProcessor(CIGI_RATE_CTRL_PACKET_ID_V4,
+                              // (CigiBaseEventProcessor *) &Pr_RateCtrl);
+   Imsg.RegisterEventProcessor(CIGI_CELESTIAL_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_CelestialCtrl);
-   Imsg.RegisterEventProcessor(CIGI_ATMOS_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_ATMOS_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_AtmosCtrl);
-   Imsg.RegisterEventProcessor(CIGI_ENV_RGN_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_ENV_RGN_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_EnvRgnCtrl);
-   Imsg.RegisterEventProcessor(CIGI_WEATHER_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_WEATHER_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_WeatherCtrl);
-   Imsg.RegisterEventProcessor(CIGI_MARITIME_SURFACE_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_MARITIME_SURFACE_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_MaritimeSurfaceCtrl);
-   Imsg.RegisterEventProcessor(CIGI_WAVE_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_WAVE_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_WaveCtrl);
-   Imsg.RegisterEventProcessor(CIGI_TERRESTRIAL_SURFACE_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_TERRESTRIAL_SURFACE_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_TerrestrialSurfaceCtrl);
-   Imsg.RegisterEventProcessor(CIGI_VIEW_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_VIEW_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ViewCtrl);
-   Imsg.RegisterEventProcessor(CIGI_SENSOR_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_SENSOR_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SensorCtrl);
-   Imsg.RegisterEventProcessor(CIGI_MOTION_TRACK_CTRL_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_MOTION_TRACK_CTRL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_MotionTrackCtrl);
-   Imsg.RegisterEventProcessor(CIGI_EARTH_MODEL_DEF_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_EARTH_MODEL_DEF_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_EarthModelDef);
-   Imsg.RegisterEventProcessor(CIGI_TRAJECTORY_DEF_PACKET_ID_V3,
-                              (CigiBaseEventProcessor *) &Pr_Trajectory);
-   Imsg.RegisterEventProcessor(CIGI_VIEW_DEF_PACKET_ID_V3,
+   // Imsg.RegisterEventProcessor(CIGI_TRAJECTORY_DEF_PACKET_ID_V4,
+                              // (CigiBaseEventProcessor *) &Pr_Trajectory);
+   Imsg.RegisterEventProcessor(CIGI_VIEW_DEF_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ViewDef);
-   Imsg.RegisterEventProcessor(CIGI_COLL_DET_SEG_DEF_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_COLL_DET_SEG_DEF_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_CollDetSegDef);
-   Imsg.RegisterEventProcessor(CIGI_COLL_DET_VOL_DEF_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_COLL_DET_VOL_DEF_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_CollDetVolDef);
-   Imsg.RegisterEventProcessor(CIGI_HAT_HOT_REQ_PACKET_ID_V3_2,
+   Imsg.RegisterEventProcessor(CIGI_HAT_HOT_REQ_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_HatHotReq);
-   Imsg.RegisterEventProcessor(CIGI_LOS_SEG_REQ_PACKET_ID_V3_2,
+   Imsg.RegisterEventProcessor(CIGI_LOS_SEG_REQ_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_LosSegReq);
-   Imsg.RegisterEventProcessor(CIGI_LOS_VECT_REQ_PACKET_ID_V3_2,
+   Imsg.RegisterEventProcessor(CIGI_LOS_VECT_REQ_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_LosVectReq);
-   Imsg.RegisterEventProcessor(CIGI_POSITION_REQ_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_POSITION_REQ_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_PositionReq);
-   Imsg.RegisterEventProcessor(CIGI_ENV_COND_REQ_PACKET_ID_V3,
+   Imsg.RegisterEventProcessor(CIGI_ENV_COND_REQ_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_EnvCondReq);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_SURFACE_DEF_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_SURFACE_DEF_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolSurfaceDef);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CONTROL_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CONTROL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolCtrl);
-   Imsg.RegisterEventProcessor(CIGI_SHORT_SYMBOL_CONTROL_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SHORT_SYMBOL_CONTROL_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_ShortSymbolCtrl);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_TEXT_DEFINITION_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_TEXT_DEFINITION_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolTextDef);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CIRCLE_DEFINITION_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CIRCLE_DEFINITION_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolCircleDef);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_LINE_DEFINITION_PACKET_ID_V3_3,
+   // Imsg.RegisterEventProcessor(CIGI_SYMBOL_LINE_DEFINITION_PACKET_ID_V4,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_POLYGON_DEFINITION_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolLineDef);
-   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CLONE_PACKET_ID_V3_3,
+   Imsg.RegisterEventProcessor(CIGI_SYMBOL_CLONE_PACKET_ID_V4,
                               (CigiBaseEventProcessor *) &Pr_SymbolClone);
 
 

@@ -6,6 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
+#include <iostream>
 
 #define SWIG_VERSION 0x040201
 #define SWIGCSHARP
@@ -3383,23 +3384,27 @@ SWIGEXPORT int SWIGSTDCALL CSharp_CigiOutgoingMsg_UnlockMsg(void * jarg1) {
 
 
 SWIGEXPORT int SWIGSTDCALL CSharp_CigiOutgoingMsg_PackageMsg(void * jarg1, void * jarg2, void * jarg3) {
-  Cigi_uint8 *msgBuf = (Cigi_uint8 *) 0;
+  static unsigned char *msgBuf = NULL;
   int jresult ;
   CigiOutgoingMsg *arg1 = (CigiOutgoingMsg *) 0 ;
-  Cigi_uint8 **arg2 = (Cigi_uint8 **) 0 ;
   int *arg3 = 0 ;
   int result;
 
   arg1 = (CigiOutgoingMsg *)jarg1;
-  msgBuf = (Cigi_uint8 *)jarg2;
+  msgBuf = (unsigned char *)jarg2;
   arg3 = (int *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & is null", 0);
     return 0;
   }
+
+  std::cout << "poop: 01" << std::endl;
+
   result = (int)(arg1)->PackageMsg(&msgBuf,*arg3);
+  std::cout << "poop: 02" << std::endl;
+
   jresult = result;
-  memcpy (&jarg2, &msgBuf, jresult);
+  memcpy (jarg2, msgBuf, *arg3);
   return jresult;
 }
 
